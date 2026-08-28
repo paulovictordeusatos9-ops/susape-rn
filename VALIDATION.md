@@ -43,3 +43,7 @@ Após a atualização baseada em `pasted_content.txt`, o navegador confirmou sei
 ## Correção do hero para 1234
 
 A abertura foi revisada em desktop e mobile. A fotografia voltou ao ativo anterior do site (`susape-manual-candidato-portrait_07f389a4.jpg`), o lockup e o cartão lateral exibem a sequência oficial 1234 e a paleta mantém vermelho, verde, azul e amarelo da identidade SUSAPE. A animação de entrada permanece com suporte a `prefers-reduced-motion`.
+
+## Atualização com pasted_content_3.txt
+
+A Home foi alinhada ao novo briefing: o menu agora inclui as dez áreas públicas principais e o CTA passou a apontar para Contato. Foi adicionada uma faixa gráfica potiguar entre o hero e Quem é Susape, usando módulos chapados para Sol, Vento, Mapa do RN, Gente e Cultura. O hero mantém a fotografia existente, 1234 e as cores SUSAPE. A compilação, os testes Vitest e as capturas desktop/mobile foram concluídos sem erros de TypeScript.

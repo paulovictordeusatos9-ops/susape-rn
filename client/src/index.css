@@ -243,3 +243,13 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
   .hero-refresh .hero-card { margin-top: 30px; }
   .hero-refresh .hero-card > strong { font-size: 42px; }
 }
+
+/* Faixa gráfica potiguar — assinatura de transição entre o hero e o conteúdo */
+.potiguar-strip { position: relative; overflow: hidden; background: #ffffff; border-top: 3px solid #001c4a; border-bottom: 3px solid #001c4a; }
+.potiguar-strip-track { display: flex; align-items: stretch; width: max-content; min-height: 64px; }
+.potiguar-strip-track span { display: inline-flex; align-items: center; gap: 9px; padding: 0 28px; color: #ffffff; font-family: "Inter", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.potiguar-strip-track svg { stroke-width: 2.5; }
+.strip-red { background: #e0141e; }.strip-blue { background: #124e9b; }.strip-green { background: #137043; }.strip-yellow { background: #f4ae28; color: #001c4a !important; }.strip-pink { background: #e6597b; }
+@media (prefers-reduced-motion: no-preference) { .potiguar-strip-track { animation: potiguarSlide 22s linear infinite; } }
+@keyframes potiguarSlide { from { transform: translateX(0); } to { transform: translateX(-18%); } }
+@media (max-width: 680px) { .potiguar-strip-track span { padding: 0 18px; font-size: 9px; letter-spacing: .08em; } .potiguar-strip-track { min-height: 56px; } }

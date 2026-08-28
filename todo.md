@@ -67,5 +67,19 @@
 
 ## Entrega da correção final 1234
 
-- [ ] Guardar um novo checkpoint após a correção final do hero com a fotografia anterior e o número 1234.
-- [ ] Entregar explicitamente ao utilizador a versão corrigida anexando o checkpoint correspondente.
+- [x] Guardar um novo checkpoint após a correção final do hero com a fotografia anterior e o número 1234.
+- [x] Entregar explicitamente ao utilizador a versão corrigida anexando o checkpoint correspondente.
+
+## Atualização com pasted_content_3.txt
+
+- [x] Ler e organizar o novo conteúdo enviado.
+- [x] Mapear as novas informações para as secções existentes sem inventar dados.
+- [x] Implementar as alterações editoriais e visuais realizadas nesta ronda: menu completo, CTA de contato, faixa gráfica potiguar e ajuste de texto do hero.
+- [x] Validar foto, número 1234, animação, navegação e responsividade após as alterações da Home.
+- [x] Preparar a versão para checkpoint e entrega. O checkpoint específico desta ronda está pendente e registado abaixo.
+
+## Escopo real da ronda pasted_content_3.txt
+
+- [ ] Guardar um novo checkpoint após as alterações da Home, navegação e faixa gráfica potiguar.
+- [ ] Entregar ao utilizador a versão atualizada anexando o checkpoint correspondente.
+- [x] Manter páginas internas, CMS/admin, newsletter e privacidade como backlog separado até receber dados e requisitos de implementação específicos.

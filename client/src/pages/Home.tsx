@@ -230,10 +230,15 @@ export default function Home() {
   };
 
   const nav = [
-    ["Trajetória", "#quem-e"],
+    ["Início", "#inicio"],
+    ["Quem é Susape", "#quem-e"],
     ["Projeto", "#projeto"],
+    ["Atuação", "#atuacao"],
     ["Propostas", "#propostas"],
-    ["Desafio", "#desafio"],
+    ["Construção Coletiva", "#construcao"],
+    ["Desafio 167/60", "#desafio"],
+    ["Notícias", "#noticias"],
+    ["Galeria", "#galeria"],
     ["Participe", "#participe"],
   ];
 
@@ -254,8 +259,8 @@ export default function Home() {
             </a>
           ))}
         </nav>
-        <a className="header-cta" href="#construcao">
-          Construir junto <ArrowUpRight size={16} />
+        <a className="header-cta" href="#contato">
+          Contato <ArrowUpRight size={16} />
         </a>
         <button
           className="menu-button"
@@ -283,7 +288,7 @@ export default function Home() {
               <SectionEyebrow>Um jeito potiguar de fazer</SectionEyebrow>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
               <p className="hero-summary">
-              Susape Augusto é candidato a deputado federal pelo Rio Grande do Norte. Uma candidatura que apresenta o RN com identidade, escuta e compromisso.
+              Susape Augusto é candidato a deputado federal pelo Rio Grande do Norte. Um Rio Grande do Norte mais justo, criativo, saudável, educado e inclusivo.
             </p>
               <div className="hero-actions">
                 <a className="button-primary" href="#quem-e">
@@ -304,6 +309,18 @@ export default function Home() {
                 <span>Rio Grande do Norte</span>
               </div>
             </aside>
+          </div>
+        </section>
+
+        <section className="potiguar-strip" aria-label="Elementos gráficos da identidade potiguar">
+          <div className="potiguar-strip-track">
+            <span className="strip-red"><Sun size={17} /> Sol</span>
+            <span className="strip-blue"><Wind size={17} /> Vento</span>
+            <span className="strip-green"><Compass size={17} /> Mapa do RN</span>
+            <span className="strip-yellow"><Flag size={17} /> Gente</span>
+            <span className="strip-pink"><HeartHandshake size={17} /> Cultura</span>
+            <span className="strip-red"><Sun size={17} /> Sol</span>
+            <span className="strip-blue"><Wind size={17} /> Vento</span>
           </div>
         </section>
 
