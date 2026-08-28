@@ -199,3 +199,47 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 .activity-filters button:hover, .activity-filters button.active { background: #001c4a; color: #ffffff; }
 .news-card[href="#contato"] { border-style: dashed; }
 .news-card[href="#contato"] h3 { font-size: 28px; }
+
+/* Hero de abertura com a fotografia oficial e a numeração 112314 */
+.hero-refresh { position: relative; min-height: 790px; background: #f4e5d1; color: #ffffff; overflow: hidden; }
+.hero-refresh .hero-overlay { z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(0,28,74,.99) 0%, rgba(0,28,74,.96) 27%, rgba(0,28,74,.52) 56%, rgba(0,28,74,.04) 82%), linear-gradient(0deg, rgba(0,28,74,.68), transparent 54%); }
+.hero-visual { position: absolute; z-index: 0; inset: 76px 0 0; overflow: hidden; background: #f4e5d1; }
+.hero-photo-wash { position: absolute; z-index: 0; top: 8%; right: 1%; width: min(56vw, 760px); aspect-ratio: 1; border-radius: 50%; background: #137043; opacity: .92; }
+.hero-number-backdrop { position: absolute; z-index: 1; top: 13%; right: 1%; width: 72%; display: flex; justify-content: center; white-space: nowrap; font-family: "Anton", Impact, sans-serif; font-size: clamp(170px, 23vw, 330px); line-height: .72; letter-spacing: -.12em; opacity: .96; transform-origin: center; }
+.hero-number-backdrop span { display: inline-block; }
+.hero-portrait { position: absolute; z-index: 2; right: 8%; bottom: -1%; height: min(92%, 760px); width: auto; max-width: none; object-fit: contain; object-position: bottom center; filter: drop-shadow(12px 10px 0 rgba(0,28,74,.18)); }
+.hero-refresh .hero-content { z-index: 3; }
+.hero-refresh .hero-card { position: relative; z-index: 4; }
+.hero-refresh .hero-lockup > span { max-width: 430px; }
+.hero-refresh .hero-card > strong { font-size: 52px; white-space: nowrap; }
+.hero-refresh .hero-card .card-label { display: block; max-width: 150px; line-height: 1.25; }
+@keyframes heroNumberEnter { from { opacity: 0; transform: translateX(34px) scale(.9); } to { opacity: .96; transform: translateX(0) scale(1); } }
+@keyframes heroPortraitEnter { from { opacity: 0; transform: translateX(56px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes heroCopyEnter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-number-backdrop { animation: heroNumberEnter .72s cubic-bezier(.23,1,.32,1) both; }
+  .hero-portrait { animation: heroPortraitEnter .95s .08s cubic-bezier(.23,1,.32,1) both; }
+  .hero-refresh .hero-copy { animation: heroCopyEnter .65s .18s cubic-bezier(.23,1,.32,1) both; }
+  .hero-refresh .hero-card { animation: heroCopyEnter .65s .28s cubic-bezier(.23,1,.32,1) both; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-number-backdrop, .hero-portrait, .hero-refresh .hero-copy, .hero-refresh .hero-card { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+@media (max-width: 1000px) {
+  .hero-number-backdrop { right: -6%; width: 72%; font-size: min(24vw, 280px); }
+  .hero-portrait { right: -4%; height: 86%; }
+  .hero-photo-wash { right: -6%; width: 62vw; }
+}
+@media (max-width: 680px) {
+  .hero-refresh { min-height: 790px; background: #001c4a; }
+  .hero-visual { inset: 68px 0 0; background: #f4e5d1; }
+  .hero-photo-wash { top: 10%; right: -26%; width: 112vw; opacity: .82; }
+  .hero-number-backdrop { top: 14%; right: -28%; width: 136%; font-size: min(23vw, 104px); letter-spacing: -.13em; opacity: .84; }
+  .hero-portrait { right: -19%; bottom: -1%; height: 70%; opacity: .9; }
+  .hero-refresh .hero-overlay { background: linear-gradient(90deg, rgba(0,28,74,.99) 0%, rgba(0,28,74,.9) 44%, rgba(0,28,74,.38) 75%, rgba(0,28,74,.1) 100%), linear-gradient(0deg, rgba(0,28,74,.84), rgba(0,28,74,.12) 80%); }
+  .hero-refresh .hero-content { min-height: 790px; padding-top: 136px; }
+  .hero-refresh .hero-lockup > span { max-width: 300px; font-size: 9px; }
+  .hero-refresh .hero-lockup > strong { font-size: clamp(35px, 10vw, 54px); }
+  .hero-refresh .hero-card { margin-top: 30px; }
+  .hero-refresh .hero-card > strong { font-size: 42px; }
+}

@@ -46,5 +46,26 @@
 
 ## Entrega posterior às últimas edições
 
-- [ ] Salvar checkpoint após as alterações finais de pasted_content.txt.
-- [ ] Entregar explicitamente a versão atualizada depois do checkpoint.
+- [x] Salvar checkpoint após as alterações finais de pasted_content.txt.
+- [x] Entregar explicitamente a versão atualizada depois do checkpoint.
+
+## Tentativa de hero com nova fotografia — revertida após correção
+
+- [x] Preparar a nova fotografia sem alterar rosto ou aparência do candidato. (Tentativa histórica, não usada na versão final.)
+- [x] Atualizar temporariamente o hero com a foto nova, a numeração 112314 e o texto de candidato a deputado federal. (Revertido; a versão final usa a foto anterior e 1234.)
+- [x] Implementar a animação de entrada do candidato e da numeração grande com respeito a prefers-reduced-motion. (Mantida na versão final com 1234.)
+- [x] Validar a abertura em desktop e mobile, incluindo responsividade e legibilidade. (Validação da estrutura mantida.)
+- [x] Guardar checkpoint e entregar a nova versão. (A tentativa 112314 não foi entregue; substituída pela correção final.)
+
+## Correção da referência do hero
+
+- [x] Restaurar a fotografia que já estava no site.
+- [x] Substituir 112314 por 1234 em todos os elementos do hero.
+- [x] Manter as cores padrão já existentes na identidade SUSAPE.
+- [x] Validar a abertura em desktop e mobile.
+- [x] Guardar checkpoint e entregar a correção.
+
+## Entrega da correção final 1234
+
+- [ ] Guardar um novo checkpoint após a correção final do hero com a fotografia anterior e o número 1234.
+- [ ] Entregar explicitamente ao utilizador a versão corrigida anexando o checkpoint correspondente.

@@ -39,3 +39,7 @@ A Home foi atualizada com os quatro eixos definidos no briefing: Orgulho de ser 
 ## Validação final da ronda de conteúdo
 
 Após a atualização baseada em `pasted_content.txt`, o navegador confirmou seis filtros de Atuação, seis âncoras principais funcionais, os quatro títulos de propostas, o formulário com consentimento e a mensagem “Contribuição recebida.”, além do início do quiz 167/60.
+
+## Correção do hero para 1234
+
+A abertura foi revisada em desktop e mobile. A fotografia voltou ao ativo anterior do site (`susape-manual-candidato-portrait_07f389a4.jpg`), o lockup e o cartão lateral exibem a sequência oficial 1234 e a paleta mantém vermelho, verde, azul e amarelo da identidade SUSAPE. A animação de entrada permanece com suporte a `prefers-reduced-motion`.

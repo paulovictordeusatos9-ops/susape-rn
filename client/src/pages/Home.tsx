@@ -48,7 +48,13 @@ type Municipio = {
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
 
-const heroImage = "/manus-storage/susape-manual-candidato-portrait_07f389a4.jpg";
+const officialPortrait = "/manus-storage/susape-manual-candidato-portrait_07f389a4.jpg";
+const heroNumberDigits = [
+  { digit: "1", className: "num-red" },
+  { digit: "2", className: "num-green" },
+  { digit: "3", className: "num-blue" },
+  { digit: "4", className: "num-yellow" },
+];
 const encounterImage = "/manus-storage/susape-territorio-encontro_bddc5ac6.jpg";
 const bridgeImage = "/manus-storage/susape-costa-ponte_c56e432f.jpg";
 const logoImage = "/manus-storage/page-003_8955e366.png";
@@ -261,18 +267,23 @@ export default function Home() {
       </header>
 
       <main>
-        <section id="inicio" className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
+        <section id="inicio" className="hero hero-refresh">
+          <div className="hero-visual" aria-hidden="true">
+            <div className="hero-number-backdrop">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-${index}`} className={className}>{digit}</span>)}</div>
+            <div className="hero-photo-wash" />
+            <img className="hero-portrait" src={officialPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
+          </div>
           <div className="hero-overlay" />
           <div className="manual-icons" aria-label="Ícones de referência do Rio Grande do Norte">
             <span><b>≈</b> ondas</span><span><b>✹</b> sol</span><span><b>⌁</b> farol</span><span><b>●</b> gente</span>
           </div>
           <div className="hero-content">
           <div className="hero-copy">
-            <div className="hero-lockup" aria-label="Deputado Federal Susape 1234"><span>DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
+            <div className="hero-lockup" aria-label="Candidato a deputado federal Susape 1234"><span>CANDIDATO A DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
               <SectionEyebrow>Um jeito potiguar de fazer</SectionEyebrow>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
-            <p className="hero-summary">
-              Uma candidatura federal que apresenta o RN com identidade, escuta e compromisso com inclusão, cultura, educação e saúde.
+              <p className="hero-summary">
+              Susape Augusto é candidato a deputado federal pelo Rio Grande do Norte. Uma candidatura que apresenta o RN com identidade, escuta e compromisso.
             </p>
               <div className="hero-actions">
                 <a className="button-primary" href="#quem-e">
@@ -282,15 +293,15 @@ export default function Home() {
                   Traga uma ideia <ChevronRight size={18} />
                 </a>
               </div>
-              <p className="hero-source">PDT · 1234 · dados públicos da candidatura em atualização</p>
+              <p className="hero-source">Candidato a deputado federal · número 1234</p>
             </div>
-            <aside className="hero-card" aria-label="Resumo da candidatura">
-              <span className="card-label">Faz sentido?!</span>
-              <strong><b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong>
-              <p>um jeito potiguar de fazer.</p>
+            <aside className="hero-card" aria-label="Identificação da candidatura">
+              <span className="card-label">Candidato a deputado federal</span>
+              <strong>{heroNumberDigits.map(({ digit, className }, index) => <b key={`${digit}-card-${index}`} className={className}>{digit}</b>)}</strong>
+              <p>Um jeito potiguar de fazer.</p>
               <div className="hero-card-footer">
                 <Compass size={18} />
-                <span>Orgulho potiguar</span>
+                <span>Rio Grande do Norte</span>
               </div>
             </aside>
           </div>
