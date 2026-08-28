@@ -29,3 +29,22 @@
 - [x] Remover do CSS e da UI final os remanescentes cartográficos ocultos, incluindo hero-route, hero-atlas e rótulos carta/eixos de escuta.
 - [x] Validar CTAs principais e links externos no fluxo desktop e em viewport mobile, além do quiz e formulário, após a limpeza final.
 - [x] Guardar o checkpoint definitivo e fazer a entrega final desta atualização.
+
+## Atualização com pasted_content.txt
+
+- [x] Ler e organizar todo o conteúdo enviado.
+- [x] Mapear as informações novas para as secções correspondentes do site.
+- [x] Atualizar textos, propostas, notícias, atuação e participação sem inventar dados.
+- [x] Validar compilação, navegação, quiz, formulário e responsividade.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Verificação adicional da ronda pasted_content.txt
+
+- [x] Adaptar Atuação e Notícias ao briefing, usando placeholders administrativos explícitos onde faltarem dados oficiais.
+- [x] Testar âncoras e CTAs após a atualização com pasted_content.txt.
+- [x] Guardar checkpoint final e entregar a nova versão.
+
+## Entrega posterior às últimas edições
+
+- [ ] Salvar checkpoint após as alterações finais de pasted_content.txt.
+- [ ] Entregar explicitamente a versão atualizada depois do checkpoint.

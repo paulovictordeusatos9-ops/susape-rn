@@ -21,6 +21,10 @@ import {
   MessageCircle,
   Send,
   Sparkles,
+  Sun,
+  ShieldCheck,
+  HeartPulse,
+  Wind,
   Users,
   X,
 } from "lucide-react";
@@ -57,27 +61,31 @@ const chartConfig = {
 const themes = [
   {
     number: "01",
-    title: "Inclusão",
-    body: "Eixo destacado no manual de identidade visual. Área preparada para compromissos que ampliem oportunidades e participação.",
-    color: "theme-inclusao",
+    title: "Orgulho de ser Potiguar",
+    body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
+    color: "theme-orgulho",
+    icon: Sun,
   },
   {
     number: "02",
-    title: "Cultura",
-    body: "Tema destacado pela campanha como parte de um Rio Grande do Norte criativo, com identidade e orgulho potiguar.",
-    color: "theme-cultura",
+    title: "Segurança Pública para Todos",
+    body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
+    color: "theme-seguranca",
+    icon: ShieldCheck,
   },
   {
     number: "03",
-    title: "Educação",
-    body: "Eixo apresentado no material de referência. Espaço pronto para propostas, metas e compromissos publicados com clareza.",
-    color: "theme-educacao",
+    title: "Saúde mais perto de quem precisa",
+    body: "Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
+    color: "theme-saude",
+    icon: HeartPulse,
   },
   {
     number: "04",
-    title: "Saúde",
-    body: "Tema destacado no manual para uma visão de estado mais justo, saudável e inclusivo.",
-    color: "theme-saude",
+    title: "Desenvolvimento Sustentável",
+    body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
+    color: "theme-sustentavel",
+    icon: Wind,
   },
 ];
 
@@ -102,11 +110,19 @@ const news = [
     href: "https://www.instagram.com/susapeaugusto/?hl=en",
   },
   {
-    tag: "Atualização",
-    title: "Acompanhe os canais oficiais da campanha",
-    body: "Agenda, vídeos e comunicados podem ser acompanhados no Instagram e no Facebook.",
-    href: "https://www.instagram.com/susapeaugusto/",
+    tag: "Conteúdo pendente",
+    title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]",
+    body: "Área preparada para receber título, data, imagem, texto, categoria e fonte oficial.",
+    href: "#contato",
   },
+];
+
+const activityEntries = [
+  { category: "Projetos", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para projetos documentados, com data e fonte.", icon: Landmark },
+  { category: "Ações", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para ações e iniciativas públicas da candidatura.", icon: Users },
+  { category: "Iniciativas", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para articulações e experiências verificáveis.", icon: Flag },
+  { category: "Agenda", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para agendas, encontros e visitas oficiais.", icon: Clock3 },
+  { category: "Resultados", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para resultados publicados com contexto e fonte.", icon: Check },
 ];
 
 function normalizar(value: string) {
@@ -131,6 +147,7 @@ export default function Home() {
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
   const [municipiosError, setMunicipiosError] = useState(false);
   const [ideaSent, setIdeaSent] = useState(false);
+  const [activityFilter, setActivityFilter] = useState("Todos");
   const [quizActive, setQuizActive] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
@@ -319,16 +336,17 @@ export default function Home() {
           <div className="project-topline">
             <div>
               <SectionEyebrow>Conheça o projeto</SectionEyebrow>
-              <h2>Um jeito potiguar de fazer.</h2>
+              <h2>Quatro eixos para um jeito potiguar de fazer.</h2>
             </div>
-            <p>O manual apresenta um Rio Grande do Norte mais justo, criativo, saudável, educado e inclusivo. Os quatro eixos abaixo organizam a conversa e deixam espaço para compromissos detalhados.</p>
+            <p>As propostas abaixo traduzem os temas definidos no briefing da campanha. A linguagem respeita a atuação parlamentar: defender, propor, fiscalizar, articular e buscar recursos, sem prometer execução direta.</p>
           </div>
           <div className="theme-grid" id="propostas">
             {themes.map(theme => (
               <article className={`theme-card ${theme.color}`} key={theme.number}>
-                <div className="telegram-top"><span>{theme.number}</span><small>despacho · eixo</small><ArrowUpRight size={15} /></div>
+                <div className="telegram-top"><span>{theme.number}</span><small>proposta · eixo</small><ArrowUpRight size={15} /></div>
                 <h3>{theme.title}</h3>
                 <p>{theme.body}</p>
+                <div className="theme-icon" aria-hidden="true"><theme.icon size={24} /></div>
                 <button onClick={() => document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" })}>
                   Contribuir com este tema <ArrowUpRight size={17} />
                 </button>
@@ -351,11 +369,12 @@ export default function Home() {
             <div className="action-copy">
               <SectionEyebrow>Atuação</SectionEyebrow>
               <h2>Agenda, encontros e resultados: presença que se comprova.</h2>
-              <p>Esta área está preparada para reunir projetos, iniciativas, agendas e experiências da candidatura com data, localidade, tema e fontes primárias.</p>
+              <p>Área editorial com filtros para projetos, ações, iniciativas, agenda e resultados. Até que a campanha forneça os registos oficiais, os cartões permanecem identificados como conteúdo pendente.</p>
+              <div className="activity-filters" role="tablist" aria-label="Filtrar atuação">
+                {["Todos", "Projetos", "Ações", "Iniciativas", "Agenda", "Resultados"].map(filter => <button key={filter} type="button" className={activityFilter === filter ? "active" : ""} onClick={() => setActivityFilter(filter)}>{filter}</button>)}
+              </div>
               <div className="action-list">
-                <div><Users size={19} /><span><strong>Encontros</strong><small>Registos de conversas, visitas e agendas.</small></span></div>
-                <div><Landmark size={19} /><span><strong>Iniciativas</strong><small>Projetos, articulações e experiências documentadas.</small></span></div>
-                <div><Check size={19} /><span><strong>Prestação de contas</strong><small>Resultados e atualizações com contexto e fonte.</small></span></div>
+                {activityEntries.filter(item => activityFilter === "Todos" || item.category === activityFilter).map(item => { const Icon = item.icon; return <div key={item.category}><Icon size={19} /><span><strong>{item.category}</strong><small>{item.title} · {item.body}</small></span></div>; })}
               </div>
               <a className="text-link" href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer">Acompanhar registos no Instagram <ExternalLink size={15} /></a>
             </div>
@@ -399,14 +418,18 @@ export default function Home() {
             <SectionEyebrow>Construção coletiva</SectionEyebrow>
             <h2>Traga uma ideia do seu bairro. Vamos construir juntos.</h2>
             <p>Ideias, problemas e propostas ajudam a dar forma a um plano que começa nas pessoas. Nesta versão estática, o formulário confirma a sua participação localmente; conecte-o ao canal oficial para receber envios reais.</p>
-            <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Compromissos</span></div>
+            <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Propostas</span></div>
           </div>
           <form className="idea-form" onSubmit={event => { event.preventDefault(); setIdeaSent(true); }}>
             <label>Seu nome<input required placeholder="Como podemos chamar você?" /></label>
             <label>Seu município<input required placeholder="Ex.: Mossoró" /></label>
-            <label>O que precisa entrar nessa conversa?<textarea required rows={4} placeholder="Conte uma ideia, problema ou proposta para o RN." /></label>
+            <label>Bairro <span className="optional">(opcional)</span><input placeholder="Onde esta ideia acontece?" /></label>
+            <label>Tema<select required defaultValue=""><option value="" disabled>Escolha um tema</option><option>Orgulho de ser Potiguar</option><option>Segurança</option><option>Saúde</option><option>Desenvolvimento Sustentável</option><option>Outro</option></select></label>
+            <label>Sua ideia, problema ou proposta<textarea required rows={4} maxLength={800} placeholder="Conte o que precisa entrar nessa conversa." /></label>
+            <label>Seu e-mail ou WhatsApp <span className="optional">(opcional)</span><input type="text" placeholder="Como podemos responder?" /></label>
+            <label className="consent-label"><input type="checkbox" required /> <span>Concordo com o uso destes dados apenas para responder a esta contribuição, conforme a política de privacidade.</span></label>
             <Button type="submit" className="send-button"><Send size={17} /> Enviar contribuição</Button>
-            {ideaSent && <p className="form-confirm"><Check size={16} /> Contribuição registada nesta sessão. Para receber mensagens reais, ligue este formulário ao canal oficial da campanha.</p>}
+            {ideaSent && <p className="form-confirm"><Check size={16} /> Contribuição recebida. Ela não representa promessa de adoção; ligue o formulário ao canal oficial para receber envios reais.</p>}
           </form>
         </section>
 

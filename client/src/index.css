@@ -182,3 +182,20 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
   .hero-content { padding-top: 180px; }.hero-lockup > strong { font-size: 46px; }.hero-card { margin-top: 36px; }.hero-card > strong { font-size: 64px; }
   .section-stamp { left: calc(27px - 20px); }.theme-card h3 { font-size: 37px; }.profile-statement { box-shadow: 6px 6px 0 #e0141e; }.idea-form { box-shadow: 6px 6px 0 #137043; }.quiz-card { box-shadow: 9px 9px 0 #f4ae28; }
 }
+
+/* Complementos da atualização editorial */
+.theme-orgulho { border-top-color: #f4ae28; }.theme-seguranca { border-top-color: #e0141e; }.theme-saude { border-top-color: #e6597b; }.theme-sustentavel { border-top-color: #137043; }
+.theme-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin: 12px 0 18px; border: 2px solid #f4ae28; color: #f4ae28; }
+.theme-card button { margin-top: auto; }
+.idea-form select { width: 100%; border: 0; border-bottom: 1px solid #001c4a; border-radius: 0; background: transparent; padding: 12px 0; color: #001c4a; font: inherit; outline: none; }
+.idea-form select:focus, .idea-form input:focus, .idea-form textarea:focus { border-bottom: 2px solid #e0141e; box-shadow: 0 3px 0 rgba(224,20,30,.13); }
+.optional { color: #6f7b88; font-size: 10px; font-weight: 600; text-transform: lowercase; }
+.consent-label { display: grid; grid-template-columns: 18px 1fr; align-items: start; gap: 9px; color: #385273; font-size: 11px !important; line-height: 1.45; }
+.consent-label input { width: 16px; height: 16px; margin: 0; accent-color: #e0141e; }
+.form-confirm { display: flex; gap: 7px; align-items: flex-start; margin: 4px 0 0; color: #137043; font-size: 11px; line-height: 1.45; }
+
+.activity-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 12px; }
+.activity-filters button { border: 1px solid #001c4a; background: transparent; padding: 8px 11px; color: #001c4a; font: 800 10px/1 "Inter", sans-serif; text-transform: uppercase; cursor: pointer; transition: .18s ease; }
+.activity-filters button:hover, .activity-filters button.active { background: #001c4a; color: #ffffff; }
+.news-card[href="#contato"] { border-style: dashed; }
+.news-card[href="#contato"] h3 { font-size: 28px; }
