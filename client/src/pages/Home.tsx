@@ -1,5 +1,5 @@
 /**
- * Estilo Cartografia Cívica: rota territorial assimétrica, azul-noite e caju em movimento.
+ * Atualização baseada no Manual de Identidade Visual SUSAPE 1234.
  * Cada bloco deve levar a uma ação concreta e nunca substituir factos verificados por ficção.
  */
 import { useEffect, useMemo, useState } from "react";
@@ -44,45 +44,45 @@ type Municipio = {
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
 
-const heroImage = "/manus-storage/susape-hero-cartografia_cbbfc6e5.jpg";
+const heroImage = "/manus-storage/susape-manual-candidato-portrait_07f389a4.jpg";
 const encounterImage = "/manus-storage/susape-territorio-encontro_bddc5ac6.jpg";
 const bridgeImage = "/manus-storage/susape-costa-ponte_c56e432f.jpg";
-const logoImage = "/manus-storage/susape-marca-rosa-dos-ventos_42e7774a.png";
+const logoImage = "/manus-storage/page-003_8955e366.png";
 const wikimediaBridge = "/manus-storage/ponte-newton-navarro-ccby_2f5f8d70.jpg";
 
 const chartConfig = {
-  municipios: { label: "Municípios", color: "#F15A3A" },
+  municipios: { label: "Municípios", color: "#e0141e" },
 } satisfies ChartConfig;
 
 const themes = [
   {
     number: "01",
-    title: "Cultura",
-    body: "Um dos quatro eixos apresentados no perfil público. Espaço preparado para prioridades culturais e iniciativas da campanha.",
-    color: "theme-cultura",
+    title: "Inclusão",
+    body: "Eixo destacado no manual de identidade visual. Área preparada para compromissos que ampliem oportunidades e participação.",
+    color: "theme-inclusao",
   },
   {
     number: "02",
-    title: "Segurança",
-    body: "Eixo declarado no canal oficial. As propostas detalhadas podem ser publicadas aqui com fonte e data de atualização.",
-    color: "theme-seguranca",
+    title: "Cultura",
+    body: "Tema destacado pela campanha como parte de um Rio Grande do Norte criativo, com identidade e orgulho potiguar.",
+    color: "theme-cultura",
   },
   {
     number: "03",
-    title: "Saúde",
-    body: "Tema que integra a apresentação pública da candidatura, organizado no site para consulta simples e participação popular.",
-    color: "theme-saude",
+    title: "Educação",
+    body: "Eixo apresentado no material de referência. Espaço pronto para propostas, metas e compromissos publicados com clareza.",
+    color: "theme-educacao",
   },
   {
     number: "04",
-    title: "Sustentabilidade",
-    body: "Quarto eixo mencionado no perfil. Área pronta para metas, ações, parcerias e acompanhamento de compromissos.",
-    color: "theme-sustentabilidade",
+    title: "Saúde",
+    body: "Tema destacado no manual para uma visão de estado mais justo, saudável e inclusivo.",
+    color: "theme-saude",
   },
 ];
 
-const rota = [
-  ["Ponto de partida", "Natal/RN", "Natural de Natal, potiguar e candidato a deputado federal pelo Rio Grande do Norte."],
+const perfil = [
+  ["Identidade", "Orgulho potiguar", "O manual ancora a comunicação no orgulho de ser norte-rio-grandense."],
   ["Pessoas", "Pai e empreendedor", "Apresentação pessoal indicada no perfil público da candidatura."],
   ["Formação", "Superior completo", "Informação declarada na ficha pública da candidatura."],
   ["Caminhada", "Primeira disputa eleitoral", "Dado publicado por fonte de perfil eleitoral baseada em registos públicos."],
@@ -96,9 +96,9 @@ const news = [
     href: "https://agorarn.com.br/eleicoes-2026/candidatos/susape-augusto/",
   },
   {
-    tag: "Temas",
-    title: "Quatro eixos organizam a apresentação pública",
-    body: "Cultura, segurança, saúde e sustentabilidade aparecem no perfil oficial indexado.",
+    tag: "Manual",
+    title: "A identidade SUSAPE 1234 ganha forma",
+    body: "Cores vivas, símbolos do RN e o slogan Faz sentido?! organizam a nova referência visual.",
     href: "https://www.instagram.com/susapeaugusto/?hl=en",
   },
   {
@@ -196,14 +196,14 @@ export default function Home() {
       return;
     }
     if (used.includes(city.nome)) {
-      setQuizFeedback("Esse município já entrou na sua rota. Escolha outro.");
+      setQuizFeedback("Esse município já foi marcado. Escolha outro.");
       setAnswer("");
       return;
     }
     setUsed(previous => [city.nome, ...previous]);
     setScore(previous => previous + 1);
     setAnswer("");
-    setQuizFeedback(`${city.nome} entrou no mapa.`);
+    setQuizFeedback(`Resposta validada: ${city.nome}.`);
   };
 
   const nav = [
@@ -217,12 +217,12 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="Susape Augusto — início">
-          <img src={logoImage} alt="Marca gráfica em forma de rosa dos ventos solar" />
-          <span>
-            <strong>Susape</strong>
-            <small>Augusto · RN</small>
-          </span>
+        <a className="brand" href="#inicio" aria-label="Susape 1234 — início">
+          <div className="brand-lockup">
+            <span>DEPUTADO FEDERAL</span>
+            <strong>SUSAPE</strong>
+            <div className="brand-number"><b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></div>
+          </div>
         </a>
         <nav className={menuOpen ? "nav-links nav-open" : "nav-links"} aria-label="Navegação principal">
           {nav.map(([label, href]) => (
@@ -246,25 +246,17 @@ export default function Home() {
       <main>
         <section id="inicio" className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="hero-overlay" />
-          <div className="route-line hero-route" aria-hidden="true">
-            <i /> <i /> <i />
-          </div>
-          <div className="hero-atlas" aria-hidden="true">
-            <span className="atlas-title">Carta de rota · RN</span>
-            <span className="atlas-coordinate coordinate-one">05°48′S</span>
-            <span className="atlas-coordinate coordinate-two">35°12′W</span>
-            <span className="atlas-point point-one" />
-            <span className="atlas-point point-two" />
-            <span className="atlas-point point-three" />
-            <b>Território em conversa</b>
+          <div className="manual-icons" aria-label="Ícones de referência do Rio Grande do Norte">
+            <span><b>≈</b> ondas</span><span><b>✹</b> sol</span><span><b>⌁</b> farol</span><span><b>●</b> gente</span>
           </div>
           <div className="hero-content">
-            <div className="hero-copy">
-              <SectionEyebrow>Deputado federal · Rio Grande do Norte</SectionEyebrow>
-              <h1>O Rio Grande do Norte cabe na nossa conversa.</h1>
-              <p className="hero-summary">
-                Susape Augusto apresenta uma candidatura federal com escuta, presença e quatro eixos públicos: cultura, segurança, saúde e sustentabilidade.
-              </p>
+          <div className="hero-copy">
+            <div className="hero-lockup" aria-label="Deputado Federal Susape 1234"><span>DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
+              <SectionEyebrow>Um jeito potiguar de fazer</SectionEyebrow>
+              <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
+            <p className="hero-summary">
+              Uma candidatura federal que apresenta o RN com identidade, escuta e compromisso com inclusão, cultura, educação e saúde.
+            </p>
               <div className="hero-actions">
                 <a className="button-primary" href="#quem-e">
                   Conheça a trajetória <ArrowDownRight size={19} />
@@ -276,19 +268,19 @@ export default function Home() {
               <p className="hero-source">PDT · 1234 · dados públicos da candidatura em atualização</p>
             </div>
             <aside className="hero-card" aria-label="Resumo da candidatura">
-              <span className="card-label">No mapa</span>
-              <strong>4</strong>
-              <p>eixos para organizar a conversa com o estado.</p>
+              <span className="card-label">Faz sentido?!</span>
+              <strong><b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong>
+              <p>um jeito potiguar de fazer.</p>
               <div className="hero-card-footer">
                 <Compass size={18} />
-                <span>Faz sentido?</span>
+                <span>Orgulho potiguar</span>
               </div>
             </aside>
           </div>
         </section>
 
-        <section id="quem-e" className="section profile-section route-section">
-          <div className="route-rail" aria-hidden="true"><span>01</span></div>
+        <section id="quem-e" className="section profile-section identity-section">
+          <div className="section-stamp" aria-hidden="true"><span>01</span></div>
           <div className="section-intro split-heading">
             <div>
               <SectionEyebrow>Quem é Susape</SectionEyebrow>
@@ -304,9 +296,9 @@ export default function Home() {
               <p>Política olhando para as pessoas, ouvindo mais e construindo soluções que façam sentido.</p>
               <small>— síntese da mensagem pública de apresentação da candidatura</small>
             </div>
-            <div className="route-timeline">
-              {rota.map(([eyebrow, title, body], index) => (
-                <article className="timeline-item" key={title}>
+            <div className="profile-facts">
+              {perfil.map(([eyebrow, title, body], index) => (
+                <article className="profile-fact" key={title}>
                   <span className="timeline-index">0{index + 1}</span>
                   <div>
                     <small>{eyebrow}</small>
@@ -322,14 +314,14 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="projeto" className="section project-section route-section">
-          <div className="route-rail rail-light" aria-hidden="true"><span>02</span></div>
+        <section id="projeto" className="section project-section identity-section">
+          <div className="section-stamp rail-light" aria-hidden="true"><span>02</span></div>
           <div className="project-topline">
             <div>
               <SectionEyebrow>Conheça o projeto</SectionEyebrow>
-              <h2>Quatro pontos para orientar uma mesma direção.</h2>
+              <h2>Um jeito potiguar de fazer.</h2>
             </div>
-            <p>Os eixos abaixo são os temas destacados no perfil público. Esta estrutura permite que a campanha publique propostas detalhadas, metas e referências de forma transparente.</p>
+            <p>O manual apresenta um Rio Grande do Norte mais justo, criativo, saudável, educado e inclusivo. Os quatro eixos abaixo organizam a conversa e deixam espaço para compromissos detalhados.</p>
           </div>
           <div className="theme-grid" id="propostas">
             {themes.map(theme => (
@@ -349,17 +341,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="atuacao" className="section action-section route-section">
-          <div className="route-rail" aria-hidden="true"><span>03</span></div>
+        <section id="atuacao" className="section action-section identity-section">
+          <div className="section-stamp" aria-hidden="true"><span>03</span></div>
           <div className="action-layout">
             <div className="action-photo-wrap">
               <img src={encounterImage} alt="Pessoas reunidas em torno de um mapa, imagem ilustrativa de construção coletiva" />
-              <span className="photo-chip"><MapPin size={14} /> Escuta no território</span>
+              <span className="photo-chip"><MapPin size={14} /> Escuta no território · RN</span>
             </div>
             <div className="action-copy">
               <SectionEyebrow>Atuação</SectionEyebrow>
-              <h2>Agenda, encontros e resultados: tudo no mesmo percurso.</h2>
-              <p>Esta área está preparada para reunir projetos, iniciativas, agendas e experiências da candidatura com data, território, tema e ligações para fontes primárias.</p>
+              <h2>Agenda, encontros e resultados: presença que se comprova.</h2>
+              <p>Esta área está preparada para reunir projetos, iniciativas, agendas e experiências da candidatura com data, localidade, tema e fontes primárias.</p>
               <div className="action-list">
                 <div><Users size={19} /><span><strong>Encontros</strong><small>Registos de conversas, visitas e agendas.</small></span></div>
                 <div><Landmark size={19} /><span><strong>Iniciativas</strong><small>Projetos, articulações e experiências documentadas.</small></span></div>
@@ -370,16 +362,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="territorio" className="section data-section route-section">
-          <div className="route-rail rail-light" aria-hidden="true"><span>04</span></div>
+        <section id="territorio" className="section data-section identity-section">
+          <div className="section-stamp rail-light" aria-hidden="true"><span>04</span></div>
           <div className="data-copy">
             <SectionEyebrow>O estado em números</SectionEyebrow>
-            <h2>167 municípios. Muitas rotas. Um estado inteiro para escutar.</h2>
+            <h2>167 municípios. Um estado inteiro para conhecer.</h2>
             <p>O painel usa a lista oficial de municípios do IBGE e permite ver como eles se distribuem pelas regiões intermediárias. É uma leitura territorial, não um indicador de desempenho de campanha.</p>
           </div>
           <div className="data-card">
             <div className="data-card-header">
-              <div><span className="card-label">Distribuição territorial</span><h3>Municípios por região intermediária</h3><span className="map-reference">ref. 24 · carta territorial</span></div>
+              <div><span className="card-label">Distribuição territorial</span><h3>Municípios por região intermediária</h3><span className="map-reference">base oficial · RN</span></div>
               <div className="big-number">{municipios.length || "—"}<small>municípios</small></div>
             </div>
             {municipiosError ? (
@@ -401,12 +393,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="construcao" className="section collective-section route-section">
-          <div className="route-rail" aria-hidden="true"><span>05</span></div>
+        <section id="construcao" className="section collective-section identity-section">
+          <div className="section-stamp" aria-hidden="true"><span>05</span></div>
           <div className="collective-copy">
             <SectionEyebrow>Construção coletiva</SectionEyebrow>
-            <h2>Traga um problema do seu bairro. Vamos colocá-lo no mapa.</h2>
-            <p>Ideias, problemas e propostas ajudam a dar forma a uma agenda que começa no território. Nesta versão estática, o formulário confirma a sua participação localmente; conecte-o ao canal oficial para receber envios reais.</p>
+            <h2>Traga uma ideia do seu bairro. Vamos construir juntos.</h2>
+            <p>Ideias, problemas e propostas ajudam a dar forma a um plano que começa nas pessoas. Nesta versão estática, o formulário confirma a sua participação localmente; conecte-o ao canal oficial para receber envios reais.</p>
             <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Compromissos</span></div>
           </div>
           <form className="idea-form" onSubmit={event => { event.preventDefault(); setIdeaSent(true); }}>
@@ -418,11 +410,11 @@ export default function Home() {
           </form>
         </section>
 
-        <section id="desafio" className="section challenge-section route-section">
-          <div className="route-rail rail-light" aria-hidden="true"><span>06</span></div>
+        <section id="desafio" className="section challenge-section identity-section">
+          <div className="section-stamp rail-light" aria-hidden="true"><span>06</span></div>
           <div className="challenge-copy">
             <SectionEyebrow>Desafio 167/60</SectionEyebrow>
-            <h2>Em 60 segundos, quantos municípios do RN você consegue lembrar?</h2>
+            <h2>Faz sentido?! Em 60 segundos, quantos municípios você lembra?</h2>
             <p>Digite os nomes sem consultar lista. O desafio confere cada resposta pela base oficial do IBGE e contabiliza apenas respostas únicas.</p>
             <div className="challenge-rules"><span><Clock3 size={16} /> 60 segundos</span><span><MapPin size={16} /> 167 municípios</span><span><Sparkles size={16} /> resposta imediata</span></div>
           </div>
@@ -434,22 +426,22 @@ export default function Home() {
               <input autoFocus value={answer} onChange={event => setAnswer(event.target.value)} placeholder="Digite um município" aria-label="Digite um município do RN" />
               <Button type="submit">Marcar <ChevronRight size={17} /></Button>
             </form>}
-            {quizFinished && <div className="quiz-result"><p>Tempo encerrado. A sua rota alcançou <strong>{score}</strong> município{score === 1 ? "" : "s"}.</p><Button onClick={startQuiz}>Tentar outra vez <ArrowUpRight size={16} /></Button></div>}
+            {quizFinished && <div className="quiz-result"><p>Tempo encerrado. Você lembrou <strong>{score}</strong> município{score === 1 ? "" : "s"}.</p><Button onClick={startQuiz}>Tentar outra vez <ArrowUpRight size={16} /></Button></div>}
             {quizFeedback && <p className="quiz-feedback">{quizFeedback}</p>}
             {used.length > 0 && <div className="used-cities" aria-live="polite">{used.slice(0, 8).map(city => <span key={city}>{city}</span>)}</div>}
           </div>
         </section>
 
-        <section id="noticias" className="section news-section route-section">
-          <div className="route-rail" aria-hidden="true"><span>07</span></div>
+        <section id="noticias" className="section news-section identity-section">
+          <div className="section-stamp" aria-hidden="true"><span>07</span></div>
           <div className="news-header"><div><SectionEyebrow>Notícias</SectionEyebrow><h2>Informação com data, fonte e caminho para acompanhar.</h2></div><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer" className="text-link">Ver canal oficial <ExternalLink size={15} /></a></div>
           <div className="news-grid">
             {news.map((item, index) => <a className="news-card" href={item.href} target="_blank" rel="noreferrer" key={item.title}><span>despacho 0{index + 1} · {item.tag}</span><h3>{item.title}</h3><p>{item.body}</p><ArrowUpRight size={18} /></a>)}
           </div>
         </section>
 
-        <section id="galeria" className="gallery-section route-section">
-          <div className="gallery-title"><SectionEyebrow>Galeria</SectionEyebrow><h2>O território também conta a história.</h2><p>Galeria-base com imagens de apoio territorial. Substitua ou complemente com fotos oficiais de agendas, visitas e encontros.</p></div>
+        <section id="galeria" className="gallery-section identity-section">
+          <div className="gallery-title"><SectionEyebrow>Galeria</SectionEyebrow><h2>Orgulho de ser norte-rio-grandense.</h2><p>Galeria-base com imagens de apoio do RN e referências do manual. Substitua ou complemente com fotos oficiais de agendas, visitas e encontros.</p></div>
           <div className="gallery-grid">
             <figure className="gallery-main"><img src={bridgeImage} alt="Ponte sobre a água em Natal, imagem ilustrativa" /><figcaption>Conexão · imagem ilustrativa</figcaption></figure>
             <figure><img src={wikimediaBridge} alt="Ponte Newton Navarro em Natal" /><figcaption>Ponte Newton Navarro · Foto: Otávio Nogueira, CC BY 2.0</figcaption></figure>
@@ -458,13 +450,13 @@ export default function Home() {
         </section>
 
         <section id="participe" className="participate-section">
-          <div><SectionEyebrow>Participe</SectionEyebrow><h2>Não acompanhe de longe. Entre na rota.</h2></div>
+          <div><SectionEyebrow>Participe</SectionEyebrow><h2>Faz sentido?! Então faça parte.</h2></div>
           <div className="participate-actions"><a href="#construcao" className="button-primary">Enviar uma ideia <ArrowUpRight size={18} /></a><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer" className="button-outline"><Instagram size={18} /> Seguir no Instagram</a></div>
         </section>
       </main>
 
       <footer id="contato" className="site-footer">
-        <div className="footer-brand"><img src={logoImage} alt="" /><div><strong>Susape Augusto</strong><span>Deputado Federal · RN</span></div></div>
+        <div className="footer-brand"><img src={logoImage} alt="" /><div><strong>Susape 1234</strong><span>Deputado Federal · RN</span></div></div>
         <div className="footer-links"><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href="https://www.facebook.com/susape.augusto/" target="_blank" rel="noreferrer"><Facebook size={17} /> Facebook</a><span><MessageCircle size={17} /> WhatsApp: canal a confirmar</span></div>
         <div className="footer-note"><p>Conteúdo baseado em fontes públicas consultadas em agosto de 2026. Situação de candidatura pode mudar; confirme no TSE.</p><a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noreferrer">Consulta oficial <ExternalLink size={14} /></a></div>
       </footer>

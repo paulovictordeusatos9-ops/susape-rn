@@ -87,3 +87,11 @@ Uma **rosa dos ventos solar**: quatro raios arredondados apontam para fora de um
 - O hero abre explicitamente como uma carta/rota do território potiguar, com coordenadas, arcos e marcadores solares sobre a paisagem.
 - **Caju em Movimento #F15A3A** é a única cor de sinalização: ações, wayfinding, estados ativos e participação. Tons quentes secundários ficam restritos ao papel/areia e nunca concorrem com o caju.
 - Todo cartão relevante assume o comportamento de um **cartão-telegrama**: microetiqueta, código de despacho, seta direcional e borda editorial visível.
+
+## Atualização: manual SUSAPE 1234
+
+A referência principal passa a ser o Manual de Identidade Visual enviado pelo utilizador. A direção deve usar a assinatura **DEPUTADO FEDERAL SUSAPE 1234**, o conceito **Um jeito potiguar de fazer**, o slogan **Faz sentido?!** e a frase **Orgulho de ser norte-rio-grandense**.
+
+A paleta oficial de interface é: azul-marinho `#001c4a`, azul `#124e9b`, vermelho `#e0141e`, bege papel `#f4e5d1`, branco `#ffffff`, verde `#137043`, amarelo `#f4ae28`, rosa `#e6597b` e bege secundário `#e8d0af`. Anton deve orientar títulos e destaques; Inter deve orientar textos de apoio; o slogan pode usar uma cursiva equivalente quando a fonte proprietária não estiver disponível.
+
+O sistema gráfico deve trazer ícones e referências do RN — ondas, sol, dunas, jangada, farol, vento, gente e mapa — dentro de blocos geométricos coloridos. A identidade anterior de Cartografia Cívica fica registrada como histórico, mas não deve prevalecer sobre os parâmetros do manual.
