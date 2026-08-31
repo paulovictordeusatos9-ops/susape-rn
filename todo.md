@@ -461,4 +461,4 @@
 - [x] Preservar títulos, textos, cores, dimensões e grelha 2×2.
 - [x] Validar a apresentação em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
