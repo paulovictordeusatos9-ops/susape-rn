@@ -7,6 +7,7 @@ import {
   ArrowDownRight,
   ArrowUpRight,
   Check,
+  ChevronLeft,
   ChevronRight,
   Clock3,
   Compass,
@@ -154,6 +155,7 @@ export default function Home() {
   const [municipiosError, setMunicipiosError] = useState(false);
   const [ideaSent, setIdeaSent] = useState(false);
   const [activityFilter, setActivityFilter] = useState("Todos");
+  const [profileIndex, setProfileIndex] = useState(0);
   const [quizActive, setQuizActive] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
@@ -161,6 +163,11 @@ export default function Home() {
   const [answer, setAnswer] = useState("");
   const [used, setUsed] = useState<string[]>([]);
   const [quizFeedback, setQuizFeedback] = useState("");
+  const activeProfile = perfil[profileIndex];
+
+  const changeProfile = (direction: number) => {
+    setProfileIndex(current => (current + direction + perfil.length) % perfil.length);
+  };
 
   useEffect(() => {
     let active = true;
@@ -330,17 +337,39 @@ export default function Home() {
               <p>Política olhando para as pessoas, ouvindo mais e construindo soluções que façam sentido.</p>
               <small>— síntese da mensagem pública de apresentação da candidatura</small>
             </div>
-            <div className="profile-facts">
-              {perfil.map(([eyebrow, title, body], index) => (
-                <article className="profile-fact" key={title}>
-                  <span className="timeline-index">0{index + 1}</span>
+            <div className="profile-carousel" aria-label="Etapas da trajetória de Susape">
+              <div className="profile-carousel-main">
+                <div className="profile-carousel-topline">
                   <div>
-                    <small>{eyebrow}</small>
-                    <h3>{title}</h3>
-                    <p>{body}</p>
+                    <span className="profile-carousel-index">0{profileIndex + 1}</span>
+                    <span className="profile-carousel-kicker">etapa da trajetória</span>
                   </div>
+                  <div className="profile-carousel-controls" aria-label="Navegação das etapas">
+                    <button type="button" onClick={() => changeProfile(-1)} aria-label="Etapa anterior"><ChevronLeft size={18} /></button>
+                    <button type="button" onClick={() => changeProfile(1)} aria-label="Próxima etapa"><ChevronRight size={18} /></button>
+                  </div>
+                </div>
+                <article className="profile-carousel-card" aria-live="polite">
+                  <span>{activeProfile[0]}</span>
+                  <h3>{activeProfile[1]}</h3>
+                  <p>{activeProfile[2]}</p>
                 </article>
-              ))}
+              </div>
+              <div className="profile-carousel-rail" role="tablist" aria-label="Selecionar etapa da trajetória">
+                {perfil.map(([eyebrow], index) => (
+                  <button
+                    key={eyebrow}
+                    type="button"
+                    role="tab"
+                    aria-selected={profileIndex === index}
+                    className={profileIndex === index ? "active" : ""}
+                    onClick={() => setProfileIndex(index)}
+                  >
+                    <span>0{index + 1}</span>
+                    <small>{eyebrow}</small>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
           <p className="source-note">

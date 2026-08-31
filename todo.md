@@ -181,3 +181,30 @@
 - [x] Manter a fotografia com chapéu e o número 1234 ao fundo.
 - [x] Validar desktop/mobile, testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Segunda seção — roleta lateral de trajetória
+
+- [x] Reorganizar “Quem é Susape?” com a mensagem política na parte superior.
+- [x] Transformar identidade, pessoas, formação e caminhada numa roleta/carrossel lateral.
+- [x] Implementar numeração 1, 2, 3 e 4 com avanço e retorno entre as etapas.
+- [x] Garantir navegação por teclado, botões acessíveis e adaptação mobile.
+- [x] Validar a segunda seção em desktop e mobile, incluindo testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Roleta de trajetória em toda a largura
+
+- [x] Fazer a roleta 1–4 ocupar toda a largura útil da segunda seção.
+- [x] Manter a mensagem política na parte superior da seção.
+- [x] Exibir Identidade, Pessoas, Formação e Caminhada numa faixa horizontal sinalizada.
+- [x] Preservar os controlos de avanço, retorno e seleção de etapa.
+- [x] Ajustar a faixa para leitura e interação em mobile.
+- [x] Validar desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Correção da roleta horizontal no desktop
+
+- [x] Transformar a navegação 1–4 em faixa horizontal também no desktop.
+- [x] Manter a faixa de etapas de ponta a ponta na segunda seção.
+- [x] Preservar o painel ativo, os botões anterior/próximo e a seleção por teclado.
+- [x] Revalidar desktop e mobile, testes e build.
+- [x] Guardar checkpoint e entregar a versão corrigida.
