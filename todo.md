@@ -420,4 +420,4 @@
 - [x] Fazer título, mapa e teste do Desafio ocuparem toda a largura da secção.
 - [x] Validar o resultado em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
