@@ -172,3 +172,8 @@ A primeira etapa da trajetória reutiliza o mesmo ativo `officialPortrait` do he
 ## Simplificação do cabeçalho
 
 A navegação compartilhada do cabeçalho foi verificada em desktop e mobile. As abas “Projeto” e “Construção Coletiva” deixaram de ser renderizadas; permanecem “Início”, “Quem é Susape”, “Propostas”, “Desafio 167/60”, “Notícias”, “Galeria”, “Participe” e “Contacto”. No mobile, o cabeçalho continua reduzido ao logótipo e ao botão de menu.
+
+
+## Padronização visual do cabeçalho
+
+A revisão visual confirmou no desktop que as abas restantes usam a mesma família tipográfica, tamanho, peso, altura de linha e alinhamento vertical, com distribuição regular entre o logótipo, a navegação e o botão “Contacto”. No mobile, o logótipo e o botão de menu permanecem alinhados na mesma altura e a navegação continua recolhida de forma consistente.

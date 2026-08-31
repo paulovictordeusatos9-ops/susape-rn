@@ -380,3 +380,14 @@
 - [x] Validar o cabeçalho em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Padronização visual do cabeçalho
+
+- [x] Uniformizar o tamanho e o peso da letra das abas do cabeçalho.
+- [x] Aplicar espaçamento igual entre todos os itens de navegação.
+- [x] Alinhar verticalmente o logótipo, as abas e o botão “Contacto”.
+- [x] Ajustar a distribuição do cabeçalho sem alterar as abas existentes.
+- [x] Validar a apresentação em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

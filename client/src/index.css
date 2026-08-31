@@ -558,3 +558,19 @@ h3 { line-height: 1.16; }
   .profile-section .profile-card-heading { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
   .profile-section .profile-stage-photo { width: clamp(92px, 28vw, 124px); height: auto; }
 }
+
+
+/* Padronização final do cabeçalho: ritmo, escala e alinhamento consistentes */
+.site-header { gap: clamp(20px, 2.5vw, 36px); }
+.brand { flex: 0 0 auto; }
+.nav-links { flex: 1 1 auto; min-width: 0; align-items: center; justify-content: space-between; gap: clamp(16px, 1.9vw, 30px); font-family: "Inter", Arial, sans-serif; font-size: 11px; font-weight: 800; line-height: 1; letter-spacing: .055em; }
+.nav-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; white-space: nowrap; text-align: center; line-height: 1.15; font: inherit; }
+.header-cta { flex: 0 0 auto; min-width: 110px; min-height: 42px; justify-content: center; padding: 0 14px; font-family: "Inter", Arial, sans-serif; font-size: 11px; font-weight: 800; line-height: 1; letter-spacing: .055em; }
+@media (max-width: 1000px) {
+  .site-header { gap: 16px; }
+  .nav-links.nav-open { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 0 16px; }
+  .nav-links.nav-open a { justify-content: flex-start; min-height: 44px; font-size: 11px; line-height: 1.15; }
+}
+@media (max-width: 680px) {
+  .menu-button { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; }
+}
