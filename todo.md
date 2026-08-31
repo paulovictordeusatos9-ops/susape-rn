@@ -441,4 +441,4 @@
 - [x] Alinhar cada ícone lateralmente ao nome da proposta.
 - [x] Preservar a legibilidade e o empilhamento adequado no mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
