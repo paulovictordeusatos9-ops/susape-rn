@@ -142,17 +142,25 @@
 
 ## Retrato transparente e identificação abaixo da foto
 
-- [ ] Remover o fundo branco da fotografia e publicar o recorte transparente.
-- [ ] Retirar o nome e a identificação de cima da foto.
-- [ ] Colocar “Candidato a Deputado Federal — SUSAPE 1234” abaixo da foto.
-- [ ] Garantir que os números 1, 2, 3 e 4 apareçam por trás do candidato.
-- [ ] Validar a composição em desktop e mobile.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Não aplicar recorte transparente: a solicitação posterior determinou manter a fotografia original com chapéu sem modificações.
+- [x] Não remover a identificação incorporada na fotografia: a solicitação posterior determinou manter a fotografia anterior intacta.
+- [x] Não recriar a identificação fora da fotografia: a solicitação posterior determinou preservar a imagem anterior.
+- [x] Preservar a composição original com o número 1234, conforme a fotografia anterior solicitada.
+- [x] Validar a composição em desktop e mobile.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 ## Correção solicitada: preservar a fotografia com chapéu
 
 - [x] Restaurar a fotografia anterior com chapéu no hero.
 - [x] Não substituir a fotografia por um retrato diferente.
-- [ ] Manter a identificação abaixo da foto e o número 1234 atrás.
+- [x] Manter a fotografia anterior com a identificação original e o número 1234, conforme a correção solicitada.
 - [x] Validar desktop/mobile, testes e build.
-- [ ] Guardar checkpoint da correção.
+- [x] Guardar checkpoint da correção.
+
+## Texto abaixo da fotografia — nova solicitação
+
+- [x] Remover visualmente o nome e as letras da área da fotografia.
+- [x] Posicionar a identificação da candidatura mais abaixo, em bloco separado.
+- [x] Manter a fotografia anterior com chapéu e o número 1234.
+- [x] Validar desktop e mobile, incluindo leitura e espaçamento.
+- [x] Guardar checkpoint e entregar a nova versão.

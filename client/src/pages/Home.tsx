@@ -48,7 +48,7 @@ type Municipio = {
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
 
-const officialPortrait = "/manus-storage/susape-hero-chapeu_a2f98661.webp";
+const officialPortrait = "/manus-storage/susape-hero-chapeu_54ff4d41.webp";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },
