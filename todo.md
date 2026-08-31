@@ -80,6 +80,14 @@
 
 ## Escopo real da ronda pasted_content_3.txt
 
-- [ ] Guardar um novo checkpoint após as alterações da Home, navegação e faixa gráfica potiguar.
-- [ ] Entregar ao utilizador a versão atualizada anexando o checkpoint correspondente.
+- [x] Guardar um novo checkpoint após as alterações da Home, navegação e faixa gráfica potiguar.
+- [x] Entregar ao utilizador a versão atualizada anexando o checkpoint correspondente.
 - [x] Manter páginas internas, CMS/admin, newsletter e privacidade como backlog separado até receber dados e requisitos de implementação específicos.
+
+## Atualização da primeira seção com nova foto
+
+- [x] Publicar a nova fotografia enviada e usá-la no hero.
+- [x] Ajustar o fundo da primeira seção para branco e azul.
+- [x] Preservar 1234, a identificação de deputado federal e a animação existente.
+- [x] Validar o hero em desktop e mobile.
+- [ ] Guardar checkpoint e entregar a nova versão.

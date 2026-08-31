@@ -48,7 +48,7 @@ type Municipio = {
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
 
-const officialPortrait = "/manus-storage/susape-manual-candidato-portrait_07f389a4.jpg";
+const officialPortrait = "/manus-storage/susape-hero-chapeu_a2f98661.webp";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },
@@ -272,7 +272,7 @@ export default function Home() {
       </header>
 
       <main>
-        <section id="inicio" className="hero hero-refresh">
+        <section id="inicio" className="hero hero-refresh hero-white-blue">
           <div className="hero-visual" aria-hidden="true">
             <div className="hero-number-backdrop">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-${index}`} className={className}>{digit}</span>)}</div>
             <div className="hero-photo-wash" />
