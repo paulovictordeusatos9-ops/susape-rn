@@ -208,3 +208,25 @@
 - [x] Preservar o painel ativo, os botões anterior/próximo e a seleção por teclado.
 - [x] Revalidar desktop e mobile, testes e build.
 - [x] Guardar checkpoint e entregar a versão corrigida.
+
+## Projetos — quatro propostas em quadrados coloridos
+
+- [x] Atualizar a proposta 1 para “Gosto de Ser Potiguar” e aplicar vermelho.
+- [x] Atualizar a proposta 2 para “Segurança Pública” e aplicar verde.
+- [x] Atualizar a proposta 3 para “Saúde mais perto de quem precisa / Saúde Pública” e aplicar azul.
+- [x] Atualizar a proposta 4 para “Desenvolvimento Sustentável” e aplicar amarelo.
+- [x] Alinhar os quatro quadrados com dimensões e espaçamentos consistentes.
+- [x] Validar desktop/mobile, interações, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Correção final dos quadrados de propostas
+
+- [x] Corrigir o hover para preservar vermelho, verde, azul e amarelo em cada cartão.
+- [x] Atualizar o título da proposta 3 para incluir explicitamente “Saúde Pública”.
+- [x] Testar os quatro botões “Contribuir com este tema” e confirmar o scroll para Construção Coletiva.
+- [x] Guardar checkpoint após a correção final e entregar a nova versão.
+
+## Entrega final dos quadrados de propostas
+
+- [ ] Guardar novo checkpoint após a correção final de hover, Saúde Pública e CTAs.
+- [ ] Entregar explicitamente ao utilizador o checkpoint desta versão.

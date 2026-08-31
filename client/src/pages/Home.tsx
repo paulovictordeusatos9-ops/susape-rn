@@ -68,21 +68,21 @@ const chartConfig = {
 const themes = [
   {
     number: "01",
-    title: "Orgulho de ser Potiguar",
+    title: "Gosto de Ser Potiguar",
     body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
     color: "theme-orgulho",
     icon: Sun,
   },
   {
     number: "02",
-    title: "Segurança Pública para Todos",
+    title: "Segurança Pública",
     body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
     color: "theme-seguranca",
     icon: ShieldCheck,
   },
   {
     number: "03",
-    title: "Saúde mais perto de quem precisa",
+    title: "Saúde Pública, mais perto de quem precisa",
     body: "Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
     color: "theme-saude",
     icon: HeartPulse,

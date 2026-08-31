@@ -77,3 +77,10 @@ A bandeira foi transformada numa faixa horizontal de largura total, posicionada 
 ## Hero centralizado com foto e número 1234
 
 A primeira seção foi reorganizada para centralizar rigorosamente a fotografia do candidato. O número 1234 aparece atrás da foto em dígitos grandes nas cores padrão do site, com a fotografia em camada superior. A bandeira permanece como faixa superior de ponta a ponta e o lockup, o slogan, “Orgulho de ser norte-rio-grandense”, o resumo e os CTAs foram movidos para baixo da imagem. A composição foi validada em 1280x1200 e 390x1200; tipos, testes e build passaram.
+
+
+## Verificação dos quadrados de propostas — 2026-08-31
+
+A seção de projetos foi revisada visualmente em desktop e mobile. Os quatro cartões aparecem alinhados e com a ordem cromática definida: vermelho, verde, azul e amarelo. O conteúdo exibido foi confirmado como: “Gosto de Ser Potiguar”, “Segurança Pública”, “Saúde Pública, mais perto de quem precisa” e “Desenvolvimento Sustentável”.
+
+Os quatro botões “Contribuir com este tema” foram acionados individualmente no preview; cada um encaminhou a página para a área “Construção Coletiva”, preservando o fluxo de contribuição.
