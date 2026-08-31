@@ -157,3 +157,8 @@ As capturas desktop e mobile confirmaram que os dígitos 1, 2, 3 e 4 foram distr
 ## Revisão pós-editor visual
 
 O JSX duplicado do título de “Desenvolvimento Sustentável” foi corrigido para um único elemento válido, preservando a apresentação completa do título. A matriz de navegação mantém os rótulos “Propostas” e “Construção Coletiva”, evitando links vazios. As capturas desktop e mobile ficaram sem erro de renderização, e os rótulos do menu permanecem disponíveis no DOM.
+
+
+## Verificação do editor visual — título do Projeto 4
+
+A tentativa de alterar o texto para uma quebra manual não produziu mudanças porque o elemento já estava na forma correta. A inspeção do JSX confirmou `{theme.title}` no `<h3>`, com o valor “Desenvolvimento Sustentável” na definição da proposta. As capturas desktop e mobile confirmaram a renderização sem erro; não foi necessário aplicar uma nova alteração visual.

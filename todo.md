@@ -343,4 +343,12 @@
 - [x] Corrigir o JSX e os estilos duplicados do título “Desenvolvimento Sustentável”.
 - [x] Confirmar a remoção dos links “Propostas” e “Construção Coletiva” conforme a edição visual.
 - [x] Validar desktop/mobile, testes e build após a revisão.
-- [ ] Guardar novo checkpoint e entregar explicitamente a versão corrigida.
+- [x] Guardar novo checkpoint e entregar explicitamente a versão corrigida.
+
+## Verificação do título do quarto Projeto
+
+- [x] Confirmar manualmente o texto “Desenvolvimento Sustentável” no JSX.
+- [x] Confirmar a renderização completa do título em desktop e mobile.
+- [x] Nenhuma divergência encontrada; não foi necessária correção manual.
+- [x] Validar testes e build após a verificação.
+- [ ] Guardar checkpoint e entregar a nova versão.
