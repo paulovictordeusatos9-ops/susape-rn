@@ -576,4 +576,4 @@
 - [x] Preservar o botão e as opções no menu mobile.
 - [x] Validar o comportamento em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
