@@ -508,4 +508,4 @@
 - [x] Manter o retrato central e a numeração alinhados.
 - [x] Validar o ajuste em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
