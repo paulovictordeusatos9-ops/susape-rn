@@ -431,3 +431,14 @@
 - [x] Validar o layout em desktop e mobile.
 - [x] Executar tipos, testes e build.
 - [x] Guardar checkpoint e entregar a revisão.
+
+
+## Reorganização da aba de Projetos em grelha 2×2
+
+- [x] Organizar os cartões 1 e 2 na primeira linha.
+- [x] Organizar os cartões 3 e 4 na segunda linha.
+- [x] Definir quadrados maiores com dimensão aproximada de 250 px em desktop.
+- [x] Alinhar cada ícone lateralmente ao nome da proposta.
+- [x] Preservar a legibilidade e o empilhamento adequado no mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

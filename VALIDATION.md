@@ -197,3 +197,8 @@ A proposta quatro passou a exibir “Sustentabilidade”. A proposta três foi r
 ## Revisão da edição visual dos cartões
 
 A edição visual gerou atributos `style` duplicados no JSX, incluindo valores inválidos como `width: 'px'` e `marginTop: 'px'`. Esses atributos foram removidos, deixando a largura e o espaçamento sob controlo das classes CSS responsivas. As capturas desktop e mobile confirmaram cartões sem artefactos visíveis e com alinhamento preservado. `pnpm check`, `pnpm test` e `pnpm build` concluíram com sucesso.
+
+
+## Reorganização da aba de Projetos em grelha 2×2
+
+Os cartões de propostas foram organizados em duas colunas no desktop, com 1 e 2 na primeira linha e 3 e 4 na segunda, usando quadrados de 250×250 px e espaçamento uniforme. Cada ícone foi posicionado na coluna lateral do respetivo título. No mobile, os quatro cartões passam para uma coluna de 250 px, preservando a leitura e o alinhamento. As capturas desktop e mobile foram verificadas; `pnpm check`, `pnpm test` e `pnpm build` passaram.
