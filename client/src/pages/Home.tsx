@@ -22,8 +22,6 @@ import {
   Send,
   Sparkles,
   Sun,
-  ShieldCheck,
-  HeartPulse,
   Wind,
   X,
 } from "lucide-react";
@@ -79,28 +77,24 @@ const themes = [
     title: "Gosto de Ser Potiguar",
     body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
     color: "theme-orgulho",
-    icon: Flag,
   },
   {
     number: "02",
     title: "Segurança Pública",
     body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
     color: "theme-seguranca",
-    icon: ShieldCheck,
   },
   {
     number: "03",
     title: "Saúde Pública",
     body: "Saúde Pública mais perto de quem precisa. Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
     color: "theme-saude",
-    icon: HeartPulse,
   },
   {
     number: "04",
     title: "Sustentabilidade",
     body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
     color: "theme-sustentavel",
-    icon: Wind,
   },
 ];
 
@@ -456,7 +450,6 @@ export default function Home() {
                 <div className="telegram-top"><span>{theme.number}</span><small>proposta · eixo</small><ArrowUpRight size={15} /></div>
                 <h3>{theme.title}</h3>
                 <p>{theme.body}</p>
-                <div className="theme-icon" aria-hidden="true"><theme.icon size={24} /></div>
                 <button onClick={() => document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" })}>
                   Contribuir com este tema <ArrowUpRight size={17} />
                 </button>

@@ -207,3 +207,8 @@ Os cartões de propostas foram organizados em duas colunas no desktop, com 1 e 2
 ## Alinhamento dos ícones com os temas
 
 O primeiro cartão passou a usar o ícone de bandeira para representar identidade e orgulho potiguar; Segurança Pública mantém o escudo, Saúde Pública mantém o pulso cardíaco e Sustentabilidade mantém o vento. Os quatro ícones agora ocupam uma coluna lateral uniforme, separados do título por uma linha discreta e alinhados verticalmente. As capturas desktop e mobile confirmaram a consistência visual e a leitura.
+
+
+## Remoção dos ícones das propostas
+
+Os ícones foram removidos dos cartões 1, 2, 3 e 4 da aba de Propostas, incluindo as referências de ícones no array de temas e o elemento visual no JSX. A estrutura foi reequilibrada para uma coluna interna, preservando os títulos, textos, cores, dimensões de 250×250 px e a grelha 2×2 no desktop. No mobile, os cartões continuam empilhados e legíveis. Capturas desktop/mobile, `pnpm check`, `pnpm test` e `pnpm build` concluídos com sucesso.

@@ -452,3 +452,13 @@
 - [x] Preservar a leitura e o alinhamento no mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Remoção dos ícones das propostas
+
+- [x] Remover os ícones dos cartões 1, 2, 3 e 4.
+- [x] Reequilibrar o espaçamento interno dos cartões sem ícones.
+- [x] Preservar títulos, textos, cores, dimensões e grelha 2×2.
+- [x] Validar a apresentação em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

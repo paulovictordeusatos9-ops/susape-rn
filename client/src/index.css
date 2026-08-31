@@ -654,3 +654,24 @@ h3 { line-height: 1.16; }
   .theme-card h3 { margin-top: 10px; }
   .theme-card .theme-icon { margin-top: 10px; padding-left: 8px; }
 }
+
+
+/* Cartões de propostas sem ícones: conteúdo alinhado numa coluna única */
+.theme-card,
+.theme-saude { grid-template-columns: minmax(0, 1fr); }
+.theme-card h3,
+.theme-card p,
+.theme-card button,
+.theme-saude h3,
+.theme-saude p,
+.theme-saude button { grid-column: 1 / -1; }
+.theme-card h3,
+.theme-saude h3 { margin-top: 12px; padding-right: 0; }
+.theme-card .theme-icon,
+.theme-saude .theme-icon { display: none; }
+@media (max-width: 680px) {
+  .theme-card,
+  .theme-saude { grid-template-columns: minmax(0, 1fr); }
+  .theme-card h3,
+  .theme-saude h3 { margin-top: 10px; }
+}
