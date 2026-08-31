@@ -129,4 +129,13 @@
 - [x] Fazer a bandeira ocupar toda a largura disponível acima do nome da candidatura.
 - [x] Ajustar a altura para preservar a leitura do texto e da fotografia.
 - [x] Validar a composição em desktop e mobile.
-- [ ] Guardar checkpoint e entregar a versão final.
+- [x] Guardar checkpoint e entregar a versão final.
+
+## Hero centralizado com foto e número 1234
+
+- [x] Centralizar a fotografia do candidato na primeira seção.
+- [x] Exibir o número 1234 grande atrás da fotografia com as cores padrão.
+- [x] Mover o conteúdo textual principal para baixo da fotografia.
+- [x] Manter a bandeira e ajustar a hierarquia visual do hero.
+- [x] Validar a composição em desktop e mobile.
+- [ ] Guardar checkpoint e entregar a versão centralizada.

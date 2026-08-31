@@ -273,13 +273,14 @@ export default function Home() {
 
       <main>
         <section id="inicio" className="hero hero-refresh hero-white-blue">
+          <img className="hero-flag-banner" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
           <div className="hero-visual">
+            <div className="hero-number-central" aria-hidden="true">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-central-${index}`} className={className}>{digit}</span>)}</div>
             <img className="hero-portrait" src={officialPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
           </div>
           <div className="hero-overlay" />
           <div className="hero-content">
           <div className="hero-copy">
-            <img className="hero-flag-inline" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
             <div className="hero-lockup" aria-label="Candidato a deputado federal Susape 1234"><span>CANDIDATO A DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
               <SectionEyebrow>Um jeito potiguar de fazer</SectionEyebrow>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>

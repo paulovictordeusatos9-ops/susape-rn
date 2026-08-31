@@ -329,3 +329,41 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 .hero-white-blue .hero-flag-inline { width: 100vw; max-width: none; height: clamp(92px, 11vw, 148px); margin: 0 0 20px -5.5vw; object-fit: cover; object-position: center; opacity: 1; transform: none; filter: none; }
 @media (max-width: 1000px) { .hero-white-blue .hero-flag-inline { margin-left: -5.5vw; height: 105px; } }
 @media (max-width: 680px) { .hero-white-blue .hero-flag-inline { width: 100vw; height: 72px; margin: 0 0 14px -24px; object-fit: cover; opacity: 1; } }
+
+/* Hero centralizado: fotografia no centro, número atrás e conteúdo abaixo */
+.hero-white-blue { min-height: 0; display: flex; flex-direction: column; align-items: stretch; padding-top: 76px; background: #ffffff !important; color: #001c4a; }
+.hero-white-blue .hero-flag-banner { display: block; width: 100%; height: clamp(86px, 10vw, 136px); object-fit: cover; object-position: center; margin: 0; opacity: 1; }
+.hero-white-blue .hero-visual { position: relative; z-index: 2; width: min(650px, 82vw); height: clamp(390px, 47vw, 570px); margin: 42px auto 0; display: flex; align-items: flex-end; justify-content: center; background: #ffffff !important; }
+.hero-white-blue .hero-number-central { position: absolute; z-index: 1; top: 45%; left: 50%; display: flex; align-items: center; transform: translate(-50%, -50%); font-family: "Anton", Impact, sans-serif; font-size: clamp(170px, 22vw, 360px); line-height: .72; letter-spacing: -.13em; white-space: nowrap; opacity: .34; pointer-events: none; }
+.hero-white-blue .hero-number-central span { display: inline-block; }
+.hero-white-blue .hero-number-central .num-red { color: #e51b23; }
+.hero-white-blue .hero-number-central .num-green { color: #008c45; }
+.hero-white-blue .hero-number-central .num-blue { color: #1479c9; }
+.hero-white-blue .hero-number-central .num-yellow { color: #f5bd1f; }
+.hero-white-blue .hero-portrait { position: relative; z-index: 2; right: auto; bottom: auto; width: auto; height: 100%; max-width: 100%; object-fit: contain; transform: none; }
+.hero-white-blue .hero-content { position: relative; z-index: 3; width: min(940px, 100%); margin: 0 auto; padding: 42px 5.5vw 94px; display: flex; flex-direction: column; align-items: center; gap: 0; color: #001c4a; }
+.hero-white-blue .hero-copy { width: 100%; max-width: 900px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero-white-blue .hero-lockup { text-align: center; }
+.hero-white-blue .hero-lockup span { color: #124e9b; }
+.hero-white-blue .section-eyebrow { justify-content: center; color: #e51b23; }
+.hero-white-blue h1 { max-width: 900px; color: #001c4a; text-align: center; }
+.hero-white-blue .hero-summary { max-width: 700px; color: #334e6f; text-align: center; }
+.hero-white-blue .hero-actions { justify-content: center; }
+.hero-white-blue .hero-source { color: #526681; text-align: center; }
+.hero-white-blue .hero-card { position: relative; right: auto; bottom: auto; margin: 34px auto 0; }
+.hero-white-blue .hero-overlay { display: none !important; }
+@media (max-width: 680px) {
+  .hero-white-blue { padding-top: 67px; }
+  .hero-white-blue .hero-flag-banner { height: 72px; }
+  .hero-white-blue .hero-visual { width: 100%; height: 370px; margin-top: 28px; }
+  .hero-white-blue .hero-number-central { font-size: clamp(128px, 36vw, 210px); opacity: .3; }
+  .hero-white-blue .hero-portrait { height: 100%; max-width: 92%; }
+  .hero-white-blue .hero-content { padding: 28px 24px 68px; }
+  .hero-white-blue h1 { font-size: clamp(48px, 14vw, 68px); }
+  .hero-white-blue .hero-card { width: 188px; margin-top: 28px; }
+}
+
+/* Reforço do número 1234 atrás da fotografia central */
+.hero-white-blue .hero-number-central { z-index: 1; top: 48%; font-size: clamp(190px, 28vw, 430px); letter-spacing: -.035em; opacity: .52; }
+.hero-white-blue .hero-number-central span { flex: 0 0 auto; }
+@media (max-width: 680px) { .hero-white-blue .hero-number-central { top: 46%; font-size: clamp(150px, 43vw, 250px); letter-spacing: -.045em; opacity: .48; } }

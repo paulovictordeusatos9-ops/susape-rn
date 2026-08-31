@@ -73,3 +73,7 @@ Fonte visual: [Bandeira do Rio Grande do Norte — Wikimedia Commons](https://co
 ## Bandeira de ponta a ponta no hero
 
 A bandeira foi transformada numa faixa horizontal de largura total, posicionada acima do nome “Candidato a Deputado Federal”. A altura foi controlada para manter a identificação, o título, a fotografia e o cartão legíveis. A composição foi verificada em 1280x720 e 390x844; tipos, testes e build passaram.
+
+## Hero centralizado com foto e número 1234
+
+A primeira seção foi reorganizada para centralizar rigorosamente a fotografia do candidato. O número 1234 aparece atrás da foto em dígitos grandes nas cores padrão do site, com a fotografia em camada superior. A bandeira permanece como faixa superior de ponta a ponta e o lockup, o slogan, “Orgulho de ser norte-rio-grandense”, o resumo e os CTAs foram movidos para baixo da imagem. A composição foi validada em 1280x1200 e 390x1200; tipos, testes e build passaram.
