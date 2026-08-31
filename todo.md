@@ -451,4 +451,4 @@
 - [x] Uniformizar posição, tamanho e espaçamento dos ícones.
 - [x] Preservar a leitura e o alinhamento no mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
