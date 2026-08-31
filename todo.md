@@ -501,3 +501,11 @@
 - [x] Validar a primeira secção em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Aproximação da bandeira e da numeração
+
+- [x] Reduzir o espaço entre a bandeira do Rio Grande do Norte e o número 1234.
+- [x] Manter o retrato central e a numeração alinhados.
+- [x] Validar o ajuste em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

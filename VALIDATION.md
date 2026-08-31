@@ -226,3 +226,7 @@ O detalhe de cada proposta abre agora em primeiro plano sobre a grelha, numa cai
 ## Nova fotografia e compactação do hero
 
 A fotografia enviada substituiu exclusivamente o retrato central da primeira secção e permanece centrada, completa e sobreposta ao número 1234. As quatro cores da numeração foram escurecidas e receberam maior opacidade para aumentar a leitura atrás do candidato. Os espaços entre bandeira, retrato, identificação e texto foram reduzidos em desktop e mobile. As capturas responsivas, `pnpm check`, `pnpm test` e `pnpm build` foram concluídos com sucesso.
+
+## Aproximação da bandeira e da numeração
+
+O bloco visual do hero foi deslocado para cima e a numeração foi reposicionada dentro da composição, reduzindo o espaço branco entre a bandeira do Rio Grande do Norte e os algarismos 2, 3 e 4. O retrato permaneceu centrado e a identificação continuou abaixo da imagem. As capturas desktop e mobile, os testes e o build confirmaram o ajuste.

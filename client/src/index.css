@@ -751,3 +751,11 @@ h3 { line-height: 1.16; }
   .hero-white-blue h1 { margin-bottom: 12px; }
   .hero-white-blue .hero-summary { margin-bottom: 18px; }
 }
+
+/* Aproximação da bandeira e da numeração do hero */
+.hero-white-blue .hero-visual { margin-top: -28px; }
+.hero-white-blue .hero-number-central { top: 44%; }
+@media (max-width: 680px) {
+  .hero-white-blue .hero-visual { margin-top: -20px; }
+  .hero-white-blue .hero-number-central { top: 42%; }
+}
