@@ -567,4 +567,4 @@
 - [x] Preservar Contacto como chamada de destaque.
 - [x] Validar alinhamento e navegação em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
