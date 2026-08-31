@@ -585,4 +585,4 @@
 - [x] Manter a navegação direta inalterada em desktop e tablet.
 - [x] Validar o alinhamento em mobile e desktop.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
