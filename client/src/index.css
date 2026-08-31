@@ -599,3 +599,24 @@ h3 { line-height: 1.16; }
   .theme-saude p { margin-top: 0; }
   .theme-saude .theme-icon { margin: 12px 0 18px; }
 }
+
+
+/* Refinamento dos cartões: proposta 3 alinhada e Desafio realmente de ponta a ponta */
+.theme-saude { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr) auto; align-items: start; gap: 0; }
+.theme-saude .telegram-top { grid-column: 1 / -1; grid-row: 1; }
+.theme-saude h3 { grid-column: 1; grid-row: 2; align-self: start; margin: 10px 0 0; padding-right: 10px; font-size: clamp(28px, 2.35vw, 36px); line-height: .98; letter-spacing: -.025em; }
+.theme-saude p { grid-column: 1 / -1; grid-row: 3; align-self: start; margin: 16px 0 0; line-height: 1.72; }
+.theme-saude .theme-icon { grid-column: 2; grid-row: 2; align-self: start; margin: 10px 0 0; }
+.theme-saude button { grid-column: 1 / -1; grid-row: 4; align-self: end; }
+@media (min-width: 1001px) {
+  .challenge-section { padding-left: 0; padding-right: 0; }
+  .challenge-layout, .challenge-copy, .challenge-copy h2, .rn-map-card, .rn-map-frame, .challenge-layout > .quiz-card { width: 100%; max-width: none; }
+  .challenge-layout > .quiz-card { margin-left: 0; margin-right: 0; }
+}
+@media (max-width: 680px) {
+  .theme-saude { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr) auto; }
+  .theme-saude h3 { grid-column: 1; grid-row: 2; align-self: start; margin: 10px 0 0; padding-right: 8px; font-size: clamp(27px, 8.6vw, 34px); line-height: 1.02; }
+  .theme-saude p { grid-column: 1 / -1; grid-row: 3; margin: 15px 0 0; line-height: 1.82; }
+  .theme-saude .theme-icon { grid-column: 2; grid-row: 2; align-self: start; margin: 10px 0 0; }
+  .theme-saude button { grid-column: 1 / -1; grid-row: 4; }
+}

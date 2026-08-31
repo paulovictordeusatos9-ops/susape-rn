@@ -97,7 +97,7 @@ const themes = [
   },
   {
     number: "04",
-    title: "Desenvolvimento Sustentável",
+    title: "Sustentabilidade",
     body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
     color: "theme-sustentavel",
     icon: Wind,

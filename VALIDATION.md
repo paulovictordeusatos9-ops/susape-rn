@@ -187,3 +187,8 @@ A aba do cabeçalho foi atualizada de “Desafio 167/60” para “Desafio”, m
 ## Ajustes de Projetos e Desafio em largura total
 
 As capturas desktop e mobile confirmaram o aumento discreto do cartão “Desenvolvimento Sustentável” no modo computador, sem alterar a grelha móvel. No cartão “Saúde Pública”, o título foi aproximado verticalmente do ícone do coração. No desktop, o título, o mapa municipal e a área interativa do Desafio usam a largura total disponível da secção; no mobile, a composição permanece em coluna e legível.
+
+
+## Ajustes finais das propostas e do Desafio
+
+A proposta quatro passou a exibir “Sustentabilidade”. A proposta três foi reorganizada com uma grelha explícita para manter “Saúde Pública”, o ícone do coração e o texto complementar alinhados tanto no desktop como no mobile. A secção do Desafio foi reforçada para usar a largura total disponível no desktop, incluindo título, mapa municipal e teste; no mobile, a disposição vertical permanece legível e sem sobreposição.

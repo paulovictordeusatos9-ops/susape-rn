@@ -410,3 +410,14 @@
 - [x] Preservar a leitura e o comportamento responsivo no mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Ajustes finais das propostas e do Desafio
+
+- [x] Renomear a proposta quatro de “Desenvolvimento Sustentável” para “Sustentabilidade”.
+- [x] Alinhar a proposta três e corrigir o espaçamento das letras em desktop.
+- [x] Alinhar a proposta três e corrigir o espaçamento das letras em mobile.
+- [x] Fazer título, mapa e teste do Desafio ocuparem toda a largura da secção.
+- [x] Validar o resultado em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
