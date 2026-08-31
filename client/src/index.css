@@ -202,19 +202,19 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 
 /* Projetos: quatro propostas em quadrados com a paleta SUSAPE */
 .project-section .theme-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 58px; background: transparent; }
-.project-section .theme-card { min-height: 0; aspect-ratio: 1 / 1; padding: clamp(20px, 2.4vw, 32px); overflow: hidden; border-top: 0; box-shadow: 0 7px 0 rgba(0,0,0,.2); color: #ffffff; }
+.project-section .theme-card { min-height: 0; aspect-ratio: 1 / 1; padding: clamp(18px, 2vw, 24px); overflow: hidden; border-top: 0; box-shadow: 0 7px 0 rgba(0,0,0,.2); color: #ffffff; }
 .project-section .theme-card:hover { filter: saturate(1.08); transform: translateY(-5px); }
 .project-section .theme-orgulho, .project-section .theme-orgulho:hover { background: #e0141e; }
 .project-section .theme-seguranca, .project-section .theme-seguranca:hover { background: #137043; }
 .project-section .theme-saude, .project-section .theme-saude:hover { background: #124e9b; }
-.project-section .theme-sustentavel, .project-section .theme-sustentavel:hover { background: #f4ae28; color: #001c4a; }
+.project-section .theme-sustentavel, .project-section .theme-sustentavel:hover { background: #f4ae28; color: #ffffff; text-shadow: 0 1px 0 rgba(0,28,74,.26); }
 .project-section .theme-card .telegram-top { color: currentColor; border-bottom-color: rgba(255,255,255,.38); }
 .project-section .theme-sustentavel .telegram-top { border-bottom-color: rgba(0,28,74,.3); }
 .project-section .theme-card .telegram-top small { color: currentColor; opacity: .82; }
-.project-section .theme-card h3 { margin: auto 0 12px; color: currentColor; font-family: "Anton", Impact, sans-serif; font-size: clamp(28px, 2.7vw, 43px); line-height: .94; letter-spacing: .01em; text-transform: uppercase; }
-.project-section .theme-card p { margin: 0 0 16px; color: currentColor; opacity: .9; font-size: 12px; line-height: 1.55; }
-.project-section .theme-card .theme-icon { border-color: currentColor; color: currentColor; }
-.project-section .theme-card button { color: currentColor; border-top-color: currentColor; }
+.project-section .theme-card h3 { margin: 12px 0 8px; max-width: 92%; color: currentColor; font-family: "Anton", Impact, sans-serif; font-size: clamp(24px, 2vw, 33px); line-height: .96; letter-spacing: .01em; text-transform: uppercase; overflow-wrap: anywhere; }
+.project-section .theme-card p { margin: 0 0 12px; color: currentColor; opacity: .95; font-size: clamp(10px, .82vw, 11px); line-height: 1.42; overflow-wrap: anywhere; }
+.project-section .theme-card .theme-icon { position: absolute; top: 58px; right: 18px; width: 34px; height: 34px; margin: 0; border-color: currentColor; color: currentColor; }
+.project-section .theme-card button { min-height: 25px; color: currentColor; border-top-color: currentColor; font-size: 9px; }
 @media (max-width: 1000px) {
   .project-section .theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-section .theme-card h3 { font-size: clamp(30px, 4.8vw, 48px); }
@@ -222,7 +222,7 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 @media (max-width: 680px) {
   .project-section .theme-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 42px; }
   .project-section .theme-card { aspect-ratio: auto; min-height: 280px; }
-  .project-section .theme-card h3 { font-size: clamp(36px, 11vw, 54px); }
+  .project-section .theme-card h3 { max-width: 90%; font-size: clamp(34px, 9.5vw, 44px); }
 }
 
 /* Segunda seção: mensagem no topo e roleta de trajetória em toda a largura */

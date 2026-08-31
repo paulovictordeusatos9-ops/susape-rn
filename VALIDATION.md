@@ -84,3 +84,23 @@ A primeira seção foi reorganizada para centralizar rigorosamente a fotografia 
 A seção de projetos foi revisada visualmente em desktop e mobile. Os quatro cartões aparecem alinhados e com a ordem cromática definida: vermelho, verde, azul e amarelo. O conteúdo exibido foi confirmado como: “Gosto de Ser Potiguar”, “Segurança Pública”, “Saúde Pública, mais perto de quem precisa” e “Desenvolvimento Sustentável”.
 
 Os quatro botões “Contribuir com este tema” foram acionados individualmente no preview; cada um encaminhou a página para a área “Construção Coletiva”, preservando o fluxo de contribuição.
+
+
+## Verificação visual final da legibilidade dos projetos — 2026-08-31
+
+A captura final da seção “Conheça o projeto” foi inspecionada em 893 × 768 px. Os quatro cartões aparecem alinhados e com conteúdo contido nos próprios limites, sem texto vazando: “GOSTO DE SER POTIGUAR”, “SEGURANÇA PÚBLICA”, “SAÚDE PÚBLICA” e “DESENVOLVIMENTO SUSTENTÁVEL”. A explicação “Saúde Pública mais perto de quem precisa” aparece no corpo do terceiro cartão. O quarto cartão mantém o fundo amarelo e a tipografia branca, com o título dividido em duas linhas e totalmente visível.
+
+
+## Reteste dos CTAs após ajuste de legibilidade — primeira parte
+
+Após a correção final de encaixe e tipografia, os CTAs dos cartões 1 e 2 (“Contribuir com este tema”) foram acionados no preview. Ambos mantiveram o botão utilizável e encaminharam para a seção “Construção Coletiva”.
+
+
+## Reteste dos CTAs após ajuste de legibilidade — conclusão
+
+Os CTAs dos cartões 3 (“Saúde Pública”) e 4 (“Desenvolvimento Sustentável”) também foram acionados no preview após a última alteração. Ambos permaneceram utilizáveis e encaminharam para “Construção Coletiva”. Com os cartões 1 e 2 registrados acima, os quatro CTAs foram retestados na versão final.
+
+
+## Comprovação técnica de encaixe dos cartões — 2026-08-31
+
+A inspeção do DOM no preview confirmou os quatro cartões com 254 × 254 px, `overflow: hidden` e `scrollHeight` igual a `clientHeight` (254 px) em todos os casos. O resultado `contentFits: true` foi obtido para cada cartão. Os títulos foram confirmados como “Gosto de Ser Potiguar”, “Segurança Pública”, “Saúde Pública” e “Desenvolvimento Sustentável”; os limites inferiores dos textos permaneceram dentro da altura do cartão.

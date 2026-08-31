@@ -82,8 +82,8 @@ const themes = [
   },
   {
     number: "03",
-    title: "Saúde Pública, mais perto de quem precisa",
-    body: "Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
+    title: "Saúde Pública",
+    body: "Saúde Pública mais perto de quem precisa. Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
     color: "theme-saude",
     icon: HeartPulse,
   },

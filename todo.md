@@ -228,5 +228,29 @@
 
 ## Entrega final dos quadrados de propostas
 
-- [ ] Guardar novo checkpoint após a correção final de hover, Saúde Pública e CTAs.
-- [ ] Entregar explicitamente ao utilizador o checkpoint desta versão.
+- [x] Guardar novo checkpoint após a correção final de hover, Saúde Pública e CTAs.
+- [x] Entregar explicitamente ao utilizador o checkpoint desta versão.
+
+## Legibilidade dos quadrados de projetos
+
+- [x] Aumentar a visibilidade das letras nas quatro propostas.
+- [x] Corrigir cortes e overflow de texto nos quadrados.
+- [x] Deixar o título do ponto 3 apenas como “Saúde Pública” e completar a explicação abaixo.
+- [x] Ajustar “Desenvolvimento Sustentável” para caber integralmente no ponto 4.
+- [x] Deixar a tipografia do ponto 4 branca sobre o fundo amarelo.
+- [x] Validar desktop/mobile, CTAs, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Fecho da legibilidade dos projetos
+
+- [x] Fazer todo o conteúdo caber dentro dos quadrados sem overflow visível.
+- [x] Confirmar visualmente os quatro títulos e textos, sobretudo “Desenvolvimento Sustentável”.
+- [x] Retestar os quatro CTAs após os ajustes de legibilidade.
+- [x] Guardar checkpoint final e entregar explicitamente a versão atualizada.
+
+## Comprovação final dos cartões de projetos
+
+- [x] Verificar e documentar que os quatro títulos e textos cabem integralmente nos cartões.
+- [x] Ajustar dimensões ou tipografia novamente se houver qualquer corte visual.
+- [x] Retestar os quatro botões de contribuição depois dos últimos ajustes.
+- [x] Guardar novo checkpoint e entregar explicitamente a versão final.
