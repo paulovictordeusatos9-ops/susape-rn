@@ -574,3 +574,28 @@ h3 { line-height: 1.16; }
 @media (max-width: 680px) {
   .menu-button { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; }
 }
+
+
+/* Ajustes finais solicitados nos Projetos e no Desafio */
+@media (min-width: 681px) {
+  .theme-sustentavel { position: relative; z-index: 2; transform: scale(1.035); }
+  .theme-sustentavel:hover { transform: translateY(-6px) scale(1.035); }
+}
+.theme-saude { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr) auto; align-items: start; }
+.theme-saude .telegram-top { grid-column: 1 / -1; grid-row: 1; }
+.theme-saude h3 { grid-column: 1; grid-row: 2; align-self: center; margin: 20px 0 0; padding-right: 8px; }
+.theme-saude p { grid-column: 1 / -1; grid-row: 3; align-self: start; margin: 18px 0 0; }
+.theme-saude .theme-icon { grid-column: 2; grid-row: 2; align-self: center; margin: 20px 0 0; }
+.theme-saude button { grid-column: 1 / -1; grid-row: 4; align-self: end; }
+@media (min-width: 1001px) {
+  .challenge-section { padding-left: 4.5vw; padding-right: 4.5vw; }
+  .challenge-layout, .challenge-copy, .challenge-copy h2, .rn-map-card, .challenge-layout > .quiz-card { width: 100%; max-width: none; }
+  .challenge-layout > .quiz-card { margin-left: 0; margin-right: 0; }
+  .rn-map-frame { width: 100%; }
+}
+@media (max-width: 680px) {
+  .theme-saude { display: flex; flex-direction: column; }
+  .theme-saude h3 { margin-top: auto; padding-right: 0; }
+  .theme-saude p { margin-top: 0; }
+  .theme-saude .theme-icon { margin: 12px 0 18px; }
+}

@@ -400,3 +400,13 @@
 - [x] Validar a apresentação em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Ajustes de Projetos e Desafio em largura total
+
+- [x] Aumentar ligeiramente o quadrado 4 de “Desenvolvimento Sustentável”.
+- [x] Elevar o título “Saúde Pública” para ficar alinhado ao ícone do coração.
+- [x] Fazer título, mapa e área interativa do Desafio ocuparem toda a largura no desktop.
+- [x] Preservar a leitura e o comportamento responsivo no mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

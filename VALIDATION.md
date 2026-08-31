@@ -182,3 +182,8 @@ A revisão visual confirmou no desktop que as abas restantes usam a mesma famíl
 ## Rótulo simplificado do Desafio
 
 A aba do cabeçalho foi atualizada de “Desafio 167/60” para “Desafio”, mantendo a âncora `#desafio` e a secção do quiz com temporizador de três minutos. As capturas desktop e mobile confirmaram o novo rótulo e a preservação do comportamento responsivo.
+
+
+## Ajustes de Projetos e Desafio em largura total
+
+As capturas desktop e mobile confirmaram o aumento discreto do cartão “Desenvolvimento Sustentável” no modo computador, sem alterar a grelha móvel. No cartão “Saúde Pública”, o título foi aproximado verticalmente do ícone do coração. No desktop, o título, o mapa municipal e a área interativa do Desafio usam a largura total disponível da secção; no mobile, a composição permanece em coluna e legível.
