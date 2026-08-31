@@ -164,3 +164,11 @@
 - [x] Manter a fotografia anterior com chapéu e o número 1234.
 - [x] Validar desktop e mobile, incluindo leitura e espaçamento.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Remoção do bloco textual da primeira seção
+
+- [x] Retirar completamente “Candidato a Deputado Federal 1234” da primeira seção.
+- [x] Retirar completamente “Um jeito potiguar de fazer” da primeira seção.
+- [x] Ajustar o espaçamento restante sem alterar a fotografia com chapéu e o número 1234.
+- [x] Validar desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.

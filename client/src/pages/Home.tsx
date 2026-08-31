@@ -281,8 +281,6 @@ export default function Home() {
           <div className="hero-overlay" />
           <div className="hero-content">
           <div className="hero-copy">
-            <div className="hero-lockup" aria-label="Candidato a deputado federal Susape 1234"><span>CANDIDATO A DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
-              <SectionEyebrow>Um jeito potiguar de fazer</SectionEyebrow>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
               <p className="hero-summary">
               Susape Augusto é candidato a deputado federal pelo Rio Grande do Norte. Um Rio Grande do Norte mais justo, criativo, saudável, educado e inclusivo.
@@ -295,17 +293,7 @@ export default function Home() {
                   Traga uma ideia <ChevronRight size={18} />
                 </a>
               </div>
-              <p className="hero-source">Candidato a deputado federal · número 1234</p>
             </div>
-            <aside className="hero-card" aria-label="Identificação da candidatura">
-              <span className="card-label">Candidato a deputado federal</span>
-              <strong>{heroNumberDigits.map(({ digit, className }, index) => <b key={`${digit}-card-${index}`} className={className}>{digit}</b>)}</strong>
-              <p>Um jeito potiguar de fazer.</p>
-              <div className="hero-card-footer">
-                <Compass size={18} />
-                <span>Rio Grande do Norte</span>
-              </div>
-            </aside>
           </div>
         </section>
 
