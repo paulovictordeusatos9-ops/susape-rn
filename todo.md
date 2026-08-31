@@ -527,7 +527,7 @@
 - [x] Ajustar a grelha para destacar corretamente o formato horizontal.
 - [x] Validar a galeria em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 ## Padronização visual do nome SUSAPE
 
@@ -538,7 +538,7 @@
 - [x] Manter acessibilidade e leitura do nome SUSAPE.
 - [x] Validar o wordmark em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 ## Tópicos das secções no cabeçalho
 
@@ -548,4 +548,4 @@
 - [x] Manter espaçamento uniforme no desktop.
 - [x] Organizar os tópicos no menu responsivo do mobile.
 - [x] Validar navegação, testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
