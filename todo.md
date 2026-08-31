@@ -351,4 +351,22 @@
 - [x] Confirmar a renderização completa do título em desktop e mobile.
 - [x] Nenhuma divergência encontrada; não foi necessária correção manual.
 - [x] Validar testes e build após a verificação.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Foto na primeira etapa da trajetória
+
+- [x] Reutilizar o mesmo ativo fotográfico do hero na etapa “Identidade — Orgulho potiguar”.
+- [x] Inserir a foto em tamanho pequeno ao lado do nome e da etapa.
+- [x] Manter a fotografia central do hero inalterada.
+- [x] Ajustar o encaixe da miniatura em desktop e mobile.
+- [x] Validar a etapa, testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+## Fotografia livre na etapa Identidade
+
+- [x] Remover o formato quadrado, a borda e a sombra da miniatura.
+- [x] Exibir a fotografia completa sem recorte e com proporção original.
+- [x] Preservar o fundo branco e o mesmo ativo fotográfico do hero.
+- [x] Ajustar escala e alinhamento em desktop e mobile.
+- [x] Validar testes e build.
 - [ ] Guardar checkpoint e entregar a nova versão.

@@ -162,3 +162,8 @@ O JSX duplicado do título de “Desenvolvimento Sustentável” foi corrigido p
 ## Verificação do editor visual — título do Projeto 4
 
 A tentativa de alterar o texto para uma quebra manual não produziu mudanças porque o elemento já estava na forma correta. A inspeção do JSX confirmou `{theme.title}` no `<h3>`, com o valor “Desenvolvimento Sustentável” na definição da proposta. As capturas desktop e mobile confirmaram a renderização sem erro; não foi necessário aplicar uma nova alteração visual.
+
+
+## Fotografia livre na etapa Identidade
+
+A primeira etapa da trajetória reutiliza o mesmo ativo `officialPortrait` do hero. A miniatura foi convertida para proporção automática, `object-fit: contain`, sem borda, sem sombra, sem raio e sem formato quadrado; o fundo permanece branco. As capturas desktop e mobile confirmaram a fotografia pequena ao lado de “Identidade — Orgulho potiguar”, sem alterar o retrato central do hero.

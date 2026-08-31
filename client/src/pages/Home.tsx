@@ -405,8 +405,19 @@ export default function Home() {
                   </div>
                 </div>
                 <article className="profile-carousel-card" aria-live="polite">
-                  <span>{activeProfile[0]}</span>
-                  <h3>{activeProfile[1]}</h3>
+                  <div className="profile-card-heading">
+                    <div>
+                      <span>{activeProfile[0]}</span>
+                      <h3>{activeProfile[1]}</h3>
+                    </div>
+                    {profileIndex === 0 && (
+                      <img
+                        className="profile-stage-photo"
+                        src={officialPortrait}
+                        alt="Susape Augusto com chapéu, ilustração da etapa Identidade"
+                      />
+                    )}
+                  </div>
                   <p>{activeProfile[2]}</p>
                 </article>
               </div>
