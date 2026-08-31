@@ -491,11 +491,12 @@ export default function Home() {
               </article>
             ))}
             {selectedTheme && (
-              <div className={`theme-detail-panel ${selectedTheme.color}`}>
+              <div className={`theme-detail-panel ${selectedTheme.color}`} role="dialog" aria-modal="true" aria-labelledby="theme-detail-title">
                 <div className="theme-detail-heading">
+
                   <div>
                     <span className="theme-detail-kicker">Plano de ação · proposta {selectedTheme.number}</span>
-                    <h3>{selectedTheme.title}</h3>
+                    <h3 id="theme-detail-title">{selectedTheme.title}</h3>
                   </div>
                   <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={() => setSelectedThemeNumber(null)}>×</button>
                 </div>

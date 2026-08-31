@@ -476,3 +476,17 @@
 - [x] Garantir interação acessível por teclado e leitura responsiva.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Caixas compactas coloridas para os eixos
+
+- [x] Reduzir e reorganizar o texto detalhado dos quatro eixos.
+- [x] Abrir o detalhe numa caixa à frente do cartão selecionado.
+- [x] Aplicar vermelho ao detalhe de Gosto de Ser Potiguar.
+- [x] Aplicar verde ao detalhe de Segurança Pública.
+- [x] Aplicar azul ao detalhe de Saúde Pública.
+- [x] Aplicar amarelo ao detalhe de Sustentabilidade.
+- [x] Manter a caixa compacta, legível e com contribuição disponível.
+- [x] Validar interação em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

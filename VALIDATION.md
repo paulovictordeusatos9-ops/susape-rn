@@ -217,3 +217,8 @@ Os ícones foram removidos dos cartões 1, 2, 3 e 4 da aba de Propostas, incluin
 ## Detalhamento interativo das propostas
 
 Os quatro cartões foram ampliados para 280×280 px no desktop e mantêm dimensão consistente no mobile. Cada cartão abre, por clique ou teclado, um painel com um plano de ação específico para o eixo selecionado. O painel apresenta três frentes de trabalho e mantém a ação “Contribuir com este tema”. As capturas desktop e mobile confirmaram a adaptação da grelha, a leitura dos textos e a ausência de cortes; `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+
+## Caixas compactas coloridas para os eixos
+
+O detalhe de cada proposta abre agora em primeiro plano sobre a grelha, numa caixa compacta com a cor predominante do eixo: vermelho, verde, azul ou amarelo. O texto foi reduzido e organizado em três frentes para caber melhor, mantendo a descrição do plano e o botão de contribuição. As capturas desktop e mobile confirmaram a adaptação da caixa; tipos, testes e build passaram.

@@ -711,3 +711,21 @@ h3 { line-height: 1.16; }
 @media (prefers-reduced-motion: reduce) {
   .theme-card { transition: none; }
 }
+
+
+/* Detalhe compacto em primeiro plano sobre a grelha de propostas */
+.theme-grid { position: relative; }
+.theme-detail-panel { position: absolute; z-index: 12; top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(560px, calc(100% - 32px)); min-height: 0; max-height: 365px; overflow: auto; padding: 22px 24px; box-shadow: 0 20px 50px rgba(0, 15, 45, .3); }
+.theme-detail-panel h3 { font-size: clamp(28px, 3.2vw, 42px); }
+.theme-detail-kicker { margin-bottom: 5px; font-size: 9px; }
+.theme-detail-intro { margin: 12px 0 16px; font-size: 12px; line-height: 1.5; }
+.theme-detail-panel ol { gap: 12px; }
+.theme-detail-panel li { gap: 8px; padding-top: 9px; }
+.theme-detail-panel li p { font-size: 11px; line-height: 1.45; }
+.theme-detail-contribute { margin-top: 18px; padding: 10px 13px; font-size: 10px; }
+@media (max-width: 680px) {
+  .theme-detail-panel { top: 50%; width: calc(100% - 20px); max-height: 430px; padding: 18px; }
+  .theme-detail-panel h3 { font-size: clamp(26px, 8vw, 34px); }
+  .theme-detail-intro { font-size: 11px; }
+  .theme-detail-panel li p { font-size: 11px; line-height: 1.5; }
+}
