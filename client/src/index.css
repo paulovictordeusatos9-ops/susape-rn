@@ -729,3 +729,25 @@ h3 { line-height: 1.16; }
   .theme-detail-intro { font-size: 11px; }
   .theme-detail-panel li p { font-size: 11px; line-height: 1.5; }
 }
+
+/* Hero com novo retrato, número mais escuro e espaçamento compacto */
+.hero-white-blue .hero-visual { height: clamp(430px, 44vw, 570px); margin-top: 8px; }
+.hero-white-blue .hero-portrait { display: block; height: 100%; max-width: 100%; margin: 0 auto; object-fit: contain; object-position: center bottom; }
+.hero-white-blue .hero-number-central { top: 50%; opacity: .74; filter: saturate(1.12); }
+.hero-white-blue .hero-number-central .num-red { color: #c8141f; }
+.hero-white-blue .hero-number-central .num-green { color: #006c38; }
+.hero-white-blue .hero-number-central .num-blue { color: #0b559f; }
+.hero-white-blue .hero-number-central .num-yellow { color: #d99500; }
+.hero-white-blue .hero-content { padding-top: 10px; padding-bottom: 58px; }
+.hero-white-blue .hero-identification-below { margin-top: 6px; margin-bottom: 22px; }
+.hero-white-blue h1 { margin-top: 0; margin-bottom: 14px; }
+.hero-white-blue .hero-summary { margin-top: 0; margin-bottom: 22px; }
+@media (max-width: 680px) {
+  .hero-white-blue .hero-visual { height: clamp(360px, 108vw, 440px); margin-top: 4px; }
+  .hero-white-blue .hero-portrait { max-width: 94vw; }
+  .hero-white-blue .hero-number-central { top: 50%; opacity: .72; }
+  .hero-white-blue .hero-content { padding-top: 8px; padding-bottom: 46px; }
+  .hero-white-blue .hero-identification-below { margin-top: 4px; margin-bottom: 18px; }
+  .hero-white-blue h1 { margin-bottom: 12px; }
+  .hero-white-blue .hero-summary { margin-bottom: 18px; }
+}

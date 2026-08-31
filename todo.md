@@ -490,3 +490,14 @@
 - [x] Validar interação em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Nova fotografia e compactação do hero
+
+- [x] Preparar e carregar a fotografia enviada para utilização no site.
+- [x] Substituir apenas a fotografia central da primeira secção.
+- [x] Manter o novo retrato centrado e sem recorte inadequado.
+- [x] Escurecer as cores do número 1234 para aumentar a visibilidade.
+- [x] Reduzir os espaços em branco excessivos da primeira secção.
+- [x] Validar a primeira secção em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

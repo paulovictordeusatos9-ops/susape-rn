@@ -222,3 +222,7 @@ Os quatro cartões foram ampliados para 280×280 px no desktop e mantêm dimens�
 ## Caixas compactas coloridas para os eixos
 
 O detalhe de cada proposta abre agora em primeiro plano sobre a grelha, numa caixa compacta com a cor predominante do eixo: vermelho, verde, azul ou amarelo. O texto foi reduzido e organizado em três frentes para caber melhor, mantendo a descrição do plano e o botão de contribuição. As capturas desktop e mobile confirmaram a adaptação da caixa; tipos, testes e build passaram.
+
+## Nova fotografia e compactação do hero
+
+A fotografia enviada substituiu exclusivamente o retrato central da primeira secção e permanece centrada, completa e sobreposta ao número 1234. As quatro cores da numeração foram escurecidas e receberam maior opacidade para aumentar a leitura atrás do candidato. Os espaços entre bandeira, retrato, identificação e texto foram reduzidos em desktop e mobile. As capturas responsivas, `pnpm check`, `pnpm test` e `pnpm build` foram concluídos com sucesso.

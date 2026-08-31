@@ -60,6 +60,7 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
 }
 
 const officialPortrait = "/manus-storage/susape-hero-chapeu_54ff4d41.webp";
+const heroPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },
@@ -352,7 +353,7 @@ export default function Home() {
           <img className="hero-flag-banner" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
           <div className="hero-visual">
             <div className="hero-number-central" aria-hidden="true">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-central-${index}`} className={className}>{digit}</span>)}</div>
-            <img className="hero-portrait" src={officialPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
+            <img className="hero-portrait" src={heroPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
           </div>
           <div className="hero-overlay" />
           <div className="hero-content">
