@@ -172,3 +172,12 @@
 - [x] Ajustar o espaçamento restante sem alterar a fotografia com chapéu e o número 1234.
 - [x] Validar desktop/mobile, testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Identificação abaixo da fotografia — correção solicitada
+
+- [x] Recolocar “Candidato a Deputado Federal 1234” no hero.
+- [x] Posicionar a identificação exclusivamente abaixo da fotografia.
+- [x] Garantir que não exista nome, letra ou identificação sobre o chapéu, rosto ou parte superior da foto.
+- [x] Manter a fotografia com chapéu e o número 1234 ao fundo.
+- [x] Validar desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.

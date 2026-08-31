@@ -281,6 +281,10 @@ export default function Home() {
           <div className="hero-overlay" />
           <div className="hero-content">
           <div className="hero-copy">
+              <div className="hero-identification-below" aria-label="Candidato a Deputado Federal Susape 1234">
+                <span>CANDIDATO A DEPUTADO FEDERAL</span>
+                <strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong>
+              </div>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
               <p className="hero-summary">
               Susape Augusto é candidato a deputado federal pelo Rio Grande do Norte. Um Rio Grande do Norte mais justo, criativo, saudável, educado e inclusivo.
