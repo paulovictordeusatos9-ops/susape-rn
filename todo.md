@@ -390,4 +390,13 @@
 - [x] Ajustar a distribuição do cabeçalho sem alterar as abas existentes.
 - [x] Validar a apresentação em desktop e mobile.
 - [x] Executar testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Simplificação do rótulo do Desafio
+
+- [x] Alterar “Desafio 167/60” para “Desafio” no cabeçalho.
+- [x] Preservar a âncora e o funcionamento do quiz 167/60.
+- [x] Validar a apresentação em desktop e mobile.
+- [x] Executar testes e build.
 - [ ] Guardar checkpoint e entregar a nova versão.

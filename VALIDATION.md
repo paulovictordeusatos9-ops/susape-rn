@@ -177,3 +177,8 @@ A navegação compartilhada do cabeçalho foi verificada em desktop e mobile. As
 ## Padronização visual do cabeçalho
 
 A revisão visual confirmou no desktop que as abas restantes usam a mesma família tipográfica, tamanho, peso, altura de linha e alinhamento vertical, com distribuição regular entre o logótipo, a navegação e o botão “Contacto”. No mobile, o logótipo e o botão de menu permanecem alinhados na mesma altura e a navegação continua recolhida de forma consistente.
+
+
+## Rótulo simplificado do Desafio
+
+A aba do cabeçalho foi atualizada de “Desafio 167/60” para “Desafio”, mantendo a âncora `#desafio` e a secção do quiz com temporizador de três minutos. As capturas desktop e mobile confirmaram o novo rótulo e a preservação do comportamento responsivo.

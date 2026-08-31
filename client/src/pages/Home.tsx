@@ -296,7 +296,7 @@ export default function Home() {
     ["Início", "#inicio"],
     ["Quem é Susape", "#quem-e"],
     ["Propostas", "#propostas"],
-    ["Desafio 167/60", "#desafio"],
+    ["Desafio", "#desafio"],
     ["Notícias", "#noticias"],
     ["Galeria", "#galeria"],
     ["Participe", "#participe"],
