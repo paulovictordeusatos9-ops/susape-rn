@@ -379,4 +379,4 @@
 - [x] Preservar as restantes abas e as respetivas âncoras.
 - [x] Validar o cabeçalho em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
