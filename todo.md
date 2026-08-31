@@ -559,3 +559,12 @@
 - [x] Validar o wordmark em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Confirmação dos tópicos no cabeçalho
+
+- [x] Confirmar todos os tópicos principais no cabeçalho.
+- [x] Garantir a presença de Projeto e Construção Coletiva.
+- [x] Preservar Contacto como chamada de destaque.
+- [x] Validar alinhamento e navegação em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

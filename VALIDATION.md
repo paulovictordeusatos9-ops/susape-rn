@@ -246,3 +246,7 @@ A captura mobile confirmou o wordmark numa única linha no cabeçalho e na ident
 ## Refinamento do A no wordmark SUSAPE
 
 O A foi estreitado e aproximado das letras vizinhas para reproduzir a proporção compacta da nova referência. O farol passou a ter corpo mais fino, janelas menores e centralização melhor dentro da letra. As capturas desktop e mobile confirmaram a assinatura numa única linha no cabeçalho e no hero; o mesmo componente é reutilizado no rodapé. `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+## Confirmação dos tópicos no cabeçalho
+
+O cabeçalho apresenta Início, Quem é Susape, Projeto, Construção Coletiva, Desafio, Notícias, Galeria e Participe, mantendo Contacto como chamada destacada. As âncoras foram conferidas no código, a distribuição horizontal foi validada no desktop e o menu compacto permanece disponível no mobile. `pnpm check`, `pnpm test` e `pnpm build` passaram.
