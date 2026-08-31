@@ -104,3 +104,13 @@ Os CTAs dos cartões 3 (“Saúde Pública”) e 4 (“Desenvolvimento Sustentá
 ## Comprovação técnica de encaixe dos cartões — 2026-08-31
 
 A inspeção do DOM no preview confirmou os quatro cartões com 254 × 254 px, `overflow: hidden` e `scrollHeight` igual a `clientHeight` (254 px) em todos os casos. O resultado `contentFits: true` foi obtido para cada cartão. Os títulos foram confirmados como “Gosto de Ser Potiguar”, “Segurança Pública”, “Saúde Pública” e “Desenvolvimento Sustentável”; os limites inferiores dos textos permaneceram dentro da altura do cartão.
+
+
+## Ajuste de tipografia dos Projetos e remoção de seções — revisão visual
+
+As capturas desktop e mobile após o ajuste confirmaram os quatro cartões de Projetos com títulos reduzidos e alinhados. “Gosto de Ser Potiguar”, “Segurança Pública”, “Saúde Pública” e “Desenvolvimento Sustentável” aparecem completos dentro dos respetivos cartões; o quarto título mantém a tipografia branca sobre o fundo amarelo. As seções Atuação e Estado em números deixaram de aparecer na sequência da página, e Construção Coletiva passou a seguir diretamente os Projetos.
+
+
+## Remoção de Atuação e Estado em números — 2026-08-31
+
+A revisão do JSX e do preview confirmou a remoção integral dos blocos “Atuação — Agenda, encontros e resultados: presença que se comprova” e “O estado em números — 167 municípios. Um estado inteiro para conhecer”. Os links de navegação correspondentes também foram retirados. A sequência visível passou de Projetos diretamente para Construção Coletiva, seguida pelo Desafio 167/60; o carregamento da lista do IBGE foi preservado apenas para o quiz.

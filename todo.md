@@ -254,3 +254,18 @@
 - [x] Ajustar dimensões ou tipografia novamente se houver qualquer corte visual.
 - [x] Retestar os quatro botões de contribuição depois dos últimos ajustes.
 - [x] Guardar novo checkpoint e entregar explicitamente a versão final.
+
+## Ajuste dos Projetos e remoção de seções
+
+- [x] Reduzir e uniformizar a fonte dos quatro títulos dos Projetos.
+- [x] Garantir que “Desenvolvimento Sustentável” aparece completo e alinhado.
+- [x] Remover completamente a seção “Atuação — Agenda, encontros e resultados”.
+- [x] Remover completamente a seção “O estado em números — 167 municípios”.
+- [x] Limpar navegação e espaçamentos afetados pelas remoções.
+- [x] Validar desktop/mobile, navegação, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Entrega da remoção de seções
+
+- [ ] Guardar novo checkpoint após reduzir os títulos dos Projetos e remover Atuação e Estado em números.
+- [ ] Entregar explicitamente ao utilizador a versão atualizada com o novo checkpoint.

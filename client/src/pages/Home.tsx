@@ -2,7 +2,7 @@
  * Atualização baseada no Manual de Identidade Visual SUSAPE 1234.
  * Cada bloco deve levar a uma ação concreta e nunca substituir factos verificados por ficção.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -16,7 +16,6 @@ import {
   Flag,
   HeartHandshake,
   Instagram,
-  Landmark,
   MapPin,
   Menu,
   MessageCircle,
@@ -26,17 +25,9 @@ import {
   ShieldCheck,
   HeartPulse,
   Wind,
-  Users,
   X,
 } from "lucide-react";
-import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from "recharts";
 import { Button } from "@/components/ui/button";
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-  type ChartConfig,
-} from "@/components/ui/chart";
 
 type Municipio = {
   id: number;
@@ -60,10 +51,6 @@ const encounterImage = "/manus-storage/susape-territorio-encontro_bddc5ac6.jpg";
 const bridgeImage = "/manus-storage/susape-costa-ponte_c56e432f.jpg";
 const logoImage = "/manus-storage/page-003_8955e366.png";
 const wikimediaBridge = "/manus-storage/ponte-newton-navarro-ccby_2f5f8d70.jpg";
-
-const chartConfig = {
-  municipios: { label: "Municípios", color: "#e0141e" },
-} satisfies ChartConfig;
 
 const themes = [
   {
@@ -124,14 +111,6 @@ const news = [
   },
 ];
 
-const activityEntries = [
-  { category: "Projetos", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para projetos documentados, com data e fonte.", icon: Landmark },
-  { category: "Ações", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para ações e iniciativas públicas da candidatura.", icon: Users },
-  { category: "Iniciativas", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para articulações e experiências verificáveis.", icon: Flag },
-  { category: "Agenda", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para agendas, encontros e visitas oficiais.", icon: Clock3 },
-  { category: "Resultados", title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]", body: "Espaço para resultados publicados com contexto e fonte.", icon: Check },
-];
-
 function normalizar(value: string) {
   return value
     .normalize("NFD")
@@ -152,9 +131,7 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
-  const [municipiosError, setMunicipiosError] = useState(false);
   const [ideaSent, setIdeaSent] = useState(false);
-  const [activityFilter, setActivityFilter] = useState("Todos");
   const [profileIndex, setProfileIndex] = useState(0);
   const [quizActive, setQuizActive] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
@@ -179,7 +156,7 @@ export default function Home() {
       .then((data: Municipio[]) => {
         if (active) setMunicipios(data);
       })
-      .catch(() => active && setMunicipiosError(true));
+      .catch(() => undefined);
     return () => {
       active = false;
     };
@@ -195,17 +172,6 @@ export default function Home() {
     const timer = window.setTimeout(() => setTimeLeft(value => value - 1), 1000);
     return () => window.clearTimeout(timer);
   }, [quizActive, timeLeft]);
-
-  const regionData = useMemo(() => {
-    const grouped = municipios.reduce<Record<string, number>>((acc, municipio) => {
-      const region = municipio["regiao-imediata"]?.["regiao-intermediaria"]?.nome || "Outra região";
-      acc[region] = (acc[region] || 0) + 1;
-      return acc;
-    }, {});
-    return Object.entries(grouped)
-      .map(([regiao, total]) => ({ regiao, municipios: total }))
-      .sort((a, b) => b.municipios - a.municipios);
-  }, [municipios]);
 
   const startQuiz = () => {
     setTimeLeft(60);
@@ -240,7 +206,6 @@ export default function Home() {
     ["Início", "#inicio"],
     ["Quem é Susape", "#quem-e"],
     ["Projeto", "#projeto"],
-    ["Atuação", "#atuacao"],
     ["Propostas", "#propostas"],
     ["Construção Coletiva", "#construcao"],
     ["Desafio 167/60", "#desafio"],
@@ -405,61 +370,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="atuacao" className="section action-section identity-section">
-          <div className="section-stamp" aria-hidden="true"><span>03</span></div>
-          <div className="action-layout">
-            <div className="action-photo-wrap">
-              <img src={encounterImage} alt="Pessoas reunidas em torno de um mapa, imagem ilustrativa de construção coletiva" />
-              <span className="photo-chip"><MapPin size={14} /> Escuta no território · RN</span>
-            </div>
-            <div className="action-copy">
-              <SectionEyebrow>Atuação</SectionEyebrow>
-              <h2>Agenda, encontros e resultados: presença que se comprova.</h2>
-              <p>Área editorial com filtros para projetos, ações, iniciativas, agenda e resultados. Até que a campanha forneça os registos oficiais, os cartões permanecem identificados como conteúdo pendente.</p>
-              <div className="activity-filters" role="tablist" aria-label="Filtrar atuação">
-                {["Todos", "Projetos", "Ações", "Iniciativas", "Agenda", "Resultados"].map(filter => <button key={filter} type="button" className={activityFilter === filter ? "active" : ""} onClick={() => setActivityFilter(filter)}>{filter}</button>)}
-              </div>
-              <div className="action-list">
-                {activityEntries.filter(item => activityFilter === "Todos" || item.category === activityFilter).map(item => { const Icon = item.icon; return <div key={item.category}><Icon size={19} /><span><strong>{item.category}</strong><small>{item.title} · {item.body}</small></span></div>; })}
-              </div>
-              <a className="text-link" href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer">Acompanhar registos no Instagram <ExternalLink size={15} /></a>
-            </div>
-          </div>
-        </section>
-
-        <section id="territorio" className="section data-section identity-section">
-          <div className="section-stamp rail-light" aria-hidden="true"><span>04</span></div>
-          <div className="data-copy">
-            <SectionEyebrow>O estado em números</SectionEyebrow>
-            <h2>167 municípios. Um estado inteiro para conhecer.</h2>
-            <p>O painel usa a lista oficial de municípios do IBGE e permite ver como eles se distribuem pelas regiões intermediárias. É uma leitura territorial, não um indicador de desempenho de campanha.</p>
-          </div>
-          <div className="data-card">
-            <div className="data-card-header">
-              <div><span className="card-label">Distribuição territorial</span><h3>Municípios por região intermediária</h3><span className="map-reference">base oficial · RN</span></div>
-              <div className="big-number">{municipios.length || "—"}<small>municípios</small></div>
-            </div>
-            {municipiosError ? (
-              <div className="chart-empty">Não foi possível carregar a lista do IBGE agora. Tente atualizar a página.</div>
-            ) : (
-              <ChartContainer config={chartConfig} className="territory-chart">
-                <BarChart data={regionData} layout="vertical" margin={{ left: 12, right: 20, top: 8, bottom: 8 }}>
-                  <CartesianGrid horizontal={false} strokeDasharray="3 3" />
-                  <XAxis type="number" hide />
-                  <YAxis dataKey="regiao" type="category" axisLine={false} tickLine={false} width={78} tick={{ fontSize: 12, fill: "#E8E2D6" }} />
-                  <ChartTooltip cursor={{ fill: "rgba(255,255,255,0.06)" }} content={<ChartTooltipContent />} />
-                  <Bar dataKey="municipios" radius={[0, 10, 10, 0]}>
-                    {regionData.map((entry, index) => <Cell key={entry.regiao} fill={index === 0 ? "#F15A3A" : index === 1 ? "#DDAA50" : "#6C997C"} />)}
-                  </Bar>
-                </BarChart>
-              </ChartContainer>
-            )}
-            <p className="data-source">Fonte: <a href="https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios" target="_blank" rel="noreferrer">API de Localidades do IBGE</a>.</p>
-          </div>
-        </section>
 
         <section id="construcao" className="section collective-section identity-section">
-          <div className="section-stamp" aria-hidden="true"><span>05</span></div>
+          <div className="section-stamp" aria-hidden="true"><span>03</span></div>
           <div className="collective-copy">
             <SectionEyebrow>Construção coletiva</SectionEyebrow>
             <h2>Traga uma ideia do seu bairro. Vamos construir juntos.</h2>
@@ -480,7 +393,7 @@ export default function Home() {
         </section>
 
         <section id="desafio" className="section challenge-section identity-section">
-          <div className="section-stamp rail-light" aria-hidden="true"><span>06</span></div>
+          <div className="section-stamp rail-light" aria-hidden="true"><span>04</span></div>
           <div className="challenge-copy">
             <SectionEyebrow>Desafio 167/60</SectionEyebrow>
             <h2>Faz sentido?! Em 60 segundos, quantos municípios você lembra?</h2>
@@ -502,7 +415,7 @@ export default function Home() {
         </section>
 
         <section id="noticias" className="section news-section identity-section">
-          <div className="section-stamp" aria-hidden="true"><span>07</span></div>
+          <div className="section-stamp" aria-hidden="true"><span>05</span></div>
           <div className="news-header"><div><SectionEyebrow>Notícias</SectionEyebrow><h2>Informação com data, fonte e caminho para acompanhar.</h2></div><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer" className="text-link">Ver canal oficial <ExternalLink size={15} /></a></div>
           <div className="news-grid">
             {news.map((item, index) => <a className="news-card" href={item.href} target="_blank" rel="noreferrer" key={item.title}><span>despacho 0{index + 1} · {item.tag}</span><h3>{item.title}</h3><p>{item.body}</p><ArrowUpRight size={18} /></a>)}
