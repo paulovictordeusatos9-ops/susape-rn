@@ -281,5 +281,19 @@
 
 ## Entrega do Desafio 167/180
 
-- [ ] Guardar novo checkpoint após integrar o mapa do RN e o temporizador de 3 minutos.
-- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint do Desafio.
+- [x] Guardar novo checkpoint após integrar o mapa do RN e o temporizador de 3 minutos.
+- [x] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint do Desafio.
+
+## Desafio em largura total — simplificação solicitada
+
+- [x] Remover completamente o parágrafo de instruções sobre consultar a lista e a base do IBGE.
+- [x] Fazer o título do Desafio ocupar toda a largura disponível da seção.
+- [x] Expandir o mapa branco para uma composição de ponta a ponta.
+- [x] Manter o mapa interativo, o cronómetro e o campo de respostas funcionais.
+- [x] Validar desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Entrega da simplificação do Desafio
+
+- [ ] Guardar novo checkpoint após remover as instruções e ampliar título e mapa.
+- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o checkpoint desta ronda.

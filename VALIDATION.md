@@ -127,3 +127,8 @@ No preview, o desafio iniciou com o contador em 03:00. A resposta “Natal” fo
 
 
 A verificação do DOM confirmou que, após a resposta “Natal”, existe 1 polígono em `.rn-map-highlight`, com preenchimento RGB `18, 78, 155` (azul SUSAPE), placar `1` e etiqueta municipal “Natal”.
+
+
+## Desafio em largura total — revisão visual
+
+As capturas desktop e mobile confirmaram que o parágrafo de instruções foi removido. O título do Desafio ocupa a faixa completa da seção e o cartão do mapa branco foi expandido para largura total, com o cartão de respostas separado abaixo. A versão móvel mantém a sequência vertical legível e sem sobreposição.
