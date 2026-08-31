@@ -430,4 +430,4 @@
 - [x] Preservar apenas as intenções visuais válidas: largura do cartão, pequenos ajustes de espaçamento e alinhamento.
 - [x] Validar o layout em desktop e mobile.
 - [x] Executar tipos, testes e build.
-- [ ] Guardar checkpoint e entregar a revisão.
+- [x] Guardar checkpoint e entregar a revisão.
