@@ -409,4 +409,4 @@
 - [x] Fazer título, mapa e área interativa do Desafio ocuparem toda a largura no desktop.
 - [x] Preservar a leitura e o comportamento responsivo no mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
