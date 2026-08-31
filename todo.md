@@ -360,7 +360,7 @@
 - [x] Manter a fotografia central do hero inalterada.
 - [x] Ajustar o encaixe da miniatura em desktop e mobile.
 - [x] Validar a etapa, testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 ## Fotografia livre na etapa Identidade
 
@@ -369,4 +369,4 @@
 - [x] Preservar o fundo branco e o mesmo ativo fotográfico do hero.
 - [x] Ajustar escala e alinhamento em desktop e mobile.
 - [x] Validar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
