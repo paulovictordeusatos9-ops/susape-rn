@@ -421,3 +421,13 @@
 - [x] Validar o resultado em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Revisão da edição visual dos cartões
+
+- [x] Remover atributos `style` duplicados no cartão de propostas.
+- [x] Corrigir valores CSS inválidos, incluindo `px` sem unidade numérica.
+- [x] Preservar apenas as intenções visuais válidas: largura do cartão, pequenos ajustes de espaçamento e alinhamento.
+- [x] Validar o layout em desktop e mobile.
+- [x] Executar tipos, testes e build.
+- [ ] Guardar checkpoint e entregar a revisão.

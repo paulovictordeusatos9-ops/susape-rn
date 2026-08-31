@@ -192,3 +192,8 @@ As capturas desktop e mobile confirmaram o aumento discreto do cartão “Desenv
 ## Ajustes finais das propostas e do Desafio
 
 A proposta quatro passou a exibir “Sustentabilidade”. A proposta três foi reorganizada com uma grelha explícita para manter “Saúde Pública”, o ícone do coração e o texto complementar alinhados tanto no desktop como no mobile. A secção do Desafio foi reforçada para usar a largura total disponível no desktop, incluindo título, mapa municipal e teste; no mobile, a disposição vertical permanece legível e sem sobreposição.
+
+
+## Revisão da edição visual dos cartões
+
+A edição visual gerou atributos `style` duplicados no JSX, incluindo valores inválidos como `width: 'px'` e `marginTop: 'px'`. Esses atributos foram removidos, deixando a largura e o espaçamento sob controlo das classes CSS responsivas. As capturas desktop e mobile confirmaram cartões sem artefactos visíveis e com alinhamento preservado. `pnpm check`, `pnpm test` e `pnpm build` concluíram com sucesso.
