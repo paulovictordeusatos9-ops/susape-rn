@@ -759,3 +759,17 @@ h3 { line-height: 1.16; }
   .hero-white-blue .hero-visual { margin-top: -20px; }
   .hero-white-blue .hero-number-central { top: 42%; }
 }
+
+/* Galeria oficial com as seis fotografias enviadas */
+.gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, 360px); gap: 14px; }
+.gallery-grid figure,
+.gallery-grid .gallery-main { grid-row: auto; min-height: 0; }
+.gallery-grid img { object-position: center 28%; filter: saturate(.92) contrast(1.02); }
+@media (max-width: 1000px) {
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, 340px); }
+}
+@media (max-width: 680px) {
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: none; gap: 14px; }
+  .gallery-grid figure { min-height: 0; aspect-ratio: 3 / 4; }
+  .gallery-grid img { object-position: center 24%; }
+}

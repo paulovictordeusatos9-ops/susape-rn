@@ -67,10 +67,15 @@ const heroNumberDigits = [
   { digit: "3", className: "num-blue" },
   { digit: "4", className: "num-yellow" },
 ];
-const encounterImage = "/manus-storage/susape-territorio-encontro_bddc5ac6.jpg";
-const bridgeImage = "/manus-storage/susape-costa-ponte_c56e432f.jpg";
 const logoImage = "/manus-storage/page-003_8955e366.png";
-const wikimediaBridge = "/manus-storage/ponte-newton-navarro-ccby_2f5f8d70.jpg";
+const galleryImages = [
+  { src: "/manus-storage/galeria-01_34e2af54.webp", alt: "Susape Augusto em encontro com lideranças potiguares", caption: "Encontro e diálogo" },
+  { src: "/manus-storage/galeria-02_0a9c9b22.webp", alt: "Susape Augusto em agenda com representantes locais", caption: "Construção de caminhos" },
+  { src: "/manus-storage/galeria-03_89b05074.jpg", alt: "Susape Augusto fala ao público durante encontro político", caption: "Presença e participação" },
+  { src: "/manus-storage/galeria-04_8b902bbf.jpg", alt: "Susape Augusto durante atividade partidária", caption: "Compromisso com o RN" },
+  { src: "/manus-storage/galeria-05_35a64db0.jpg", alt: "Susape Augusto em reunião com integrantes do partido", caption: "União e trabalho" },
+  { src: "/manus-storage/galeria-06_3e849a02.jpg", alt: "Susape Augusto com grupo em visita institucional", caption: "Agenda pelo Rio Grande do Norte" },
+];
 
 const themes = [
   {
@@ -586,11 +591,14 @@ export default function Home() {
         </section>
 
         <section id="galeria" className="gallery-section identity-section">
-          <div className="gallery-title"><SectionEyebrow>Galeria</SectionEyebrow><h2>Orgulho de ser norte-rio-grandense.</h2><p>Galeria-base com imagens de apoio do RN e referências do manual. Substitua ou complemente com fotos oficiais de agendas, visitas e encontros.</p></div>
+          <div className="gallery-title"><SectionEyebrow>Galeria</SectionEyebrow><h2>Orgulho de ser norte-rio-grandense.</h2><p>Registos de encontros, agendas e momentos de diálogo com quem constrói o Rio Grande do Norte todos os dias.</p></div>
           <div className="gallery-grid">
-            <figure className="gallery-main"><img src={bridgeImage} alt="Ponte sobre a água em Natal, imagem ilustrativa" /><figcaption>Conexão · imagem ilustrativa</figcaption></figure>
-            <figure><img src={wikimediaBridge} alt="Ponte Newton Navarro em Natal" /><figcaption>Ponte Newton Navarro · Foto: Otávio Nogueira, CC BY 2.0</figcaption></figure>
-            <figure><img src={encounterImage} alt="Grupo reunido em torno de um mapa, imagem ilustrativa" /><figcaption>Construção coletiva · imagem ilustrativa</figcaption></figure>
+            {galleryImages.map(image => (
+              <figure key={image.src}>
+                <img src={image.src} alt={image.alt} />
+                <figcaption>{image.caption}</figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 

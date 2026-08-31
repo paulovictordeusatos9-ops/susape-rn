@@ -230,3 +230,7 @@ A fotografia enviada substituiu exclusivamente o retrato central da primeira sec
 ## Aproximação da bandeira e da numeração
 
 O bloco visual do hero foi deslocado para cima e a numeração foi reposicionada dentro da composição, reduzindo o espaço branco entre a bandeira do Rio Grande do Norte e os algarismos 2, 3 e 4. O retrato permaneceu centrado e a identificação continuou abaixo da imagem. As capturas desktop e mobile, os testes e o build confirmaram o ajuste.
+
+## Substituição completa da galeria
+
+As três imagens anteriores e as respetivas referências ilustrativas foram removidas da galeria. As seis fotografias enviadas foram carregadas e passaram a compor exclusivamente a secção, em grelha de três colunas no desktop, duas colunas no tablet e uma coluna no mobile. As capturas confirmaram o carregamento, o enquadramento e as legendas; `pnpm check`, `pnpm test` e `pnpm build` passaram.

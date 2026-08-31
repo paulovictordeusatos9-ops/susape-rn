@@ -509,3 +509,13 @@
 - [x] Validar o ajuste em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Substituição completa da galeria
+
+- [x] Carregar as seis fotografias enviadas para os ativos do site.
+- [x] Remover todas as fotografias atualmente usadas na galeria.
+- [x] Adicionar exclusivamente as seis novas fotografias à galeria.
+- [x] Ajustar enquadramento e proporções das imagens na grelha.
+- [x] Validar a galeria em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
