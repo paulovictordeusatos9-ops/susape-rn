@@ -855,3 +855,13 @@ h3 { line-height: 1.16; }
   .site-header { justify-content: flex-start; gap: 10px; }
   .menu-button { margin-left: 4px; flex: 0 0 auto; }
 }
+
+/* Fotografias ampliadas e padronizadas na trajetória */
+.profile-section .profile-card-heading { align-items: center; gap: clamp(24px, 3vw, 44px); }
+.profile-section .profile-stage-photo-identity { width: clamp(210px, 21vw, 290px); }
+.profile-section .profile-stage-photo-formation { width: clamp(180px, 18vw, 240px); }
+@media (max-width: 680px) {
+  .profile-section .profile-card-heading { gap: 14px; }
+  .profile-section .profile-stage-photo-identity { width: clamp(138px, 42vw, 168px); }
+  .profile-section .profile-stage-photo-formation { width: clamp(126px, 38vw, 154px); }
+}

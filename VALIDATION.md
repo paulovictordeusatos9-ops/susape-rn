@@ -264,3 +264,7 @@ O cabeçalho mobile foi alterado para alinhar os elementos a partir da esquerda,
 ## Fotografia do hero na etapa Identidade
 
 A etapa “Identidade — Orgulho potiguar” passou a reutilizar exatamente o mesmo ativo fotográfico do hero. A referência anterior foi removida, e a imagem foi mantida com altura automática, `object-fit: contain`, fundo transparente, sem borda, raio, sombra ou filtro. As capturas completas em desktop e mobile confirmaram a fotografia inteira no carrossel e o hero inalterado. `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+## Fotografias ampliadas nas etapas Identidade e Formação
+
+A fotografia da etapa 1 foi ampliada para até 290 px no desktop e 168 px no mobile, mantendo transparência e proporção. A nova imagem de blazer azul foi carregada e associada à etapa 3, “Formação — Superior completo”, com largura de até 240 px e enquadramento integral. A seleção interativa da etapa 3 foi verificada no navegador, e a etapa 1 foi capturada em desktop e mobile. `pnpm check`, `pnpm test` e `pnpm build` passaram.

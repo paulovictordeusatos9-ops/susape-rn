@@ -60,6 +60,7 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
 }
 
 const heroPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
+const formationPortrait = "/manus-storage/formacao-susape_c4c8cb46.jpg";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },
@@ -452,11 +453,11 @@ export default function Home() {
                       <span>{activeProfile[0]}</span>
                       <h3>{activeProfile[1]}</h3>
                     </div>
-                    {profileIndex === 0 && (
+                    {(profileIndex === 0 || profileIndex === 2) && (
                       <img
-                        className="profile-stage-photo"
-                        src={heroPortrait}
-                        alt="Susape Augusto, fotografia da etapa Identidade"
+                        className={`profile-stage-photo ${profileIndex === 0 ? "profile-stage-photo-identity" : "profile-stage-photo-formation"}`}
+                        src={profileIndex === 0 ? heroPortrait : formationPortrait}
+                        alt={profileIndex === 0 ? "Susape Augusto, fotografia da etapa Identidade" : "Susape Augusto, fotografia da etapa Formação"}
                       />
                     )}
                   </div>

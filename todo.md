@@ -596,3 +596,14 @@
 - [x] Validar a etapa em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Fotografias ampliadas nas etapas Identidade e Formação
+
+- [x] Aumentar significativamente a fotografia da etapa 1, Identidade.
+- [x] Reequilibrar título, texto e imagem da etapa 1.
+- [x] Carregar a nova fotografia enviada para os ativos do site.
+- [x] Adicionar a nova imagem à etapa 3, Formação.
+- [x] Padronizar enquadramento e escala das duas fotografias.
+- [x] Validar as etapas em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
