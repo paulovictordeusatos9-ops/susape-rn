@@ -59,7 +59,6 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
     .join(" ");
 }
 
-const officialPortrait = "/manus-storage/susape-hero-chapeu_54ff4d41.webp";
 const heroPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
@@ -456,8 +455,8 @@ export default function Home() {
                     {profileIndex === 0 && (
                       <img
                         className="profile-stage-photo"
-                        src={officialPortrait}
-                        alt="Susape Augusto com chapéu, ilustração da etapa Identidade"
+                        src={heroPortrait}
+                        alt="Susape Augusto, fotografia da etapa Identidade"
                       />
                     )}
                   </div>

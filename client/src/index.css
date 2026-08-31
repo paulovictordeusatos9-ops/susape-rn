@@ -559,6 +559,9 @@ h3 { line-height: 1.16; }
   .profile-section .profile-stage-photo { width: clamp(92px, 28vw, 124px); height: auto; }
 }
 
+/* Mesma fotografia transparente do hero na etapa Identidade */
+.profile-section .profile-stage-photo { height: auto; object-fit: contain; object-position: center bottom; border: 0; border-radius: 0; box-shadow: none; background: transparent; filter: none; }
+
 
 /* Padronização final do cabeçalho: ritmo, escala e alinhamento consistentes */
 .site-header { gap: clamp(20px, 2.5vw, 36px); }

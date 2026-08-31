@@ -586,3 +586,13 @@
 - [x] Validar o alinhamento em mobile e desktop.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Fotografia do hero na etapa Identidade
+
+- [x] Substituir a fotografia atual da etapa Identidade pela imagem central do hero.
+- [x] Exibir a nova fotografia completa e sem recorte.
+- [x] Remover fundo, moldura, sombra e efeitos adicionais.
+- [x] Preservar a fotografia e o layout da primeira secção.
+- [x] Validar a etapa em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

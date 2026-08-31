@@ -260,3 +260,7 @@ A captura em 375 px confirmou a presença exclusiva do botão sanduíche no mobi
 ## Botão sanduíche ao lado da logo no mobile
 
 O cabeçalho mobile foi alterado para alinhar os elementos a partir da esquerda, deixando o botão sanduíche imediatamente após a assinatura SUSAPE. A captura em 375 px confirmou a proximidade e o alinhamento; a captura em 1280 px confirmou que o botão continua oculto e que os tópicos permanecem visíveis diretamente no desktop.
+
+## Fotografia do hero na etapa Identidade
+
+A etapa “Identidade — Orgulho potiguar” passou a reutilizar exatamente o mesmo ativo fotográfico do hero. A referência anterior foi removida, e a imagem foi mantida com altura automática, `object-fit: contain`, fundo transparente, sem borda, raio, sombra ou filtro. As capturas completas em desktop e mobile confirmaram a fotografia inteira no carrossel e o hero inalterado. `pnpm check`, `pnpm test` e `pnpm build` passaram.
