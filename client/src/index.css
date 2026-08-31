@@ -846,3 +846,9 @@ h3 { line-height: 1.16; }
   .nav-links a { min-height: 34px; }
   .hero-white-blue { padding-top: 118px; }
 }
+
+/* Botão sanduíche junto da assinatura SUSAPE no mobile */
+@media (max-width: 680px) {
+  .site-header { justify-content: flex-start; gap: 10px; }
+  .menu-button { margin-left: 4px; flex: 0 0 auto; }
+}

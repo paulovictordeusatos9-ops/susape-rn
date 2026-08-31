@@ -577,3 +577,12 @@
 - [x] Validar o comportamento em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Botão sanduíche ao lado da logo no mobile
+
+- [x] Posicionar o botão sanduíche imediatamente ao lado da logo SUSAPE.
+- [x] Preservar o funcionamento de abrir e fechar o menu mobile.
+- [x] Manter a navegação direta inalterada em desktop e tablet.
+- [x] Validar o alinhamento em mobile e desktop.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

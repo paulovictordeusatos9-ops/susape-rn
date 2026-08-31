@@ -256,3 +256,7 @@ O cabeçalho apresenta Início, Quem é Susape, Projeto, Construção Coletiva, 
 A inspeção em 768 px revelou que a navegação direta não cabia numa única linha. O intervalo entre 681 e 1000 px foi reorganizado em duas linhas: marca e Contacto na primeira, tópicos na segunda. A nova captura confirmou todos os tópicos visíveis, sem sobreposição e sem botão sanduíche. O botão permanece reservado a larguras de até 680 px.
 
 A captura em 375 px confirmou a presença exclusiva do botão sanduíche no mobile, com marca e hero preservados. A validação final com `pnpm check`, `pnpm test` e `pnpm build` foi concluída com sucesso.
+
+## Botão sanduíche ao lado da logo no mobile
+
+O cabeçalho mobile foi alterado para alinhar os elementos a partir da esquerda, deixando o botão sanduíche imediatamente após a assinatura SUSAPE. A captura em 375 px confirmou a proximidade e o alinhamento; a captura em 1280 px confirmou que o botão continua oculto e que os tópicos permanecem visíveis diretamente no desktop.
