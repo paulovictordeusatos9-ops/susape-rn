@@ -51,3 +51,7 @@ A Home foi alinhada ao novo briefing: o menu agora inclui as dez áreas pública
 ## Hero com nova fotografia e fundo branco/azul
 
 A primeira seção foi atualizada com a fotografia enviada do candidato usando chapéu, mantendo o rosto e a aparência da imagem original. O fundo agora combina branco com azul (#124E9B e #001C4A), enquanto 1234, a identificação de candidato a deputado federal e a animação de entrada permanecem ativos. A captura desktop confirmou boa separação entre texto e retrato; a captura mobile confirmou leitura do título, número e CTAs em coluna sem cortar a fotografia de forma crítica.
+
+## Simplificação total do fundo da primeira seção
+
+O hero foi simplificado para fundo totalmente branco. Foram removidos do JSX os elementos visuais Ondas, Sol, Farol e Gente, além dos números decorativos grandes e das formas azul/verde de fundo. A fotografia, o lockup SUSAPE 1234, o texto, os CTAs e o cartão de identificação foram preservados. Tipos, testes e build passaram; a revisão visual foi realizada em 1280x720 e 390x844.

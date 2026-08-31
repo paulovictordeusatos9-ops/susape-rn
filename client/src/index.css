@@ -278,3 +278,17 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
   .hero-white-blue .hero-portrait { right: -18%; bottom: -1%; height: 66%; opacity: 1; filter: drop-shadow(10px 9px 0 rgba(0,28,74,.2)); }
   .hero-white-blue .hero-content { min-height: 790px; }
 }
+
+/* Simplificação solicitada: primeira seção com fundo exclusivamente branco */
+.hero-white-blue,
+.hero-white-blue .hero-visual { background: #ffffff !important; }
+.hero-white-blue .hero-visual::before,
+.hero-white-blue .hero-overlay { display: none !important; }
+.hero-white-blue .hero-content { color: #001c4a; }
+.hero-white-blue .hero-portrait { filter: none; }
+.hero-white-blue .hero-card { box-shadow: 10px 10px 0 #f4ae28; }
+@media (max-width: 680px) {
+  .hero-white-blue .hero-visual::before,
+  .hero-white-blue .hero-overlay { display: none !important; }
+  .hero-white-blue .hero-portrait { opacity: 1; filter: none; }
+}

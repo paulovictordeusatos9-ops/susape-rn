@@ -90,4 +90,13 @@
 - [x] Ajustar o fundo da primeira seção para branco e azul.
 - [x] Preservar 1234, a identificação de deputado federal e a animação existente.
 - [x] Validar o hero em desktop e mobile.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Simplificação total do fundo da primeira seção
+
+- [x] Remover os grafismos azuis e verdes do fundo do hero.
+- [x] Deixar o fundo da primeira seção totalmente branco.
+- [x] Retirar os elementos visuais Ondas, Sol, Farol e Gente do hero.
+- [x] Preservar foto, texto, número 1234 e CTAs.
+- [x] Validar o hero em desktop e mobile.
 - [ ] Guardar checkpoint e entregar a nova versão.

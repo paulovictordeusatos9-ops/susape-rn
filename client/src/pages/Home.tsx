@@ -274,14 +274,9 @@ export default function Home() {
       <main>
         <section id="inicio" className="hero hero-refresh hero-white-blue">
           <div className="hero-visual" aria-hidden="true">
-            <div className="hero-number-backdrop">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-${index}`} className={className}>{digit}</span>)}</div>
-            <div className="hero-photo-wash" />
             <img className="hero-portrait" src={officialPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
           </div>
           <div className="hero-overlay" />
-          <div className="manual-icons" aria-label="Ícones de referência do Rio Grande do Norte">
-            <span><b>≈</b> ondas</span><span><b>✹</b> sol</span><span><b>⌁</b> farol</span><span><b>●</b> gente</span>
-          </div>
           <div className="hero-content">
           <div className="hero-copy">
             <div className="hero-lockup" aria-label="Candidato a deputado federal Susape 1234"><span>CANDIDATO A DEPUTADO FEDERAL</span><strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong></div>
