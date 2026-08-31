@@ -321,5 +321,19 @@
 
 ## Entrega do mapa municipal e espaçamento
 
-- [ ] Guardar novo checkpoint após aplicar divisões amarelas e espaçamento global.
+- [x] Guardar novo checkpoint após aplicar divisões amarelas e espaçamento global.
+- [x] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint.
+
+## Numeração do hero em largura total
+
+- [x] Fazer os números 1, 2, 3 e 4 atravessarem toda a largura da primeira seção.
+- [x] Manter a fotografia centralizada acima da numeração, sem perder contraste e leitura.
+- [x] Preservar as quatro cores oficiais e as camadas atrás do retrato.
+- [x] Ajustar a escala e o enquadramento para desktop e mobile.
+- [x] Validar o hero, testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+## Entrega da numeração do hero
+
+- [ ] Guardar novo checkpoint após ampliar os números 1–4 para toda a largura do hero.
 - [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint.

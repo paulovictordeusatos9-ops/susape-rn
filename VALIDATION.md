@@ -147,3 +147,8 @@ A verificação do DOM confirmou 167 caminhos municipais no mapa base, com preen
 ## Revisão visual do mapa e do espaçamento global
 
 As capturas desktop e mobile confirmaram a presença das divisões municipais amarelas sobre a base branca do mapa do RN. O desenho do mapa acompanha a composição de largura total do Desafio. O espaçamento de linhas foi ampliado em títulos, parágrafos e cartões para reduzir o risco de sobreposição em telas estreitas.
+
+
+## Numeração do hero em largura total
+
+As capturas desktop e mobile confirmaram que os dígitos 1, 2, 3 e 4 foram distribuídos por toda a largura visual da primeira seção, atrás da fotografia central. As quatro cores permanecem preservadas e a fotografia com chapéu continua centralizada e legível.

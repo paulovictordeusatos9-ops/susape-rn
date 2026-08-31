@@ -527,3 +527,14 @@ h3 { line-height: 1.16; }
   .challenge-copy h2 { line-height: 1.08; }
   .section-eyebrow { line-height: 1.45; }
 }
+
+
+/* Numeração do hero em largura total, atrás da fotografia central */
+.hero-white-blue .hero-visual { width: 100vw; max-width: none; }
+.hero-white-blue .hero-number-central { inset: 45% 0 auto; width: 100%; justify-content: space-around; transform: translateY(-50%); font-size: clamp(220px, 37vw, 520px); letter-spacing: -.04em; }
+.hero-white-blue .hero-number-central span { flex: 1 1 0; text-align: center; }
+@media (max-width: 680px) {
+  .hero-white-blue .hero-visual { width: 100vw; }
+  .hero-white-blue .hero-number-central { inset: 46% 0 auto; width: 100%; font-size: clamp(116px, 31vw, 220px); letter-spacing: -.045em; }
+  .hero-white-blue .hero-number-central span { flex: 1 1 0; }
+}
