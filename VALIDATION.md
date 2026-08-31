@@ -250,3 +250,9 @@ O A foi estreitado e aproximado das letras vizinhas para reproduzir a proporçã
 ## Confirmação dos tópicos no cabeçalho
 
 O cabeçalho apresenta Início, Quem é Susape, Projeto, Construção Coletiva, Desafio, Notícias, Galeria e Participe, mantendo Contacto como chamada destacada. As âncoras foram conferidas no código, a distribuição horizontal foi validada no desktop e o menu compacto permanece disponível no mobile. `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+## Menu sanduíche exclusivo no mobile
+
+A inspeção em 768 px revelou que a navegação direta não cabia numa única linha. O intervalo entre 681 e 1000 px foi reorganizado em duas linhas: marca e Contacto na primeira, tópicos na segunda. A nova captura confirmou todos os tópicos visíveis, sem sobreposição e sem botão sanduíche. O botão permanece reservado a larguras de até 680 px.
+
+A captura em 375 px confirmou a presença exclusiva do botão sanduíche no mobile, com marca e hero preservados. A validação final com `pnpm check`, `pnpm test` e `pnpm build` foi concluída com sucesso.

@@ -825,3 +825,24 @@ h3 { line-height: 1.16; }
 .brand-lockup strong .susape-wordmark > span:last-child,
 .hero-identification-below strong .susape-wordmark > span:last-child,
 .footer-brand strong .susape-wordmark > span:last-child { margin-left: -.02em; }
+
+/* Menu sanduíche exclusivo no mobile */
+@media (min-width: 681px) {
+  .menu-button { display: none !important; }
+  .nav-links { display: flex !important; }
+}
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-links.nav-open { display: grid; }
+  .menu-button { display: inline-flex; align-items: center; justify-content: center; }
+}
+
+/* Em tablet, os tópicos permanecem visíveis sem recorrer ao menu sanduíche */
+@media (min-width: 681px) and (max-width: 1000px) {
+  .site-header { height: 118px; padding: 8px 4vw 7px; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: 58px 40px; align-items: center; gap: 0 16px; }
+  .brand { grid-column: 1; grid-row: 1; }
+  .header-cta { grid-column: 3; grid-row: 1; justify-self: end; }
+  .nav-links { grid-column: 1 / -1; grid-row: 2; width: 100%; display: flex !important; align-items: center; justify-content: space-between; gap: 8px; font-size: 9px; letter-spacing: .025em; }
+  .nav-links a { min-height: 34px; }
+  .hero-white-blue { padding-top: 118px; }
+}

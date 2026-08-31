@@ -568,3 +568,12 @@
 - [x] Validar alinhamento e navegação em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Menu sanduíche exclusivo no mobile
+
+- [x] Ocultar o botão de menu sanduíche no desktop.
+- [x] Manter os tópicos visíveis diretamente no cabeçalho do desktop.
+- [x] Preservar o botão e as opções no menu mobile.
+- [x] Validar o comportamento em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
