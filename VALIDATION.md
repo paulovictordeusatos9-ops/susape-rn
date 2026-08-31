@@ -212,3 +212,8 @@ O primeiro cartão passou a usar o ícone de bandeira para representar identidad
 ## Remoção dos ícones das propostas
 
 Os ícones foram removidos dos cartões 1, 2, 3 e 4 da aba de Propostas, incluindo as referências de ícones no array de temas e o elemento visual no JSX. A estrutura foi reequilibrada para uma coluna interna, preservando os títulos, textos, cores, dimensões de 250×250 px e a grelha 2×2 no desktop. No mobile, os cartões continuam empilhados e legíveis. Capturas desktop/mobile, `pnpm check`, `pnpm test` e `pnpm build` concluídos com sucesso.
+
+
+## Detalhamento interativo das propostas
+
+Os quatro cartões foram ampliados para 280×280 px no desktop e mantêm dimensão consistente no mobile. Cada cartão abre, por clique ou teclado, um painel com um plano de ação específico para o eixo selecionado. O painel apresenta três frentes de trabalho e mantém a ação “Contribuir com este tema”. As capturas desktop e mobile confirmaram a adaptação da grelha, a leitura dos textos e a ausência de cortes; `pnpm check`, `pnpm test` e `pnpm build` passaram.

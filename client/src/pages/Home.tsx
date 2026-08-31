@@ -77,24 +77,44 @@ const themes = [
     title: "Gosto de Ser Potiguar",
     body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
     color: "theme-orgulho",
+    plan: [
+      "Valorizar a identidade potiguar em ações de cultura, memória e pertencimento, dando espaço às iniciativas que já existem no território.",
+      "Defender editais, circulação de artistas e preservação do património como caminhos de oportunidade para jovens, grupos culturais e municípios.",
+      "Acompanhar a aplicação dos recursos e publicar os compromissos assumidos, para que orgulho não seja apenas discurso, mas presença continuada.",
+    ],
   },
   {
     number: "02",
     title: "Segurança Pública",
     body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
     color: "theme-seguranca",
+    plan: [
+      "Priorizar prevenção e inteligência, aproximando as políticas de segurança das escolas, comunidades e serviços que conhecem a realidade de cada região.",
+      "Defender integração entre forças, formação continuada e uso responsável de tecnologia, com proteção aos profissionais e respeito aos direitos das pessoas.",
+      "Fiscalizar metas, atendimento e distribuição de recursos, acompanhando resultados por território em vez de esconder problemas atrás de números soltos.",
+    ],
   },
   {
     number: "03",
     title: "Saúde Pública",
     body: "Saúde Pública mais perto de quem precisa. Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
     color: "theme-saude",
+    plan: [
+      "Defender uma rede regional mais coordenada, para que o cuidado comece perto de casa e o encaminhamento entre municípios seja mais simples.",
+      "Buscar recursos para atenção básica, urgência e estrutura, com prioridade para reduzir esperas evitáveis e fortalecer quem trabalha na linha da frente.",
+      "Acompanhar filas, manutenção e entrega dos serviços com transparência, ouvindo utentes e profissionais antes de propor novas soluções.",
+    ],
   },
   {
     number: "04",
     title: "Sustentabilidade",
     body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
     color: "theme-sustentavel",
+    plan: [
+      "Conciliar proteção ambiental e oportunidade económica, apoiando cadeias locais que gerem rendimento sem esgotar os recursos do território.",
+      "Defender projetos de água, energia, saneamento, turismo responsável e inovação adaptados às diferenças entre litoral, agreste e sertão.",
+      "Acompanhar licenças, investimentos e resultados com critérios claros, para que desenvolvimento seja medido pela vida das pessoas e pela preservação do futuro.",
+    ],
   },
 ];
 
@@ -160,6 +180,8 @@ export default function Home() {
   const [used, setUsed] = useState<string[]>([]);
   const [quizFeedback, setQuizFeedback] = useState("");
   const activeProfile = perfil[profileIndex];
+  const [selectedThemeNumber, setSelectedThemeNumber] = useState<string | null>(null);
+  const selectedTheme = themes.find(theme => theme.number === selectedThemeNumber);
 
   const changeProfile = (direction: number) => {
     setProfileIndex(current => (current + direction + perfil.length) % perfil.length);
@@ -446,15 +468,46 @@ export default function Home() {
           </div>
           <div className="theme-grid" id="propostas">
             {themes.map(theme => (
-              <article className={`theme-card ${theme.color}`} key={theme.number}>
+              <article
+                className={`theme-card ${theme.color}`}
+                key={theme.number}
+                role="button"
+                tabIndex={0}
+                aria-expanded={selectedThemeNumber === theme.number}
+                onClick={() => setSelectedThemeNumber(current => current === theme.number ? null : theme.number)}
+                onKeyDown={event => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    setSelectedThemeNumber(current => current === theme.number ? null : theme.number);
+                  }
+                }}
+              >
                 <div className="telegram-top"><span>{theme.number}</span><small>proposta · eixo</small><ArrowUpRight size={15} /></div>
                 <h3>{theme.title}</h3>
                 <p>{theme.body}</p>
-                <button onClick={() => document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" })}>
+                <button onClick={event => { event.stopPropagation(); document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" }); }}>
                   Contribuir com este tema <ArrowUpRight size={17} />
                 </button>
               </article>
             ))}
+            {selectedTheme && (
+              <div className={`theme-detail-panel ${selectedTheme.color}`}>
+                <div className="theme-detail-heading">
+                  <div>
+                    <span className="theme-detail-kicker">Plano de ação · proposta {selectedTheme.number}</span>
+                    <h3>{selectedTheme.title}</h3>
+                  </div>
+                  <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={() => setSelectedThemeNumber(null)}>×</button>
+                </div>
+                <p className="theme-detail-intro">Um caminho de trabalho para transformar este eixo em compromisso acompanhado, com escuta, articulação e prestação de contas.</p>
+                <ol>
+                  {selectedTheme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
+                </ol>
+                <button className="theme-detail-contribute" onClick={() => document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" })}>
+                  Contribuir com este tema <ArrowUpRight size={17} />
+                </button>
+              </div>
+            )}
           </div>
           <div className="project-principles">
             <span>Visão</span><strong>Representar o Rio Grande do Norte com presença e escuta.</strong>

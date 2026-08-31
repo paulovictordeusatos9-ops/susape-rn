@@ -462,3 +462,17 @@
 - [x] Validar a apresentação em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Detalhamento interativo das propostas
+
+- [x] Aumentar novamente as dimensões dos quatro quadrados de propostas.
+- [x] Criar um plano detalhado original para Gosto de Ser Potiguar.
+- [x] Criar um plano detalhado original para Segurança Pública.
+- [x] Criar um plano detalhado original para Saúde Pública.
+- [x] Criar um plano detalhado original para Sustentabilidade.
+- [x] Permitir abrir o detalhe de cada proposta ao clicar no cartão.
+- [x] Manter a opção “Contribuir com este tema” em cada detalhe.
+- [x] Garantir interação acessível por teclado e leitura responsiva.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
