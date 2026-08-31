@@ -595,4 +595,4 @@
 - [x] Preservar a fotografia e o layout da primeira secção.
 - [x] Validar a etapa em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
