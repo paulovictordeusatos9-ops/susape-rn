@@ -295,9 +295,7 @@ export default function Home() {
   const nav = [
     ["Início", "#inicio"],
     ["Quem é Susape", "#quem-e"],
-    ["Projeto", "#projeto"],
     ["Propostas", "#propostas"],
-    ["Construção Coletiva", "#construcao"],
     ["Desafio 167/60", "#desafio"],
     ["Notícias", "#noticias"],
     ["Galeria", "#galeria"],

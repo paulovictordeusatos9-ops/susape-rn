@@ -370,3 +370,13 @@
 - [x] Ajustar escala e alinhamento em desktop e mobile.
 - [x] Validar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Simplificação do cabeçalho
+
+- [x] Remover a aba “Projeto” do cabeçalho.
+- [x] Remover a aba “Construção Coletiva” do cabeçalho.
+- [x] Preservar as restantes abas e as respetivas âncoras.
+- [x] Validar o cabeçalho em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

@@ -167,3 +167,8 @@ A tentativa de alterar o texto para uma quebra manual não produziu mudanças po
 ## Fotografia livre na etapa Identidade
 
 A primeira etapa da trajetória reutiliza o mesmo ativo `officialPortrait` do hero. A miniatura foi convertida para proporção automática, `object-fit: contain`, sem borda, sem sombra, sem raio e sem formato quadrado; o fundo permanece branco. As capturas desktop e mobile confirmaram a fotografia pequena ao lado de “Identidade — Orgulho potiguar”, sem alterar o retrato central do hero.
+
+
+## Simplificação do cabeçalho
+
+A navegação compartilhada do cabeçalho foi verificada em desktop e mobile. As abas “Projeto” e “Construção Coletiva” deixaram de ser renderizadas; permanecem “Início”, “Quem é Susape”, “Propostas”, “Desafio 167/60”, “Notícias”, “Galeria”, “Participe” e “Contacto”. No mobile, o cabeçalho continua reduzido ao logótipo e ao botão de menu.
