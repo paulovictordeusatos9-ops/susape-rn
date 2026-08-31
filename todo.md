@@ -475,4 +475,4 @@
 - [x] Manter a opção “Contribuir com este tema” em cada detalhe.
 - [x] Garantir interação acessível por teclado e leitura responsiva.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
