@@ -331,9 +331,16 @@
 - [x] Preservar as quatro cores oficiais e as camadas atrás do retrato.
 - [x] Ajustar a escala e o enquadramento para desktop e mobile.
 - [x] Validar o hero, testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 ## Entrega da numeração do hero
 
-- [ ] Guardar novo checkpoint após ampliar os números 1–4 para toda a largura do hero.
-- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint.
+- [x] Guardar novo checkpoint após ampliar os números 1–4 para toda a largura do hero.
+- [x] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint.
+
+## Revisão das edições do editor visual
+
+- [x] Corrigir o JSX e os estilos duplicados do título “Desenvolvimento Sustentável”.
+- [x] Confirmar a remoção dos links “Propostas” e “Construção Coletiva” conforme a edição visual.
+- [x] Validar desktop/mobile, testes e build após a revisão.
+- [ ] Guardar novo checkpoint e entregar explicitamente a versão corrigida.

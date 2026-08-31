@@ -152,3 +152,8 @@ As capturas desktop e mobile confirmaram a presença das divisões municipais am
 ## Numeração do hero em largura total
 
 As capturas desktop e mobile confirmaram que os dígitos 1, 2, 3 e 4 foram distribuídos por toda a largura visual da primeira seção, atrás da fotografia central. As quatro cores permanecem preservadas e a fotografia com chapéu continua centralizada e legível.
+
+
+## Revisão pós-editor visual
+
+O JSX duplicado do título de “Desenvolvimento Sustentável” foi corrigido para um único elemento válido, preservando a apresentação completa do título. A matriz de navegação mantém os rótulos “Propostas” e “Construção Coletiva”, evitando links vazios. As capturas desktop e mobile ficaram sem erro de renderização, e os rótulos do menu permanecem disponíveis no DOM.
