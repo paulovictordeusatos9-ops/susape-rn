@@ -273,7 +273,8 @@ export default function Home() {
 
       <main>
         <section id="inicio" className="hero hero-refresh hero-white-blue">
-          <div className="hero-visual" aria-hidden="true">
+          <div className="hero-visual">
+            <img className="hero-flag" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
             <img className="hero-portrait" src={officialPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
           </div>
           <div className="hero-overlay" />

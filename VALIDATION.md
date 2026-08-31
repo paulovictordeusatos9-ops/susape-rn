@@ -63,3 +63,9 @@ O retrato foi reduzido e reposicionado para deixar mais do corpo e dos braços v
 ## Ajuste final do retrato e cartão branco/azul/amarelo
 
 O retrato foi afastado e reduzido para melhorar a leitura do corpo e dos braços, enquanto o cartão deixou de cobrir a área central da fotografia. O cartão agora usa fundo branco, borda azul, sombra azul e uma faixa superior amarela. O número 1234, a identificação de candidato a deputado federal e os demais textos foram preservados. A composição foi revista em 1280x720 e 390x844; tipos, testes e build passaram.
+
+## Bandeira do Rio Grande do Norte no hero
+
+Foi inserida a bandeira oficial do Rio Grande do Norte no espaço branco da primeira seção, em escala discreta e com leve rotação para funcionar como elemento editorial sem cobrir o rosto, o título ou o cartão. O ativo vetorial foi obtido do Wikimedia Commons a partir da página da bandeira estadual e publicado no armazenamento do projeto. A composição foi verificada em desktop e mobile; tipos, testes e build passaram.
+
+Fonte visual: [Bandeira do Rio Grande do Norte — Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bandeira_do_Rio_Grande_do_Norte.svg).

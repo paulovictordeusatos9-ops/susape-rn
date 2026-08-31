@@ -311,3 +311,12 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 
 /* Detalhe amarelo solicitado no cartão branco/azul */
 .hero-white-blue .hero-card { border: 2px solid #124e9b; border-top: 6px solid #f4ae28; }
+
+/* Bandeira do Rio Grande do Norte no espaço branco do hero */
+.hero-white-blue .hero-flag { position: absolute; z-index: 1; top: 12%; right: 28%; width: clamp(220px, 25vw, 360px); height: auto; opacity: .22; filter: drop-shadow(5px 6px 0 rgba(0,28,74,.08)); transform: rotate(-3deg); }
+.hero-white-blue .hero-portrait { z-index: 2; }
+@media (prefers-reduced-motion: no-preference) { .hero-white-blue .hero-flag { animation: heroFlagEnter .8s .18s cubic-bezier(.23,1,.32,1) both; } }
+@keyframes heroFlagEnter { from { opacity: 0; transform: translateY(-10px) rotate(-3deg); } to { opacity: .22; transform: translateY(0) rotate(-3deg); } }
+@media (prefers-reduced-motion: reduce) { .hero-white-blue .hero-flag { animation: none; } }
+@media (max-width: 1000px) { .hero-white-blue .hero-flag { top: 13%; right: 25%; width: 260px; } }
+@media (max-width: 680px) { .hero-white-blue .hero-flag { top: 10%; right: 7%; width: 190px; opacity: .2; } }

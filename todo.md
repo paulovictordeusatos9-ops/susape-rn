@@ -108,4 +108,11 @@
 - [x] Trocar o cartão vermelho por branco com detalhes azul e amarelo.
 - [x] Preservar o número 1234 e a identificação de deputado federal.
 - [x] Validar a composição em desktop e mobile.
-- [ ] Guardar checkpoint e entregar a versão corrigida.
+- [x] Guardar checkpoint e entregar a versão corrigida.
+
+## Bandeira do Rio Grande do Norte no hero
+
+- [x] Inserir a bandeira do Rio Grande do Norte na área branca da primeira seção.
+- [x] Preservar foto, número 1234, cartão e leitura do hero.
+- [x] Validar a composição em desktop e mobile.
+- [ ] Guardar checkpoint e entregar a nova versão.
