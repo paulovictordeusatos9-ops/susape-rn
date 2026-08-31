@@ -79,7 +79,7 @@ const themes = [
     title: "Gosto de Ser Potiguar",
     body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
     color: "theme-orgulho",
-    icon: Sun,
+    icon: Flag,
   },
   {
     number: "02",

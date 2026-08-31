@@ -639,3 +639,18 @@ h3 { line-height: 1.16; }
   .theme-sustentavel { transform: none; }
   .theme-sustentavel:hover { transform: translateY(-6px); }
 }
+
+
+/* Ícones coerentes com cada tema e alinhados com o respetivo título */
+.theme-card { column-gap: 12px; }
+.theme-card h3 { align-self: center; margin-top: 12px; }
+.theme-card .theme-icon { width: 28px; height: 28px; display: grid; place-items: center; justify-self: end; align-self: center; margin-top: 12px; padding-left: 10px; border-left: 1px solid rgba(255,255,255,.38); box-sizing: content-box; }
+.theme-orgulho .theme-icon { color: #f4ae28; }
+.theme-seguranca .theme-icon { color: #f4ae28; }
+.theme-saude .theme-icon { color: #f6d4db; }
+.theme-sustentavel .theme-icon { color: #001c4a; border-left-color: rgba(0,28,74,.34); }
+@media (max-width: 680px) {
+  .theme-card { column-gap: 10px; }
+  .theme-card h3 { margin-top: 10px; }
+  .theme-card .theme-icon { margin-top: 10px; padding-left: 8px; }
+}

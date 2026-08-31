@@ -442,3 +442,13 @@
 - [x] Preservar a legibilidade e o empilhamento adequado no mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Alinhamento dos ícones com os temas
+
+- [x] Garantir que cada ícone corresponde visualmente ao tema da proposta.
+- [x] Alinhar os ícones lateralmente aos respetivos títulos nos quatro cartões.
+- [x] Uniformizar posição, tamanho e espaçamento dos ícones.
+- [x] Preservar a leitura e o alinhamento no mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.

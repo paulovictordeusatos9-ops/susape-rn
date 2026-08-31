@@ -202,3 +202,8 @@ A edição visual gerou atributos `style` duplicados no JSX, incluindo valores i
 ## Reorganização da aba de Projetos em grelha 2×2
 
 Os cartões de propostas foram organizados em duas colunas no desktop, com 1 e 2 na primeira linha e 3 e 4 na segunda, usando quadrados de 250×250 px e espaçamento uniforme. Cada ícone foi posicionado na coluna lateral do respetivo título. No mobile, os quatro cartões passam para uma coluna de 250 px, preservando a leitura e o alinhamento. As capturas desktop e mobile foram verificadas; `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+
+## Alinhamento dos ícones com os temas
+
+O primeiro cartão passou a usar o ícone de bandeira para representar identidade e orgulho potiguar; Segurança Pública mantém o escudo, Saúde Pública mantém o pulso cardíaco e Sustentabilidade mantém o vento. Os quatro ícones agora ocupam uma coluna lateral uniforme, separados do título por uma linha discreta e alinhados verticalmente. As capturas desktop e mobile confirmaram a consistência visual e a leitura.
