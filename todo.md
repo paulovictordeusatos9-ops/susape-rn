@@ -267,5 +267,19 @@
 
 ## Entrega da remoção de seções
 
-- [ ] Guardar novo checkpoint após reduzir os títulos dos Projetos e remover Atuação e Estado em números.
-- [ ] Entregar explicitamente ao utilizador a versão atualizada com o novo checkpoint.
+- [x] Guardar novo checkpoint após reduzir os títulos dos Projetos e remover Atuação e Estado em números.
+- [x] Entregar explicitamente ao utilizador a versão atualizada com o novo checkpoint.
+
+## Desafio 167/180 — mapa e temporizador
+
+- [x] Atualizar o limite do desafio de 60 segundos para 3 minutos.
+- [x] Substituir o texto introdutório pela pergunta sobre conhecer os municípios do RN.
+- [x] Integrar a malha branca do Rio Grande do Norte ao lado do desafio.
+- [x] Pintar em azul o polígono de cada município acertado, incluindo Natal.
+- [x] Validar timer, resposta válida, mapa, desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Entrega do Desafio 167/180
+
+- [ ] Guardar novo checkpoint após integrar o mapa do RN e o temporizador de 3 minutos.
+- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint do Desafio.

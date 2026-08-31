@@ -2,7 +2,7 @@
  * Atualização baseada no Manual de Identidade Visual SUSAPE 1234.
  * Cada bloco deve levar a uma ação concreta e nunca substituir factos verificados por ficção.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -37,8 +37,29 @@ type Municipio = {
   };
 };
 
+type Coordinate = [number, number];
+type GeoGeometry =
+  | { type: "Polygon"; coordinates: Coordinate[][] }
+  | { type: "MultiPolygon"; coordinates: Coordinate[][][] };
+type GeoFeature = { type: "Feature"; geometry: GeoGeometry };
+type GeoFeatureCollection = { type: "FeatureCollection"; features: GeoFeature[] };
+
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
+const IBGE_RN_SHAPE_URL =
+  "https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=intermediaria";
+const ibgeMunicipioShapeUrl = (id: number) =>
+  `https://servicodados.ibge.gov.br/api/v3/malhas/municipios/${id}?formato=application/vnd.geo+json&qualidade=intermediaria`;
+
+function geometryRings(geometry: GeoGeometry): Coordinate[][] {
+  return geometry.type === "Polygon" ? geometry.coordinates : geometry.coordinates.flat();
+}
+
+function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => string) {
+  return geometryRings(geometry)
+    .map(ring => ring.map((point, index) => `${index === 0 ? "M" : "L"}${project(point)}`).join(" ") + " Z")
+    .join(" ");
+}
 
 const officialPortrait = "/manus-storage/susape-hero-chapeu_54ff4d41.webp";
 const heroNumberDigits = [
@@ -131,11 +152,15 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
+  const [rnShape, setRnShape] = useState<GeoFeature[]>([]);
+  const [highlightedCities, setHighlightedCities] = useState<Municipio[]>([]);
+  const [highlightedShapes, setHighlightedShapes] = useState<GeoFeature[]>([]);
+  const [mapError, setMapError] = useState(false);
   const [ideaSent, setIdeaSent] = useState(false);
   const [profileIndex, setProfileIndex] = useState(0);
   const [quizActive, setQuizActive] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(180);
   const [score, setScore] = useState(0);
   const [answer, setAnswer] = useState("");
   const [used, setUsed] = useState<string[]>([]);
@@ -163,6 +188,69 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    let active = true;
+    fetch(IBGE_RN_SHAPE_URL)
+      .then(response => {
+        if (!response.ok) throw new Error("Malha do RN indisponível");
+        return response.json() as Promise<GeoFeatureCollection>;
+      })
+      .then(data => {
+        if (active) setRnShape(data.features || []);
+      })
+      .catch(() => active && setMapError(true));
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    if (!highlightedCities.length) {
+      setHighlightedShapes([]);
+      return () => {
+        active = false;
+      };
+    }
+    Promise.all(
+      highlightedCities.map(city =>
+        fetch(ibgeMunicipioShapeUrl(city.id)).then(response => {
+          if (!response.ok) throw new Error("Malha municipal indisponível");
+          return response.json() as Promise<GeoFeatureCollection>;
+        }),
+      ),
+    )
+      .then(collections => {
+        if (active) setHighlightedShapes(collections.flatMap(collection => collection.features || []));
+      })
+      .catch(() => active && setMapError(true));
+    return () => {
+      active = false;
+    };
+  }, [highlightedCities]);
+
+  const mapProjection = useMemo(() => {
+    const points = rnShape.flatMap(feature => geometryRings(feature.geometry).flat());
+    if (!points.length) return (_point: Coordinate) => "0,0";
+    const longitudes = points.map(point => point[0]);
+    const latitudes = points.map(point => point[1]);
+    const minLongitude = Math.min(...longitudes);
+    const maxLongitude = Math.max(...longitudes);
+    const minLatitude = Math.min(...latitudes);
+    const maxLatitude = Math.max(...latitudes);
+    const width = 800;
+    const height = 560;
+    const padding = 28;
+    const scale = Math.min(
+      (width - padding * 2) / Math.max(maxLongitude - minLongitude, 0.01),
+      (height - padding * 2) / Math.max(maxLatitude - minLatitude, 0.01),
+    );
+    const offsetX = (width - (maxLongitude - minLongitude) * scale) / 2;
+    const offsetY = (height - (maxLatitude - minLatitude) * scale) / 2;
+    return ([longitude, latitude]: Coordinate) =>
+      `${(offsetX + (longitude - minLongitude) * scale).toFixed(2)},${(height - offsetY - (latitude - minLatitude) * scale).toFixed(2)}`;
+  }, [rnShape]);
+
+  useEffect(() => {
     if (!quizActive) return;
     if (timeLeft === 0) {
       setQuizActive(false);
@@ -174,10 +262,11 @@ export default function Home() {
   }, [quizActive, timeLeft]);
 
   const startQuiz = () => {
-    setTimeLeft(60);
+    setTimeLeft(180);
     setScore(0);
     setAnswer("");
     setUsed([]);
+    setHighlightedCities([]);
     setQuizFeedback("");
     setQuizFinished(false);
     setQuizActive(true);
@@ -197,6 +286,7 @@ export default function Home() {
       return;
     }
     setUsed(previous => [city.nome, ...previous]);
+    setHighlightedCities(previous => [...previous, city]);
     setScore(previous => previous + 1);
     setAnswer("");
     setQuizFeedback(`Resposta validada: ${city.nome}.`);
@@ -394,23 +484,40 @@ export default function Home() {
 
         <section id="desafio" className="section challenge-section identity-section">
           <div className="section-stamp rail-light" aria-hidden="true"><span>04</span></div>
-          <div className="challenge-copy">
-            <SectionEyebrow>Desafio 167/60</SectionEyebrow>
-            <h2>Faz sentido?! Em 60 segundos, quantos municípios você lembra?</h2>
-            <p>Digite os nomes sem consultar lista. O desafio confere cada resposta pela base oficial do IBGE e contabiliza apenas respostas únicas.</p>
-            <div className="challenge-rules"><span><Clock3 size={16} /> 60 segundos</span><span><MapPin size={16} /> 167 municípios</span><span><Sparkles size={16} /> resposta imediata</span></div>
-          </div>
-          <div className="quiz-card">
-            <div className="quiz-top"><span>Desafio em curso</span><strong>{String(timeLeft).padStart(2, "0")}<small>s</small></strong></div>
-            <div className="quiz-score"><span>Acertos</span><strong>{score}</strong><small>de 167</small></div>
-            {!quizActive && !quizFinished && <Button onClick={startQuiz} disabled={!municipios.length} className="quiz-start">{municipios.length ? "Começar agora" : "A carregar municípios…"} <ArrowUpRight size={17} /></Button>}
-            {quizActive && <form className="quiz-form" onSubmit={submitAnswer}>
-              <input autoFocus value={answer} onChange={event => setAnswer(event.target.value)} placeholder="Digite um município" aria-label="Digite um município do RN" />
-              <Button type="submit">Marcar <ChevronRight size={17} /></Button>
-            </form>}
-            {quizFinished && <div className="quiz-result"><p>Tempo encerrado. Você lembrou <strong>{score}</strong> município{score === 1 ? "" : "s"}.</p><Button onClick={startQuiz}>Tentar outra vez <ArrowUpRight size={16} /></Button></div>}
-            {quizFeedback && <p className="quiz-feedback">{quizFeedback}</p>}
-            {used.length > 0 && <div className="used-cities" aria-live="polite">{used.slice(0, 8).map(city => <span key={city}>{city}</span>)}</div>}
+          <div className="challenge-layout">
+            <div className="challenge-copy">
+              <SectionEyebrow>Desafio 167/180</SectionEyebrow>
+              <h2>Teste o seu conhecimento. Você conhece todos os municípios do Rio Grande do Norte?</h2>
+              <p>Digite os nomes sem consultar lista. Cada resposta válida confere o município pela base oficial do IBGE e pinta a sua área de azul no mapa.</p>
+              <div className="challenge-rules"><span><Clock3 size={16} /> 3 minutos</span><span><MapPin size={16} /> 167 municípios</span><span><Sparkles size={16} /> mapa atualizado</span></div>
+            </div>
+            <div className="rn-map-card" aria-label="Mapa interativo do Rio Grande do Norte">
+              <div className="rn-map-header"><div><span>Mapa do RN</span><strong>Municípios acertados</strong></div><b aria-live="polite">{highlightedCities.length}<small>/167</small></b></div>
+              <div className="rn-map-frame">
+                {mapError ? (
+                  <p className="rn-map-status">Não foi possível carregar o mapa agora. O desafio continua disponível.</p>
+                ) : rnShape.length ? (
+                  <svg className="rn-map" viewBox="0 0 800 560" role="img" aria-label="Mapa branco do Rio Grande do Norte com municípios acertados destacados em azul">
+                    <g className="rn-map-base">{rnShape.map((feature, index) => <path key={`rn-${index}`} d={geometryToPath(feature.geometry, mapProjection)} />)}</g>
+                    <g className="rn-map-highlight">{highlightedShapes.map((feature, index) => <path key={`highlight-${index}`} d={geometryToPath(feature.geometry, mapProjection)} />)}</g>
+                  </svg>
+                ) : <p className="rn-map-status">A carregar o mapa do Rio Grande do Norte…</p>}
+              </div>
+              <p className="rn-map-note">Cada município que você acertar ficará marcado em azul.</p>
+              {highlightedCities.length > 0 && <div className="rn-map-cities" aria-live="polite">{highlightedCities.slice(-6).map(city => <span key={city.id}>{city.nome}</span>)}</div>}
+            </div>
+            <div className="quiz-card">
+              <div className="quiz-top"><span>Desafio em curso</span><strong>{String(Math.floor(timeLeft / 60)).padStart(2, "0")}:{String(timeLeft % 60).padStart(2, "0")}<small>min</small></strong></div>
+              <div className="quiz-score"><span>Acertos</span><strong>{score}</strong><small>de 167</small></div>
+              {!quizActive && !quizFinished && <Button onClick={startQuiz} disabled={!municipios.length} className="quiz-start">{municipios.length ? "Começar agora" : "A carregar municípios…"} <ArrowUpRight size={17} /></Button>}
+              {quizActive && <form className="quiz-form" onSubmit={submitAnswer}>
+                <input autoFocus value={answer} onChange={event => setAnswer(event.target.value)} placeholder="Digite um município" aria-label="Digite um município do RN" />
+                <Button type="submit">Marcar <ChevronRight size={17} /></Button>
+              </form>}
+              {quizFinished && <div className="quiz-result"><p>Tempo encerrado. Você lembrou <strong>{score}</strong> município{score === 1 ? "" : "s"}.</p><Button onClick={startQuiz}>Tentar outra vez <ArrowUpRight size={16} /></Button></div>}
+              {quizFeedback && <p className="quiz-feedback">{quizFeedback}</p>}
+              {used.length > 0 && <div className="used-cities" aria-live="polite">{used.slice(0, 8).map(city => <span key={city}>{city}</span>)}</div>}
+            </div>
           </div>
         </section>
 

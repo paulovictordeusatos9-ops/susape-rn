@@ -114,3 +114,16 @@ As capturas desktop e mobile após o ajuste confirmaram os quatro cartões de Pr
 ## Remoção de Atuação e Estado em números — 2026-08-31
 
 A revisão do JSX e do preview confirmou a remoção integral dos blocos “Atuação — Agenda, encontros e resultados: presença que se comprova” e “O estado em números — 167 municípios. Um estado inteiro para conhecer”. Os links de navegação correspondentes também foram retirados. A sequência visível passou de Projetos diretamente para Construção Coletiva, seguida pelo Desafio 167/60; o carregamento da lista do IBGE foi preservado apenas para o quiz.
+
+
+## Desafio 167/180 — mapa interativo e três minutos
+
+As capturas desktop e mobile confirmaram o novo título “Teste o seu conhecimento. Você conhece todos os municípios do Rio Grande do Norte?”, o contador inicial de 03:00, o mapa branco do RN integrado ao layout e o cartão de resposta preservado. Em mobile, o conteúdo passa para uma sequência vertical legível, com mapa e desafio sem sobreposição.
+
+
+## Teste funcional do Desafio 167/180
+
+No preview, o desafio iniciou com o contador em 03:00. A resposta “Natal” foi validada pela lista oficial de municípios, elevando o placar para 1/167, registrando “Natal” como município acertado e mantendo o contador em contagem regressiva. O mapa está preparado para receber o polígono municipal correspondente em azul através da malha GeoJSON do IBGE.
+
+
+A verificação do DOM confirmou que, após a resposta “Natal”, existe 1 polígono em `.rn-map-highlight`, com preenchimento RGB `18, 78, 155` (azul SUSAPE), placar `1` e etiqueta municipal “Natal”.
