@@ -115,4 +115,18 @@
 - [x] Inserir a bandeira do Rio Grande do Norte na área branca da primeira seção.
 - [x] Preservar foto, número 1234, cartão e leitura do hero.
 - [x] Validar a composição em desktop e mobile.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Reposicionamento da bandeira no hero
+
+- [x] Posicionar a bandeira acima do nome “Candidato a Deputado Federal”.
+- [x] Aumentar a visibilidade da bandeira sem cobrir o texto ou o rosto.
+- [x] Validar a composição em desktop e mobile.
+- [x] Registrar que a versão intermediária foi substituída pela versão final de bandeira de ponta a ponta; não houve entrega separada dessa etapa.
+
+## Bandeira de ponta a ponta no hero
+
+- [x] Fazer a bandeira ocupar toda a largura disponível acima do nome da candidatura.
+- [x] Ajustar a altura para preservar a leitura do texto e da fotografia.
+- [x] Validar a composição em desktop e mobile.
+- [ ] Guardar checkpoint e entregar a versão final.

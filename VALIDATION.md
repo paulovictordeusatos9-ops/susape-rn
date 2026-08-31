@@ -69,3 +69,7 @@ O retrato foi afastado e reduzido para melhorar a leitura do corpo e dos braços
 Foi inserida a bandeira oficial do Rio Grande do Norte no espaço branco da primeira seção, em escala discreta e com leve rotação para funcionar como elemento editorial sem cobrir o rosto, o título ou o cartão. O ativo vetorial foi obtido do Wikimedia Commons a partir da página da bandeira estadual e publicado no armazenamento do projeto. A composição foi verificada em desktop e mobile; tipos, testes e build passaram.
 
 Fonte visual: [Bandeira do Rio Grande do Norte — Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bandeira_do_Rio_Grande_do_Norte.svg).
+
+## Bandeira de ponta a ponta no hero
+
+A bandeira foi transformada numa faixa horizontal de largura total, posicionada acima do nome “Candidato a Deputado Federal”. A altura foi controlada para manter a identificação, o título, a fotografia e o cartão legíveis. A composição foi verificada em 1280x720 e 390x844; tipos, testes e build passaram.

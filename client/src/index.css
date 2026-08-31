@@ -320,3 +320,12 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
 @media (prefers-reduced-motion: reduce) { .hero-white-blue .hero-flag { animation: none; } }
 @media (max-width: 1000px) { .hero-white-blue .hero-flag { top: 13%; right: 25%; width: 260px; } }
 @media (max-width: 680px) { .hero-white-blue .hero-flag { top: 10%; right: 7%; width: 190px; opacity: .2; } }
+
+/* Bandeira em destaque acima do nome da candidatura */
+.hero-white-blue .hero-flag-inline { position: relative; z-index: 4; display: block; width: clamp(220px, 24vw, 330px); height: auto; margin: 0 0 18px; opacity: .92; transform: rotate(-2deg); filter: drop-shadow(4px 5px 0 rgba(0,28,74,.12)); }
+@media (max-width: 680px) { .hero-white-blue .hero-flag-inline { width: 174px; margin-bottom: 13px; opacity: .94; } }
+
+/* Bandeira em faixa de ponta a ponta acima da identificação */
+.hero-white-blue .hero-flag-inline { width: 100vw; max-width: none; height: clamp(92px, 11vw, 148px); margin: 0 0 20px -5.5vw; object-fit: cover; object-position: center; opacity: 1; transform: none; filter: none; }
+@media (max-width: 1000px) { .hero-white-blue .hero-flag-inline { margin-left: -5.5vw; height: 105px; } }
+@media (max-width: 680px) { .hero-white-blue .hero-flag-inline { width: 100vw; height: 72px; margin: 0 0 14px -24px; object-fit: cover; opacity: 1; } }
