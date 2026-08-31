@@ -399,4 +399,4 @@
 - [x] Preservar a âncora e o funcionamento do quiz 167/60.
 - [x] Validar a apresentação em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
