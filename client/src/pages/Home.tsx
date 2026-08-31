@@ -47,7 +47,7 @@ type GeoFeatureCollection = { type: "FeatureCollection"; features: GeoFeature[] 
 const IBGE_MUNICIPIOS_URL =
   "https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios";
 const IBGE_RN_SHAPE_URL =
-  "https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=intermediaria";
+  "https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?intrarregiao=municipio&formato=application/vnd.geo+json&qualidade=intermediaria";
 const ibgeMunicipioShapeUrl = (id: number) =>
   `https://servicodados.ibge.gov.br/api/v3/malhas/municipios/${id}?formato=application/vnd.geo+json&qualidade=intermediaria`;
 

@@ -295,5 +295,31 @@
 
 ## Entrega da simplificação do Desafio
 
-- [ ] Guardar novo checkpoint após remover as instruções e ampliar título e mapa.
-- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o checkpoint desta ronda.
+- [x] Guardar novo checkpoint após remover as instruções e ampliar título e mapa.
+- [x] Entregar explicitamente ao utilizador a versão atualizada anexando o checkpoint desta ronda.
+
+## Mapa municipal e espaçamento global
+
+- [x] Carregar a malha municipal do RN com divisões visíveis em amarelo.
+- [x] Manter o fundo branco e o destaque azul para municípios acertados.
+- [x] Fazer o mapa e a área do Desafio ocuparem toda a largura útil.
+- [x] Aumentar o espaçamento entre linhas e blocos de texto em todo o site.
+- [x] Corrigir sobreposição tipográfica nas quebras mobile.
+- [x] Validar mapa, timer, desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Retoma — mapa municipal e espaçamento global
+
+- [x] Rever o desenho atual do mapa e as regras tipográficas existentes.
+- [x] Exibir divisões de todos os municípios em amarelo sobre o mapa branco.
+- [x] Preservar o destaque azul dos municípios acertados.
+- [x] Garantir mapa e área do Desafio em largura total.
+- [x] Aumentar o espaçamento entre linhas em todas as áreas do site.
+- [x] Corrigir sobreposição de letras no mobile.
+- [x] Validar mapa, timer, desktop/mobile, testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Entrega do mapa municipal e espaçamento
+
+- [ ] Guardar novo checkpoint após aplicar divisões amarelas e espaçamento global.
+- [ ] Entregar explicitamente ao utilizador a versão atualizada anexando o novo checkpoint.

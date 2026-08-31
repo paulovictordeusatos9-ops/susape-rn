@@ -502,3 +502,28 @@ h2 { font-size: clamp(42px, 5vw, 74px); line-height: .94; }
   .rn-map { max-height: 360px; }
   .challenge-layout > .quiz-card { margin-top: 34px; }
 }
+
+
+/* Mapa municipal do RN: fundo branco, divisões amarelas e acertos azuis */
+.rn-map-base path { fill: #ffffff; stroke: #f4ae28; stroke-width: 1.15; vector-effect: non-scaling-stroke; }
+.rn-map-highlight path { fill: #124e9b; stroke: #f4ae28; stroke-width: 1.25; opacity: .98; vector-effect: non-scaling-stroke; }
+
+/* Tipografia mais aberta para leitura contínua e prevenção de sobreposição */
+body { line-height: 1.65; }
+p { line-height: 1.8; }
+h1, h2 { line-height: 1.04; }
+h3 { line-height: 1.16; }
+.section-eyebrow { line-height: 1.35; }
+.hero-summary, .hero-source, .project-topline > p, .project-principles strong, .profile-statement p, .profile-fact p, .source-note, .collective-copy > p, .form-confirm, .news-card p, .participate-section p, .footer-note p { line-height: 1.85; }
+.theme-card h3 { line-height: 1.1; }
+.theme-card p { line-height: 1.82; }
+.challenge-copy h2 { line-height: 1.04; }
+.rn-map-note, .rn-map-status, .quiz-feedback { line-height: 1.75; }
+@media (max-width: 680px) {
+  h1, h2 { line-height: 1.07; }
+  h3 { line-height: 1.2; }
+  .theme-card h3 { line-height: 1.12; }
+  .theme-card p, .profile-fact p, .collective-copy > p, .project-topline > p, .news-card p, .hero-summary { line-height: 1.9; }
+  .challenge-copy h2 { line-height: 1.08; }
+  .section-eyebrow { line-height: 1.45; }
+}

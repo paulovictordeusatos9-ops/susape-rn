@@ -132,3 +132,18 @@ A verificação do DOM confirmou que, após a resposta “Natal”, existe 1 pol
 ## Desafio em largura total — revisão visual
 
 As capturas desktop e mobile confirmaram que o parágrafo de instruções foi removido. O título do Desafio ocupa a faixa completa da seção e o cartão do mapa branco foi expandido para largura total, com o cartão de respostas separado abaixo. A versão móvel mantém a sequência vertical legível e sem sobreposição.
+
+
+## Fonte cartográfica do mapa
+
+A documentação oficial da API de malhas geográficas do IBGE confirma a rota municipal `https://servicodados.ibge.gov.br/api/v3/malhas/municipios/{id}` e o formato `application/vnd.geo+json`, além da rota estadual `https://servicodados.ibge.gov.br/api/v3/malhas/estados/24`. A implementação utiliza essas malhas oficiais para desenhar o RN e sobrepor em azul os municípios acertados. Referência: [API de malhas geográficas do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3).
+
+
+## Verificação da malha municipal amarela
+
+A verificação do DOM confirmou 167 caminhos municipais no mapa base, com preenchimento branco e traço amarelo RGB `244, 174, 40`. A largura renderizada do SVG no browser foi de 356,56 px na viewport atual, e o texto de instruções removido não está presente no documento.
+
+
+## Revisão visual do mapa e do espaçamento global
+
+As capturas desktop e mobile confirmaram a presença das divisões municipais amarelas sobre a base branca do mapa do RN. O desenho do mapa acompanha a composição de largura total do Desafio. O espaçamento de linhas foi ampliado em títulos, parágrafos e cartões para reduzir o risco de sobreposição em telas estreitas.
