@@ -489,4 +489,4 @@
 - [x] Manter a caixa compacta, legível e com contribuição disponível.
 - [x] Validar interação em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
