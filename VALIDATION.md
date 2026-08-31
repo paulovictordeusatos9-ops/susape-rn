@@ -234,3 +234,11 @@ O bloco visual do hero foi deslocado para cima e a numeração foi reposicionada
 ## Substituição completa da galeria
 
 As três imagens anteriores e as respetivas referências ilustrativas foram removidas da galeria. As seis fotografias enviadas foram carregadas e passaram a compor exclusivamente a secção, em grelha de três colunas no desktop, duas colunas no tablet e uma coluna no mobile. As capturas confirmaram o carregamento, o enquadramento e as legendas; `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+## Sétima fotografia, wordmark SUSAPE e tópicos do cabeçalho
+
+A nova fotografia horizontal foi adicionada como sétimo item e ocupa a largura da grelha no desktop, mantendo proporção 4:3 no mobile. O wordmark reutilizável passou a inserir um farol no A e foi aplicado no cabeçalho, na identificação do hero e no rodapé, com cores adaptadas ao fundo. A navegação recebeu os tópicos “Projeto” e “Construção Coletiva”, preservando as âncoras das secções. As capturas gerais desktop/mobile e a compilação foram verificadas.
+
+A primeira captura ampliada revelou que estilos antigos dos elementos `span` quebravam o wordmark no cabeçalho. A regra foi isolada e corrigida; a segunda captura confirmou “SUSAPE” numa única linha, com o farol dentro do A e os tópicos alinhados horizontalmente.
+
+A captura mobile confirmou o wordmark numa única linha no cabeçalho e na identificação do hero, com o farol visível dentro do A. O menu responsivo preserva os tópicos adicionados. A validação final com `pnpm check`, `pnpm test` e `pnpm build` foi concluída com sucesso.

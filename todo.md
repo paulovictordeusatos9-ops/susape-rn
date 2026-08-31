@@ -518,4 +518,34 @@
 - [x] Ajustar enquadramento e proporções das imagens na grelha.
 - [x] Validar a galeria em desktop e mobile.
 - [x] Executar testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Inclusão da sétima fotografia na galeria
+
+- [x] Carregar a nova fotografia horizontal para os ativos do site.
+- [x] Adicionar a imagem à galeria mantendo as seis fotografias existentes.
+- [x] Ajustar a grelha para destacar corretamente o formato horizontal.
+- [x] Validar a galeria em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+## Padronização visual do nome SUSAPE
+
+- [x] Inspecionar a referência do farol inserido no A.
+- [x] Criar um componente reutilizável para o wordmark SUSAPE.
+- [x] Aplicar o farol no lugar do A em todas as assinaturas visuais da marca.
+- [x] Respeitar a cor atual de cada contexto do site.
+- [x] Manter acessibilidade e leitura do nome SUSAPE.
+- [x] Validar o wordmark em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+## Tópicos das secções no cabeçalho
+
+- [x] Listar no cabeçalho as principais secções da página.
+- [x] Incluir “Projeto” e “Construção Coletiva” na navegação.
+- [x] Preservar as âncoras corretas de cada tópico.
+- [x] Manter espaçamento uniforme no desktop.
+- [x] Organizar os tópicos no menu responsivo do mobile.
+- [x] Validar navegação, testes e build.
 - [ ] Guardar checkpoint e entregar a nova versão.

@@ -67,7 +67,6 @@ const heroNumberDigits = [
   { digit: "3", className: "num-blue" },
   { digit: "4", className: "num-yellow" },
 ];
-const logoImage = "/manus-storage/page-003_8955e366.png";
 const galleryImages = [
   { src: "/manus-storage/galeria-01_34e2af54.webp", alt: "Susape Augusto em encontro com lideranças potiguares", caption: "Encontro e diálogo" },
   { src: "/manus-storage/galeria-02_0a9c9b22.webp", alt: "Susape Augusto em agenda com representantes locais", caption: "Construção de caminhos" },
@@ -75,6 +74,7 @@ const galleryImages = [
   { src: "/manus-storage/galeria-04_8b902bbf.jpg", alt: "Susape Augusto durante atividade partidária", caption: "Compromisso com o RN" },
   { src: "/manus-storage/galeria-05_35a64db0.jpg", alt: "Susape Augusto em reunião com integrantes do partido", caption: "União e trabalho" },
   { src: "/manus-storage/galeria-06_3e849a02.jpg", alt: "Susape Augusto com grupo em visita institucional", caption: "Agenda pelo Rio Grande do Norte" },
+  { src: "/manus-storage/galeria-07_e4a11224.jpg", alt: "Susape Augusto em encontro diante de um mapa do Rio Grande do Norte", caption: "Diálogo sobre o território", wide: true },
 ];
 
 const themes = [
@@ -166,6 +166,28 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
       <span />
       {children}
     </p>
+  );
+}
+
+function SusapeWordmark({ className = "" }: { className?: string }) {
+  return (
+    <span className={`susape-wordmark ${className}`} role="img" aria-label="SUSAPE">
+      <span aria-hidden="true">SUS</span>
+      <span className="susape-wordmark-a" aria-hidden="true">
+        <svg viewBox="0 0 60 90" focusable="false">
+          <path d="M1 90 20 0h20l19 90H45l-4-20H19l-4 20H1Z" fill="currentColor" />
+          <g className="susape-lighthouse">
+            <path d="M22 67h16l-2.5-36h-11L22 67Z" />
+            <path d="m22 29 8-10 8 10H22Z" />
+            <path d="M19 68h22v5H19zM17 75h26v5H17z" />
+            <rect x="27" y="35" width="6" height="6" fill="currentColor" />
+            <rect x="27" y="48" width="6" height="7" fill="currentColor" />
+            <path d="M30 15V8M19 20l-5-5M41 20l5-5" fill="none" stroke="var(--susape-symbol-color, #fff)" strokeWidth="2.2" strokeLinecap="round" />
+          </g>
+        </svg>
+      </span>
+      <span aria-hidden="true">PE</span>
+    </span>
   );
 }
 
@@ -317,7 +339,8 @@ export default function Home() {
   const nav = [
     ["Início", "#inicio"],
     ["Quem é Susape", "#quem-e"],
-    ["Propostas", "#propostas"],
+    ["Projeto", "#propostas"],
+    ["Construção Coletiva", "#construcao"],
     ["Desafio", "#desafio"],
     ["Notícias", "#noticias"],
     ["Galeria", "#galeria"],
@@ -330,7 +353,7 @@ export default function Home() {
         <a className="brand" href="#inicio" aria-label="Susape 1234 — início">
           <div className="brand-lockup">
             <span>DEPUTADO FEDERAL</span>
-            <strong>SUSAPE</strong>
+            <strong><SusapeWordmark className="susape-wordmark-header" /></strong>
             <div className="brand-number"><b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></div>
           </div>
         </a>
@@ -365,7 +388,7 @@ export default function Home() {
           <div className="hero-copy">
               <div className="hero-identification-below" aria-label="Candidato a Deputado Federal Susape 1234">
                 <span>CANDIDATO A DEPUTADO FEDERAL</span>
-                <strong>SUSAPE <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong>
+                <strong><SusapeWordmark className="susape-wordmark-hero" /> <b className="num-red">1</b><b className="num-green">2</b><b className="num-blue">3</b><b className="num-yellow">4</b></strong>
               </div>
               <h1>ORGULHO DE SER NORTE-RIO-GRANDENSE.</h1>
               <p className="hero-summary">
@@ -594,7 +617,7 @@ export default function Home() {
           <div className="gallery-title"><SectionEyebrow>Galeria</SectionEyebrow><h2>Orgulho de ser norte-rio-grandense.</h2><p>Registos de encontros, agendas e momentos de diálogo com quem constrói o Rio Grande do Norte todos os dias.</p></div>
           <div className="gallery-grid">
             {galleryImages.map(image => (
-              <figure key={image.src}>
+              <figure key={image.src} className={image.wide ? "gallery-wide" : undefined}>
                 <img src={image.src} alt={image.alt} />
                 <figcaption>{image.caption}</figcaption>
               </figure>
@@ -609,7 +632,7 @@ export default function Home() {
       </main>
 
       <footer id="contato" className="site-footer">
-        <div className="footer-brand"><img src={logoImage} alt="" /><div><strong>Susape 1234</strong><span>Deputado Federal · RN</span></div></div>
+        <div className="footer-brand"><div><strong><SusapeWordmark className="susape-wordmark-footer" /> 1234</strong><span>Deputado Federal · RN</span></div></div>
         <div className="footer-links"><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href="https://www.facebook.com/susape.augusto/" target="_blank" rel="noreferrer"><Facebook size={17} /> Facebook</a><span><MessageCircle size={17} /> WhatsApp: canal a confirmar</span></div>
         <div className="footer-note"><p>Conteúdo baseado em fontes públicas consultadas em agosto de 2026. Situação de candidatura pode mudar; confirme no TSE.</p><a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noreferrer">Consulta oficial <ExternalLink size={14} /></a></div>
       </footer>
