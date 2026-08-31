@@ -175,14 +175,14 @@ function SusapeWordmark({ className = "" }: { className?: string }) {
       <span aria-hidden="true">SUS</span>
       <span className="susape-wordmark-a" aria-hidden="true">
         <svg viewBox="0 0 60 90" focusable="false">
-          <path d="M1 90 20 0h20l19 90H45l-4-20H19l-4 20H1Z" fill="currentColor" />
+          <path d="M4 90 21 0h18l17 90H44l-4-21H20l-4 21H4Z" fill="currentColor" />
           <g className="susape-lighthouse">
-            <path d="M22 67h16l-2.5-36h-11L22 67Z" />
-            <path d="m22 29 8-10 8 10H22Z" />
-            <path d="M19 68h22v5H19zM17 75h26v5H17z" />
-            <rect x="27" y="35" width="6" height="6" fill="currentColor" />
-            <rect x="27" y="48" width="6" height="7" fill="currentColor" />
-            <path d="M30 15V8M19 20l-5-5M41 20l5-5" fill="none" stroke="var(--susape-symbol-color, #fff)" strokeWidth="2.2" strokeLinecap="round" />
+            <path d="M23 67h15l-3-37H26l-3 37Z" />
+            <path d="m23 29 7-10 7 10H23Z" />
+            <path d="M20 68h21v5H20zM18 75h25v5H18z" />
+            <rect x="28" y="35" width="5" height="6" fill="currentColor" />
+            <rect x="28" y="48" width="5" height="7" fill="currentColor" />
+            <path d="M30 15V8M20 20l-5-5M40 20l5-5" fill="none" stroke="var(--susape-symbol-color, #fff)" strokeWidth="2.1" strokeLinecap="round" />
           </g>
         </svg>
       </span>

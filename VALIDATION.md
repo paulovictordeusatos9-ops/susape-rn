@@ -242,3 +242,7 @@ A nova fotografia horizontal foi adicionada como sétimo item e ocupa a largura 
 A primeira captura ampliada revelou que estilos antigos dos elementos `span` quebravam o wordmark no cabeçalho. A regra foi isolada e corrigida; a segunda captura confirmou “SUSAPE” numa única linha, com o farol dentro do A e os tópicos alinhados horizontalmente.
 
 A captura mobile confirmou o wordmark numa única linha no cabeçalho e na identificação do hero, com o farol visível dentro do A. O menu responsivo preserva os tópicos adicionados. A validação final com `pnpm check`, `pnpm test` e `pnpm build` foi concluída com sucesso.
+
+## Refinamento do A no wordmark SUSAPE
+
+O A foi estreitado e aproximado das letras vizinhas para reproduzir a proporção compacta da nova referência. O farol passou a ter corpo mais fino, janelas menores e centralização melhor dentro da letra. As capturas desktop e mobile confirmaram a assinatura numa única linha no cabeçalho e no hero; o mesmo componente é reutilizado no rodapé. `pnpm check`, `pnpm test` e `pnpm build` passaram.

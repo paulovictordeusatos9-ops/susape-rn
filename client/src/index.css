@@ -814,3 +814,14 @@ h3 { line-height: 1.16; }
 .brand-lockup strong .susape-wordmark > .susape-wordmark-a,
 .hero-identification-below strong .susape-wordmark > .susape-wordmark-a,
 .footer-brand strong .susape-wordmark > .susape-wordmark-a { width: .63em; height: .94em; margin: 0 .015em; transform: translateY(.075em); }
+
+/* Proporção compacta do A conforme a referência atualizada */
+.brand-lockup strong .susape-wordmark > .susape-wordmark-a,
+.hero-identification-below strong .susape-wordmark > .susape-wordmark-a,
+.footer-brand strong .susape-wordmark > .susape-wordmark-a { width: .56em; height: .96em; margin-left: -.035em; margin-right: -.04em; transform: translateY(.08em); }
+.brand-lockup strong .susape-wordmark > span:first-child,
+.hero-identification-below strong .susape-wordmark > span:first-child,
+.footer-brand strong .susape-wordmark > span:first-child { margin-right: -.025em; }
+.brand-lockup strong .susape-wordmark > span:last-child,
+.hero-identification-below strong .susape-wordmark > span:last-child,
+.footer-brand strong .susape-wordmark > span:last-child { margin-left: -.02em; }

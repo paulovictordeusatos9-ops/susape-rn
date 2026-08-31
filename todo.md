@@ -549,3 +549,13 @@
 - [x] Organizar os tópicos no menu responsivo do mobile.
 - [x] Validar navegação, testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+## Refinamento do A no wordmark SUSAPE
+
+- [x] Aproximar a forma do A à nova referência enviada.
+- [x] Estreitar e centralizar o farol dentro da letra.
+- [x] Reduzir o espaço entre SUS, A e PE.
+- [x] Aplicar o refinamento no cabeçalho, hero e rodapé.
+- [x] Validar o wordmark em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
