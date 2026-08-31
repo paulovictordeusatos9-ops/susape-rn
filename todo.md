@@ -99,4 +99,13 @@
 - [x] Retirar os elementos visuais Ondas, Sol, Farol e Gente do hero.
 - [x] Preservar foto, texto, número 1234 e CTAs.
 - [x] Validar o hero em desktop e mobile.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Correção do enquadramento e cartão do hero
+
+- [x] Ajustar a posição e o tamanho da foto para evitar braços e corpo cortados.
+- [x] Reposicionar o cartão para não cobrir a fotografia de forma inadequada.
+- [x] Trocar o cartão vermelho por branco com detalhes azul e amarelo.
+- [x] Preservar o número 1234 e a identificação de deputado federal.
+- [x] Validar a composição em desktop e mobile.
+- [ ] Guardar checkpoint e entregar a versão corrigida.

@@ -55,3 +55,11 @@ A primeira seção foi atualizada com a fotografia enviada do candidato usando c
 ## Simplificação total do fundo da primeira seção
 
 O hero foi simplificado para fundo totalmente branco. Foram removidos do JSX os elementos visuais Ondas, Sol, Farol e Gente, além dos números decorativos grandes e das formas azul/verde de fundo. A fotografia, o lockup SUSAPE 1234, o texto, os CTAs e o cartão de identificação foram preservados. Tipos, testes e build passaram; a revisão visual foi realizada em 1280x720 e 390x844.
+
+## Correção do enquadramento e cartão do hero
+
+O retrato foi reduzido e reposicionado para deixar mais do corpo e dos braços visíveis e afastar o cartão da área central da fotografia. O cartão de identificação deixou o fundo vermelho e o detalhe amarelo: agora usa fundo branco, borda azul e sombra azul. O texto, o número 1234 e a identificação de candidato a deputado federal foram preservados. A revisão desktop/mobile e `pnpm check`, `pnpm test` e `pnpm build` foram concluídos.
+
+## Ajuste final do retrato e cartão branco/azul/amarelo
+
+O retrato foi afastado e reduzido para melhorar a leitura do corpo e dos braços, enquanto o cartão deixou de cobrir a área central da fotografia. O cartão agora usa fundo branco, borda azul, sombra azul e uma faixa superior amarela. O número 1234, a identificação de candidato a deputado federal e os demais textos foram preservados. A composição foi revista em 1280x720 e 390x844; tipos, testes e build passaram.
