@@ -500,4 +500,4 @@
 - [x] Reduzir os espaços em branco excessivos da primeira secção.
 - [x] Validar a primeira secção em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
