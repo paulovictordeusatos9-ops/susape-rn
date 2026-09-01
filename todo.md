@@ -782,3 +782,19 @@
 - [x] Garantir leitura correta em desktop e mobile.
 - [x] Validar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Atualização do despacho 3 nas Notícias
+
+- [x] Alterar o despacho 3 para o texto urgente solicitado.
+- [x] Preservar os restantes despachos e o layout da aba Notícias.
+- [x] Validar a renderização, testes e build.
+- [x] Guardar checkpoint e entregar a atualização.
+
+
+## Correção final do nome no despacho 3
+
+- [x] Substituir “Souza” e “Suzart” por “Susape” no despacho 3.
+- [x] Preservar o restante texto, os restantes despachos e o layout.
+- [x] Validar texto, testes e build.
+- [x] Guardar checkpoint e entregar a atualização.

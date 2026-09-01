@@ -140,9 +140,9 @@ const news = [
     href: "https://www.instagram.com/susapeaugusto/?hl=en",
   },
   {
-    tag: "Conteúdo pendente",
-    title: "[CONTEÚDO A SER FORNECIDO PELA CAMPANHA]",
-    body: "Área preparada para receber título, data, imagem, texto, categoria e fonte oficial.",
+    tag: "Urgente",
+    title: "Susape já aparece em resultado de pesquisa para deputado federal no Rio Grande do Norte",
+    body: "Atualização urgente sobre a corrida para deputado federal no Rio Grande do Norte.",
     href: "#contato",
   },
 ];
