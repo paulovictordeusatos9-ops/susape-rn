@@ -1335,3 +1335,20 @@ h3 { line-height: 1.16; }
     padding-top: 22px;
   }
 }
+
+
+/* Notícias: rótulo e tema mais próximos dentro de cada cartão */
+.news-card > span {
+  margin-bottom: 6px;
+}
+.news-card h3 {
+  margin: 0 0 12px;
+}
+@media (max-width: 680px) {
+  .news-card > span {
+    margin-bottom: 5px;
+  }
+  .news-card h3 {
+    margin-top: 0;
+  }
+}

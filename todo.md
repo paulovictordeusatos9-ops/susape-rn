@@ -931,4 +931,22 @@
 - [x] Manter uma área de respiro aberta dentro dos quadrados.
 - [x] Preservar os painéis de detalhe e os conteúdos das propostas.
 - [x] Validar desktop, tablet e mobile, testes e build.
+- [x] Guardar checkpoint e entregar a atualização.
+
+
+## Correção da edição visual do bloco de Notícias
+
+- [x] Remover estilos inline duplicados e valores inválidos do JSX de Notícias.
+- [x] Preservar os cartões, links e conteúdos dos despachos.
+- [x] Validar tipos, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
+
+
+## Aproximação entre despacho e tema nas Notícias
+
+- [x] Reduzir o espaço entre o rótulo do despacho e o tema.
+- [x] Aplicar o ajuste aos despachos 1, 2 e 3.
+- [x] Manter candidatura, despacho e títulos alinhados e legíveis.
+- [x] Preservar conteúdos, links e cartões das Notícias.
+- [x] Validar desktop, mobile, testes e build.
 - [ ] Guardar checkpoint e entregar a atualização.
