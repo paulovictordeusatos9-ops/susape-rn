@@ -526,7 +526,6 @@ export default function Home() {
                       </div>
                       <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={event => { event.stopPropagation(); setSelectedThemeNumber(null); }}>×</button>
                     </div>
-                    <p className="theme-detail-intro">Resumo do compromisso e das prioridades deste eixo.</p>
                     <ol>
                       {theme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
                     </ol>

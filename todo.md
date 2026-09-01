@@ -913,3 +913,12 @@
 - [x] Preservar o preenchimento e as cores atuais dos marcadores.
 - [x] Validar animação, responsividade, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Remoção da frase auxiliar das abas de propostas
+
+- [x] Retirar “Resumo do compromisso e das prioridades deste eixo” de todas as abas abertas.
+- [x] Preservar as descrições, os planos, os botões de fecho e os cartões principais.
+- [x] Ajustar o espaço restante dos painéis.
+- [x] Validar as quatro propostas, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
