@@ -751,4 +751,4 @@
 - [x] Afastar o marcador “04” do título do Desafio.
 - [x] Uniformizar títulos, espaçamentos e alinhamentos com as outras secções.
 - [x] Validar desktop, mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
