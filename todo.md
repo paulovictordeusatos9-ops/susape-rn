@@ -739,4 +739,4 @@
 - [x] Preservar mapa, cronómetro, pontuação e interação.
 - [x] Manter leitura e responsividade no desktop e mobile.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
