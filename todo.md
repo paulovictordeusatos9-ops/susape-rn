@@ -987,7 +987,7 @@
 - [x] Manter os quatro eixos lado a lado e alinhados.
 - [x] Preservar tablet, mobile, cores e conteúdos.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
 
 
 ## Equilíbrio final entre quadrados e espaçamento no PC
@@ -997,4 +997,4 @@
 - [x] Manter os quatro eixos numa fila e alinhados no computador.
 - [x] Preservar tablet, mobile, cores e conteúdos.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
