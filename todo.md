@@ -837,3 +837,13 @@
 - [x] Preservar a navegação, o conteúdo e a leitura do carrossel.
 - [x] Validar desktop, mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Ficha biográfica pública e direcionamentos
+
+- [x] Substituir o texto do bloco biográfico pelo aviso solicitado.
+- [x] Adicionar link para a página pública oficial do TSE.
+- [x] Adicionar link interno para o perfil político da candidatura.
+- [x] Preservar a apresentação e os dados biográficos existentes.
+- [x] Validar os links, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

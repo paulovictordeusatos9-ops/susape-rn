@@ -469,9 +469,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className="source-note">
-            Informações biográficas fornecidas pela campanha e organizadas para apresentação pública.
-          </p>
+          <div className="source-note">
+            <p>Informações biográficas fornecidas pela campanha e organizadas para apresentação pública.</p>
+            <div className="source-links">
+              <a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noreferrer">Ficha pública do candidato · TSE <ExternalLink size={14} /></a>
+              <a href="#quem-e">Perfil político interno <ArrowUpRight size={14} /></a>
+            </div>
+          </div>
         </section>
 
         <section id="projeto" className="section project-section identity-section">

@@ -1217,3 +1217,28 @@ h3 { line-height: 1.16; }
   }
   .profile-section .profile-carousel-rail button > span { font-size: 24px; }
 }
+
+
+/* Ficha biográfica: direcionamentos público e interno */
+.profile-section .source-note p { margin: 0; }
+.profile-section .source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 12px;
+}
+.profile-section .source-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #001c4a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 680px) {
+  .profile-section .source-links { gap: 9px 16px; }
+  .profile-section .source-links a { font-size: 9px; }
+}
