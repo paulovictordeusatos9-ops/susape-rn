@@ -730,3 +730,13 @@
 - [x] Preservar contraste, fotografias e legendas da Galeria.
 - [x] Validar responsividade, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Compactação da secção Desafio
+
+- [x] Reduzir o padding vertical da secção Desafio.
+- [x] Compactar o título, as regras, o mapa e o cartão do cronómetro.
+- [x] Preservar mapa, cronómetro, pontuação e interação.
+- [x] Manter leitura e responsividade no desktop e mobile.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
