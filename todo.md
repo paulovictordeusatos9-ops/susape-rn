@@ -772,3 +772,13 @@
 - [x] Manter as fotografias e conteúdos das restantes etapas.
 - [x] Validar desktop, mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Correção da roleta na aba Saúde Pública
+
+- [x] Aumentar o espaço disponível para a roleta/lista de etapas.
+- [x] Eliminar a sobreposição dos itens da roleta na aba Saúde Pública.
+- [x] Preservar os quatro itens, a descrição e o botão de contribuição.
+- [x] Garantir leitura correta em desktop e mobile.
+- [x] Validar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

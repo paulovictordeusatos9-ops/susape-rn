@@ -1110,3 +1110,36 @@ h3 { line-height: 1.16; }
     left: 7px;
   }
 }
+
+
+/* Aba Saúde Pública: painel ampliado para evitar sobreposição dos passos */
+.theme-saude > .theme-detail-panel {
+  inset: -24px;
+  width: calc(100% + 48px);
+  min-height: 330px;
+  max-height: min(430px, calc(100vh - 48px));
+  padding: 22px;
+}
+.theme-saude > .theme-detail-panel .theme-detail-intro {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+.theme-saude > .theme-detail-panel ol { gap: 18px; }
+.theme-saude > .theme-detail-panel li {
+  padding-top: 12px;
+  gap: 10px;
+}
+@media (max-width: 680px) {
+  .theme-saude > .theme-detail-panel {
+    inset: -24px;
+    width: calc(100% + 48px);
+    min-height: 350px;
+    max-height: min(500px, calc(100vh - 32px));
+    padding: 22px 20px;
+  }
+  .theme-saude > .theme-detail-panel ol { gap: 20px; }
+  .theme-saude > .theme-detail-panel li {
+    padding-top: 14px;
+    gap: 10px;
+  }
+}
