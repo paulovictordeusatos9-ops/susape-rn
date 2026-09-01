@@ -708,4 +708,4 @@
 - [x] Preservar os quatro cartões e a contribuição em cada proposta.
 - [x] Validar interação em mobile e desktop.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a correção.
+- [x] Guardar checkpoint e entregar a correção.
