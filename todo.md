@@ -892,4 +892,4 @@
 - [x] Aumentar o espaço entre as fotografias da Galeria.
 - [x] Preservar o layout desktop e a legibilidade mobile.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
