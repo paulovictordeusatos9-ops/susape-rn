@@ -807,7 +807,7 @@
 - [x] Uniformizar alinhamento e espaçamento em desktop e mobile.
 - [x] Preservar textos, navegação e conteúdo do carrossel.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
 
 
 ## Compactação adicional da etapa da trajetória
@@ -817,4 +817,4 @@
 - [x] Reduzir ao máximo o espaço em branco superior e inferior.
 - [x] Preservar texto, navegação e leitura do carrossel.
 - [x] Validar desktop, mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
