@@ -968,4 +968,4 @@
 - [x] Corrigir alinhamentos, espaçamentos e cores dos quatro painéis.
 - [x] Preservar integralmente os layouts de tablet e mobile.
 - [x] Validar visualmente os quatro eixos, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
