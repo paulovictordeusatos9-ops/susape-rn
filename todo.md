@@ -912,4 +912,4 @@
 - [x] Eliminar espaços vazios durante a transição da animação.
 - [x] Preservar o preenchimento e as cores atuais dos marcadores.
 - [x] Validar animação, responsividade, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
