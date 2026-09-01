@@ -818,3 +818,12 @@
 - [x] Preservar texto, navegação e leitura do carrossel.
 - [x] Validar desktop, mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Remoção do botão nas abas de propostas
+
+- [x] Retirar “Contribuir com este tema” dos painéis de detalhe abertos.
+- [x] Manter a ação de contribuição existente nos cartões das propostas.
+- [x] Ajustar o espaçamento restante dos painéis.
+- [x] Validar as quatro propostas, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

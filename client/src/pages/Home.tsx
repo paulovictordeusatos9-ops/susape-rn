@@ -523,9 +523,6 @@ export default function Home() {
                     <ol>
                       {theme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
                     </ol>
-                    <button className="theme-detail-contribute" onClick={event => { event.stopPropagation(); document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" }); }}>
-                      Contribuir com este tema <ArrowUpRight size={17} />
-                    </button>
                   </div>
                 )}
               </article>
