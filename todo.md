@@ -610,12 +610,89 @@
 
 ## Nova fotografia exclusiva na primeira secção
 
-- [ ] Preparar e carregar a imagem enviada para o hero.
-- [ ] Confirmar transparência real e impedir a exibição do quadriculado.
-- [ ] Separar a fotografia do hero da fotografia da etapa Identidade.
-- [ ] Substituir apenas a imagem central da primeira secção.
-- [ ] Preservar o número 1234, a bandeira e os textos do hero.
-- [ ] Preservar as fotografias das etapas Identidade e Formação.
-- [ ] Validar o enquadramento em desktop e mobile.
-- [ ] Executar testes e build.
+- [x] Preparar e carregar a imagem enviada para o hero.
+- [x] Confirmar transparência real e impedir a exibição do quadriculado.
+- [x] Separar a fotografia do hero da fotografia da etapa Identidade.
+- [x] Substituir apenas a imagem central da primeira secção.
+- [x] Preservar o número 1234, a bandeira e os textos do hero.
+- [x] Preservar a fotografia da etapa Identidade; a etapa Formação foi ajustada posteriormente sem fotografia.
+- [x] Validar o enquadramento em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Aproximação da bandeira à nova fotografia do hero
+
+- [x] Reduzir ao mínimo o espaço entre a bandeira do Rio Grande do Norte e a foto na versão desktop.
+- [x] Reduzir ao mínimo o espaço entre a bandeira e a foto na versão mobile.
+- [x] Preservar o número 1234, a centralização e o retrato completo.
+- [x] Validar o hero em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Menu sanduíche no canto do cabeçalho mobile
+
+- [x] Posicionar o botão sanduíche no canto direito do cabeçalho mobile.
+- [x] Manter a logo SUSAPE alinhada à esquerda.
+- [x] Preservar a abertura e o fecho do menu.
+- [x] Validar a composição em mobile e desktop.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Atualização biográfica de Quem é Susape
+
+- [x] Acrescentar o curso superior de Publicidade e Propaganda.
+- [x] Acrescentar a pós-graduação em Gestão de Pessoas.
+- [x] Acrescentar a presidência do grémio estudantil.
+- [x] Acrescentar a presidência do diretório/representação estudantil do curso da faculdade.
+- [x] Distribuir as informações no resumo e nas etapas Formação e Caminhada.
+- [x] Validar a leitura em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Correção das letras grandes e espaçamento
+
+- [x] Corrigir a sobreposição dos títulos grandes em mobile.
+- [x] Ajustar o line-height e as quebras do título principal do hero.
+- [x] Rever os títulos grandes das secções e da trajetória.
+- [x] Preservar a leitura e o alinhamento em desktop.
+- [x] Validar o resultado em mobile e desktop.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Títulos menores na trajetória
+
+- [x] Reduzir o tamanho dos títulos das etapas da trajetória.
+- [x] Ajustar o espaçamento e o line-height do carrossel.
+- [x] Evitar sobreposição de letras em mobile.
+- [x] Preservar o alinhamento e a legibilidade em desktop.
+- [x] Validar a trajetória em mobile e desktop.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Remoção da foto da etapa 3
+
+- [x] Remover a fotografia da etapa Formação.
+- [x] Preservar título, texto e navegação da etapa 3.
+- [x] Manter a fotografia da etapa Identidade sem alterações.
+- [x] Validar a trajetória em desktop e mobile.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a nova versão.
+
+
+## Resumo dos detalhes das propostas
+
+- [x] Resumir o texto da caixa de Gosto de Ser Potiguar.
+- [x] Resumir o texto da caixa de Segurança Pública.
+- [x] Resumir o texto da caixa de Saúde Pública.
+- [x] Resumir o texto da caixa de Sustentabilidade.
+- [x] Corrigir o erro de abertura, conteúdo ou apresentação da aba Sustentabilidade.
+- [x] Preservar o botão de contribuição em todas as caixas.
+- [x] Validar as caixas em desktop e mobile.
+- [x] Executar testes e build.
 - [ ] Guardar checkpoint e entregar a nova versão.

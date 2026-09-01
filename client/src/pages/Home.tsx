@@ -59,7 +59,7 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
     .join(" ");
 }
 
-const heroPortrait = "/manus-storage/susape-hero-flag-cutout_68f7954f.png";
+const heroPortrait = "/manus-storage/susape-hero-flag-cutout-trimmed_4413d33f.png";
 const identityPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
 const formationPortrait = "/manus-storage/formacao-susape_c4c8cb46.jpg";
 const heroNumberDigits = [
@@ -85,9 +85,8 @@ const themes = [
     body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
     color: "theme-orgulho",
     plan: [
-      "Valorizar a identidade potiguar em ações de cultura, memória e pertencimento, dando espaço às iniciativas que já existem no território.",
-      "Defender editais, circulação de artistas e preservação do património como caminhos de oportunidade para jovens, grupos culturais e municípios.",
-      "Acompanhar a aplicação dos recursos e publicar os compromissos assumidos, para que orgulho não seja apenas discurso, mas presença continuada.",
+      "Valorizar a cultura e a memória potiguar.",
+      "Abrir oportunidades para artistas, grupos e municípios.",
     ],
   },
   {
@@ -96,9 +95,8 @@ const themes = [
     body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
     color: "theme-seguranca",
     plan: [
-      "Priorizar prevenção e inteligência, aproximando as políticas de segurança das escolas, comunidades e serviços que conhecem a realidade de cada região.",
-      "Defender integração entre forças, formação continuada e uso responsável de tecnologia, com proteção aos profissionais e respeito aos direitos das pessoas.",
-      "Fiscalizar metas, atendimento e distribuição de recursos, acompanhando resultados por território em vez de esconder problemas atrás de números soltos.",
+      "Investir em prevenção e inteligência perto das comunidades.",
+      "Integrar forças, formação e tecnologia com responsabilidade.",
     ],
   },
   {
@@ -107,9 +105,8 @@ const themes = [
     body: "Saúde Pública mais perto de quem precisa. Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
     color: "theme-saude",
     plan: [
-      "Defender uma rede regional mais coordenada, para que o cuidado comece perto de casa e o encaminhamento entre municípios seja mais simples.",
-      "Buscar recursos para atenção básica, urgência e estrutura, com prioridade para reduzir esperas evitáveis e fortalecer quem trabalha na linha da frente.",
-      "Acompanhar filas, manutenção e entrega dos serviços com transparência, ouvindo utentes e profissionais antes de propor novas soluções.",
+      "Fortalecer a atenção básica e a rede regional.",
+      "Reduzir esperas com estrutura, transparência e escuta.",
     ],
   },
   {
@@ -118,18 +115,17 @@ const themes = [
     body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
     color: "theme-sustentavel",
     plan: [
-      "Conciliar proteção ambiental e oportunidade económica, apoiando cadeias locais que gerem rendimento sem esgotar os recursos do território.",
-      "Defender projetos de água, energia, saneamento, turismo responsável e inovação adaptados às diferenças entre litoral, agreste e sertão.",
-      "Acompanhar licenças, investimentos e resultados com critérios claros, para que desenvolvimento seja medido pela vida das pessoas e pela preservação do futuro.",
+      "Proteger os recursos naturais e fortalecer economias locais.",
+      "Apoiar água, energia, saneamento e turismo responsável.",
     ],
   },
 ];
 
 const perfil = [
   ["Identidade", "Orgulho potiguar", "O manual ancora a comunicação no orgulho de ser norte-rio-grandense."],
-  ["Pessoas", "Pai e empreendedor", "Apresentação pessoal indicada no perfil público da candidatura."],
-  ["Formação", "Superior completo", "Informação declarada na ficha pública da candidatura."],
-  ["Caminhada", "Primeira disputa eleitoral", "Dado publicado por fonte de perfil eleitoral baseada em registos públicos."],
+  ["Pessoas", "Pai, empreendedor e líder estudantil", "A experiência de liderança começou na participação estudantil e na construção coletiva com colegas."],
+  ["Formação", "Publicidade e Gestão de Pessoas", "Curso superior de Publicidade e Propaganda e pós-graduação em Gestão de Pessoas."],
+  ["Caminhada", "Liderança estudantil", "Presidiu o grémio estudantil e o DCE do curso na faculdade, assumindo responsabilidades de representação."],
 ];
 
 const news = [
@@ -427,7 +423,7 @@ export default function Home() {
               <h2>Uma trajetória apresentada com os pés no chão.</h2>
             </div>
             <p>
-              Natural de Natal, com ensino superior completo, Susape Augusto se apresenta como cristão, empreendedor, pai e potiguar. A candidatura é ao cargo de deputado federal pelo Rio Grande do Norte.
+              Natural de Natal, Susape Augusto é formado em Publicidade e Propaganda e tem pós-graduação em Gestão de Pessoas. Pai, empreendedor e potiguar, também presidiu o grémio estudantil e o DCE do curso na faculdade. A candidatura é ao cargo de deputado federal pelo Rio Grande do Norte.
             </p>
           </div>
           <div className="profile-grid">
@@ -454,7 +450,7 @@ export default function Home() {
                       <span>{activeProfile[0]}</span>
                       <h3>{activeProfile[1]}</h3>
                     </div>
-                    {(profileIndex === 0 || profileIndex === 2) && (
+                    {profileIndex === 0 && (
                       <img
                         className={`profile-stage-photo ${profileIndex === 0 ? "profile-stage-photo-identity" : "profile-stage-photo-formation"}`}
                         src={profileIndex === 0 ? identityPortrait : formationPortrait}
@@ -483,7 +479,7 @@ export default function Home() {
             </div>
           </div>
           <p className="source-note">
-            Informações conferidas em <a href="https://agorarn.com.br/eleicoes-2026/candidatos/susape-augusto/" target="_blank" rel="noreferrer">fichas públicas de candidatura</a> e no <a href="https://www.instagram.com/susapeaugusto/?hl=en" target="_blank" rel="noreferrer">perfil público indexado</a>.
+            Informações biográficas fornecidas pela campanha e organizadas para apresentação pública.
           </p>
         </section>
 
@@ -530,7 +526,7 @@ export default function Home() {
                   </div>
                   <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={() => setSelectedThemeNumber(null)}>×</button>
                 </div>
-                <p className="theme-detail-intro">Um caminho de trabalho para transformar este eixo em compromisso acompanhado, com escuta, articulação e prestação de contas.</p>
+                <p className="theme-detail-intro">Resumo do compromisso e das prioridades deste eixo.</p>
                 <ol>
                   {selectedTheme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
                 </ol>

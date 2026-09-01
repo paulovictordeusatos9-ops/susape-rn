@@ -268,3 +268,18 @@ A etapa “Identidade — Orgulho potiguar” passou a reutilizar exatamente o m
 ## Fotografias ampliadas nas etapas Identidade e Formação
 
 A fotografia da etapa 1 foi ampliada para até 290 px no desktop e 168 px no mobile, mantendo transparência e proporção. A nova imagem de blazer azul foi carregada e associada à etapa 3, “Formação — Superior completo”, com largura de até 240 px e enquadramento integral. A seleção interativa da etapa 3 foi verificada no navegador, e a etapa 1 foi capturada em desktop e mobile. `pnpm check`, `pnpm test` e `pnpm build` passaram.
+
+
+## Aproximação da bandeira à nova fotografia do hero
+
+As capturas desktop e mobile confirmaram que a fotografia transparente com a bandeira verde aparece logo abaixo da bandeira do Rio Grande do Norte, sem o espaço transparente superior anterior. O número 1234 continua atrás do sujeito, e não foi observado overflow horizontal no mobile. A etapa seguinte é executar novamente check, testes e build com o ativo aparado aplicado.
+
+
+## Resumo dos detalhes das propostas — revisão
+
+As quatro caixas de detalhe foram reduzidas a duas ações objetivas por eixo, com introdução curta e botão de contribuição preservado. Sustentabilidade mantém o fundo amarelo, o título correto e o painel funcional. O código passou por check, testes e build, e as capturas desktop/mobile confirmaram a leitura compacta.
+
+
+## Revisão das caixas de propostas e etapa Formação
+
+As caixas de detalhe agora usam textos curtos e objetivos, mantendo a contribuição disponível. A proposta “Sustentabilidade” apresenta título, fundo amarelo e ações resumidas de forma consistente. A fotografia foi removida da etapa 3, “Formação”, enquanto a etapa 1 mantém a imagem de Identidade. Desktop e mobile foram capturados após a alteração; `pnpm check`, `pnpm test` e `pnpm build` passaram.
