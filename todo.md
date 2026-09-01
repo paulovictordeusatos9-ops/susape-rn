@@ -719,4 +719,4 @@
 - [x] Manter disposição vertical e legível em mobile.
 - [x] Preservar o mapa, o contador, as respostas e a interação existentes.
 - [x] Validar layout, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
