@@ -16,8 +16,8 @@ describe("proposal detail rendering", () => {
     expect(homeSource).not.toContain("{selectedTheme && (");
   });
 
-  it("uses a unique heading id for each proposal detail", () => {
-    expect(homeSource).toContain("aria-labelledby={`theme-detail-title-${theme.number}`}");
-    expect(homeSource).toContain("id={`theme-detail-title-${theme.number}`}");
+  it("keeps an accessible detail label without repeating the theme heading", () => {
+    expect(homeSource).toContain("aria-label={`Detalhe da proposta ${theme.number}: ${theme.title}`}");
+    expect(homeSource).not.toContain("<h3 id={`theme-detail-title-${theme.number}`}>{theme.title}</h3>");
   });
 });

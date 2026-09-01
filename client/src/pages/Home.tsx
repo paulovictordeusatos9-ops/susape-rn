@@ -519,13 +519,12 @@ export default function Home() {
                     className={`theme-detail-panel ${theme.color}`}
                     role="dialog"
                     aria-modal="true"
-                    aria-labelledby={`theme-detail-title-${theme.number}`}
+                    aria-label={`Detalhe da proposta ${theme.number}: ${theme.title}`}
                     onClick={event => event.stopPropagation()}
                   >
                     <div className="theme-detail-heading">
                       <div>
                         <span className="theme-detail-kicker">Plano de ação · proposta {theme.number}</span>
-                        <h3 id={`theme-detail-title-${theme.number}`}>{theme.title}</h3>
                       </div>
                       <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={event => { event.stopPropagation(); setSelectedThemeNumber(null); }}>×</button>
                     </div>

@@ -752,3 +752,13 @@
 - [x] Uniformizar títulos, espaçamentos e alinhamentos com as outras secções.
 - [x] Validar desktop, mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Abas de propostas sem repetição do tema
+
+- [x] Remover o título do tema dentro do painel de detalhe aberto.
+- [x] Manter apenas a descrição e o plano resumido da proposta.
+- [x] Preservar o botão de contribuição e o fecho da aba.
+- [x] Ajustar o espaçamento e a hierarquia visual do conteúdo restante.
+- [x] Validar as quatro propostas, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
