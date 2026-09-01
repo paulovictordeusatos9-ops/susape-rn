@@ -410,6 +410,9 @@ export default function Home() {
             <span className="strip-pink"><HeartHandshake size={17} /> Cultura</span>
             <span className="strip-red"><Sun size={17} /> Sol</span>
             <span className="strip-blue"><Wind size={17} /> Vento</span>
+            <span className="strip-green"><Compass size={17} /> Mapa do RN</span>
+            <span className="strip-yellow"><Flag size={17} /> Gente</span>
+            <span className="strip-pink"><HeartHandshake size={17} /> Cultura</span>
           </div>
         </section>
 

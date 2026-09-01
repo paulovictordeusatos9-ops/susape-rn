@@ -1306,3 +1306,20 @@ h3 { line-height: 1.16; }
   flex: 0 0 auto;
   white-space: nowrap;
 }
+
+
+/* Faixa potiguar: ciclo contínuo dos cinco marcadores, sem intervalo */
+.potiguar-strip-track {
+  width: max-content;
+  min-width: auto;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .potiguar-strip-track {
+    animation: potiguarSlideContinuous 22s linear infinite;
+  }
+}
+@keyframes potiguarSlideContinuous {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

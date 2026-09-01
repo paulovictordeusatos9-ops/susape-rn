@@ -903,3 +903,13 @@
 - [x] Preservar o comportamento responsivo da faixa.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Faixa potiguar em repetição contínua
+
+- [x] Manter a ordem Sol, Vento, Mapa do RN, Gente e Cultura.
+- [x] Fazer a faixa repetir continuamente, sem parar.
+- [x] Eliminar espaços vazios durante a transição da animação.
+- [x] Preservar o preenchimento e as cores atuais dos marcadores.
+- [x] Validar animação, responsividade, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
