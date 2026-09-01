@@ -771,4 +771,4 @@
 - [x] Reequilibrar o espaço da etapa sem fotografia.
 - [x] Manter as fotografias e conteúdos das restantes etapas.
 - [x] Validar desktop, mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
