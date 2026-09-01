@@ -950,3 +950,12 @@
 - [x] Preservar conteúdos, links e cartões das Notícias.
 - [x] Validar desktop, mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Quadrados das propostas maiores no PC
+
+- [x] Aumentar significativamente os quatro quadrados dos eixos em desktop.
+- [x] Manter os quatro cartões lado a lado na versão computador.
+- [x] Preservar tablet, mobile, conteúdos, cores e detalhes dos eixos.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

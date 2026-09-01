@@ -1352,3 +1352,18 @@ h3 { line-height: 1.16; }
     margin-top: 0;
   }
 }
+
+
+/* Propostas maiores apenas na versão computador */
+@media (min-width: 1001px) {
+  .project-section .theme-grid {
+    width: calc(100% + 7.6vw);
+    margin-left: -3.8vw;
+    margin-right: -3.8vw;
+    gap: 20px;
+  }
+  .project-section .theme-card {
+    min-height: 0;
+    padding: clamp(26px, 2.4vw, 38px);
+  }
+}
