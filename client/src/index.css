@@ -1357,13 +1357,44 @@ h3 { line-height: 1.16; }
 /* Propostas maiores apenas na versão computador */
 @media (min-width: 1001px) {
   .project-section .theme-grid {
-    width: calc(100% + 7.6vw);
-    margin-left: -3.8vw;
-    margin-right: -3.8vw;
-    gap: 20px;
+    width: calc(100% + 11.6vw);
+    margin-left: -5.8vw;
+    margin-right: -5.8vw;
+    gap: clamp(20px, 1.7vw, 28px);
   }
   .project-section .theme-card {
+    min-height: clamp(315px, 24vw, 410px);
+    padding: clamp(28px, 2.45vw, 40px);
+  }
+  .project-section .theme-card > .theme-detail-panel,
+  .project-section .theme-saude > .theme-detail-panel,
+  .project-section .theme-sustentavel > .theme-detail-panel {
+    inset: 10px;
+    width: auto;
     min-height: 0;
-    padding: clamp(26px, 2.4vw, 38px);
+    max-height: calc(100% - 20px);
+    padding: clamp(22px, 1.8vw, 30px);
+    overflow-y: auto;
+    color: inherit;
+    background: inherit;
+    transform: none;
+  }
+  .project-section .theme-card > .theme-detail-panel .theme-detail-heading {
+    align-items: center;
+  }
+  .project-section .theme-card > .theme-detail-panel .theme-detail-kicker {
+    margin-bottom: 0;
+  }
+  .project-section .theme-card > .theme-detail-panel ol {
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .project-section .theme-card > .theme-detail-panel li {
+    gap: 10px;
+    padding-top: 12px;
+  }
+  .project-section .theme-card > .theme-detail-panel li p {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }

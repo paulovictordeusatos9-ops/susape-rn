@@ -959,3 +959,13 @@
 - [x] Preservar tablet, mobile, conteúdos, cores e detalhes dos eixos.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+## Revisão completa das propostas no desktop
+
+- [x] Aumentar mais os quadrados dos eixos 1, 2, 3 e 4 apenas no computador.
+- [x] Manter os quatro cartões lado a lado, proporcionais e alinhados.
+- [x] Rever a abertura e o fecho das quatro abas de detalhe no desktop.
+- [x] Corrigir alinhamentos, espaçamentos e cores dos quatro painéis.
+- [x] Preservar integralmente os layouts de tablet e mobile.
+- [x] Validar visualmente os quatro eixos, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
