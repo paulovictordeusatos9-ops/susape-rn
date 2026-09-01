@@ -798,3 +798,23 @@
 - [x] Preservar o restante texto, os restantes despachos e o layout.
 - [x] Validar texto, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Espaçamento das etapas da trajetória
+
+- [x] Aproximar o rótulo da etapa do respetivo título.
+- [x] Aplicar o ajuste a Identidade, Pessoas, Formação e Caminhada.
+- [x] Uniformizar alinhamento e espaçamento em desktop e mobile.
+- [x] Preservar textos, navegação e conteúdo do carrossel.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
+
+
+## Compactação adicional da etapa da trajetória
+
+- [x] Subir a numeração e o rótulo das etapas no bloco da trajetória.
+- [x] Aproximar Identidade, Pessoas, Formação e Caminhada do topo do conteúdo.
+- [x] Reduzir ao máximo o espaço em branco superior e inferior.
+- [x] Preservar texto, navegação e leitura do carrossel.
+- [x] Validar desktop, mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
