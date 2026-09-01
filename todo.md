@@ -846,4 +846,4 @@
 - [x] Adicionar link interno para o perfil político da candidatura.
 - [x] Preservar a apresentação e os dados biográficos existentes.
 - [x] Validar os links, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
