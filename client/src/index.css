@@ -1398,3 +1398,12 @@ h3 { line-height: 1.16; }
     line-height: 1.5;
   }
 }
+
+
+/* Mais respiro entre os eixos apenas no computador */
+@media (min-width: 1001px) {
+  .project-section .theme-grid {
+    column-gap: clamp(30px, 2.5vw, 42px);
+    row-gap: 0;
+  }
+}

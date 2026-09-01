@@ -969,3 +969,12 @@
 - [x] Preservar integralmente os layouts de tablet e mobile.
 - [x] Validar visualmente os quatro eixos, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Espaço maior entre os eixos no computador
+
+- [x] Aumentar o espaço entre os quatro quadrados na versão computador.
+- [x] Manter os quatro eixos lado a lado e alinhados.
+- [x] Preservar tablet, mobile, cores e conteúdos.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
