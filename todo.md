@@ -618,7 +618,7 @@
 - [x] Preservar a fotografia da etapa Identidade; a etapa Formação foi ajustada posteriormente sem fotografia.
 - [x] Validar o enquadramento em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Aproximação da bandeira à nova fotografia do hero
@@ -628,7 +628,7 @@
 - [x] Preservar o número 1234, a centralização e o retrato completo.
 - [x] Validar o hero em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Menu sanduíche no canto do cabeçalho mobile
@@ -638,7 +638,7 @@
 - [x] Preservar a abertura e o fecho do menu.
 - [x] Validar a composição em mobile e desktop.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Atualização biográfica de Quem é Susape
@@ -650,7 +650,7 @@
 - [x] Distribuir as informações no resumo e nas etapas Formação e Caminhada.
 - [x] Validar a leitura em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Correção das letras grandes e espaçamento
@@ -661,7 +661,7 @@
 - [x] Preservar a leitura e o alinhamento em desktop.
 - [x] Validar o resultado em mobile e desktop.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Títulos menores na trajetória
@@ -672,7 +672,7 @@
 - [x] Preservar o alinhamento e a legibilidade em desktop.
 - [x] Validar a trajetória em mobile e desktop.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Remoção da foto da etapa 3
@@ -682,7 +682,7 @@
 - [x] Manter a fotografia da etapa Identidade sem alterações.
 - [x] Validar a trajetória em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
 
 
 ## Resumo dos detalhes das propostas
@@ -695,4 +695,4 @@
 - [x] Preservar o botão de contribuição em todas as caixas.
 - [x] Validar as caixas em desktop e mobile.
 - [x] Executar testes e build.
-- [ ] Guardar checkpoint e entregar a nova versão.
+- [x] Guardar checkpoint e entregar a nova versão.
