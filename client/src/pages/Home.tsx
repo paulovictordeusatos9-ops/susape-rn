@@ -59,7 +59,8 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
     .join(" ");
 }
 
-const heroPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
+const heroPortrait = "/manus-storage/susape-hero-flag-cutout_68f7954f.png";
+const identityPortrait = "/manus-storage/susape-hero-31-08-2026_9fec18c3.png";
 const formationPortrait = "/manus-storage/formacao-susape_c4c8cb46.jpg";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
@@ -456,7 +457,7 @@ export default function Home() {
                     {(profileIndex === 0 || profileIndex === 2) && (
                       <img
                         className={`profile-stage-photo ${profileIndex === 0 ? "profile-stage-photo-identity" : "profile-stage-photo-formation"}`}
-                        src={profileIndex === 0 ? heroPortrait : formationPortrait}
+                        src={profileIndex === 0 ? identityPortrait : formationPortrait}
                         alt={profileIndex === 0 ? "Susape Augusto, fotografia da etapa Identidade" : "Susape Augusto, fotografia da etapa Formação"}
                       />
                     )}

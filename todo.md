@@ -606,4 +606,16 @@
 - [x] Padronizar enquadramento e escala das duas fotografias.
 - [x] Validar as etapas em desktop e mobile.
 - [x] Executar testes e build.
+- [x] Guardar checkpoint e entregar a nova versão.
+
+## Nova fotografia exclusiva na primeira secção
+
+- [ ] Preparar e carregar a imagem enviada para o hero.
+- [ ] Confirmar transparência real e impedir a exibição do quadriculado.
+- [ ] Separar a fotografia do hero da fotografia da etapa Identidade.
+- [ ] Substituir apenas a imagem central da primeira secção.
+- [ ] Preservar o número 1234, a bandeira e os textos do hero.
+- [ ] Preservar as fotografias das etapas Identidade e Formação.
+- [ ] Validar o enquadramento em desktop e mobile.
+- [ ] Executar testes e build.
 - [ ] Guardar checkpoint e entregar a nova versão.
