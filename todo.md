@@ -865,3 +865,13 @@
 - [x] Consolidar o novo destino do link da ficha pública.
 - [x] Validar alterações, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Propostas lado a lado no computador
+
+- [x] Colocar os cartões 1, 2, 3 e 4 numa única fila em desktop.
+- [x] Aumentar ligeiramente o tamanho dos cartões na versão computador.
+- [x] Preservar a grelha responsiva atual em tablet e mobile.
+- [x] Manter os detalhes, cores e conteúdos das quatro propostas.
+- [x] Validar desktop, tablet e mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
