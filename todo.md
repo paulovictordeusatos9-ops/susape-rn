@@ -874,4 +874,4 @@
 - [x] Preservar a grelha responsiva atual em tablet e mobile.
 - [x] Manter os detalhes, cores e conteúdos das quatro propostas.
 - [x] Validar desktop, tablet e mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
