@@ -958,4 +958,4 @@
 - [x] Manter os quatro cartões lado a lado na versão computador.
 - [x] Preservar tablet, mobile, conteúdos, cores e detalhes dos eixos.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
