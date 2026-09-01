@@ -696,3 +696,16 @@
 - [x] Validar as caixas em desktop e mobile.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a nova versão.
+
+
+## Painéis das propostas sobre os cartões no mobile
+
+- [x] Abrir o detalhe de Gosto de Ser Potiguar sobre o cartão 1.
+- [x] Abrir o detalhe de Segurança Pública sobre o cartão 2.
+- [x] Abrir o detalhe de Saúde Pública sobre o cartão 3.
+- [x] Abrir o detalhe de Sustentabilidade sobre o cartão 4.
+- [x] Eliminar a segunda aba/painel duplicado de Sustentabilidade.
+- [x] Preservar os quatro cartões e a contribuição em cada proposta.
+- [x] Validar interação em mobile e desktop.
+- [x] Executar testes e build.
+- [ ] Guardar checkpoint e entregar a correção.

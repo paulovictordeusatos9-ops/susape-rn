@@ -514,27 +514,32 @@ export default function Home() {
                 <button onClick={event => { event.stopPropagation(); document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" }); }}>
                   Contribuir com este tema <ArrowUpRight size={17} />
                 </button>
+                {selectedThemeNumber === theme.number && (
+                  <div
+                    className={`theme-detail-panel ${theme.color}`}
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby={`theme-detail-title-${theme.number}`}
+                    onClick={event => event.stopPropagation()}
+                  >
+                    <div className="theme-detail-heading">
+                      <div>
+                        <span className="theme-detail-kicker">Plano de ação · proposta {theme.number}</span>
+                        <h3 id={`theme-detail-title-${theme.number}`}>{theme.title}</h3>
+                      </div>
+                      <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={event => { event.stopPropagation(); setSelectedThemeNumber(null); }}>×</button>
+                    </div>
+                    <p className="theme-detail-intro">Resumo do compromisso e das prioridades deste eixo.</p>
+                    <ol>
+                      {theme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
+                    </ol>
+                    <button className="theme-detail-contribute" onClick={event => { event.stopPropagation(); document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" }); }}>
+                      Contribuir com este tema <ArrowUpRight size={17} />
+                    </button>
+                  </div>
+                )}
               </article>
             ))}
-            {selectedTheme && (
-              <div className={`theme-detail-panel ${selectedTheme.color}`} role="dialog" aria-modal="true" aria-labelledby="theme-detail-title">
-                <div className="theme-detail-heading">
-
-                  <div>
-                    <span className="theme-detail-kicker">Plano de ação · proposta {selectedTheme.number}</span>
-                    <h3 id="theme-detail-title">{selectedTheme.title}</h3>
-                  </div>
-                  <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={() => setSelectedThemeNumber(null)}>×</button>
-                </div>
-                <p className="theme-detail-intro">Resumo do compromisso e das prioridades deste eixo.</p>
-                <ol>
-                  {selectedTheme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
-                </ol>
-                <button className="theme-detail-contribute" onClick={() => document.getElementById("construcao")?.scrollIntoView({ behavior: "smooth" })}>
-                  Contribuir com este tema <ArrowUpRight size={17} />
-                </button>
-              </div>
-            )}
           </div>
           <div className="project-principles">
             <span>Visão</span><strong>Representar o Rio Grande do Norte com presença e escuta.</strong>
