@@ -1047,3 +1047,66 @@ h3 { line-height: 1.16; }
   .quiz-card { padding: 20px; }
   .quiz-score { margin: 26px 0 18px; }
 }
+
+
+/* Grelha 2×2 das propostas e alinhamento final do Desafio */
+.project-section .theme-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  max-width: 1080px;
+  margin-inline: auto;
+}
+.project-section .theme-card {
+  aspect-ratio: 1 / .84;
+}
+.challenge-section {
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+}
+.challenge-layout {
+  width: min(100%, 1080px);
+  margin-inline: auto;
+}
+.challenge-layout > .challenge-copy {
+  width: min(100%, 760px);
+  margin-inline: auto;
+  padding-top: 0;
+}
+.challenge-copy h2 {
+  max-width: 760px;
+  font-size: clamp(30px, 3.65vw, 54px);
+  line-height: 1.04;
+}
+.challenge-rules { margin-top: 14px; }
+.challenge-layout > .rn-map-card {
+  max-width: none;
+}
+.challenge-section > .section-stamp {
+  top: 76px;
+  left: 3.2vw;
+}
+@media (max-width: 1000px) and (min-width: 681px) {
+  .project-section .theme-grid { gap: 14px; }
+  .challenge-section { padding-left: 5.5vw; padding-right: 5.5vw; }
+  .challenge-section > .section-stamp { left: 2vw; }
+  .challenge-layout > .challenge-copy { width: 100%; }
+}
+@media (max-width: 680px) {
+  .project-section .theme-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    max-width: none;
+  }
+  .project-section .theme-card { aspect-ratio: auto; }
+  .challenge-section { padding-left: 58px; padding-right: 24px; }
+  .challenge-layout { width: 100%; }
+  .challenge-layout > .challenge-copy { width: 100%; }
+  .challenge-copy h2 {
+    max-width: 100%;
+    font-size: clamp(29px, 8.4vw, 42px);
+  }
+  .challenge-section > .section-stamp {
+    top: 62px;
+    left: 7px;
+  }
+}

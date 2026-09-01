@@ -574,7 +574,7 @@ export default function Home() {
           <div className="challenge-layout">
             <div className="challenge-copy">
               <SectionEyebrow>Desafio 167/180</SectionEyebrow>
-              <h2>Teste o seu conhecimento. Você conhece todos os municípios do Rio Grande do Norte?</h2>
+              <h2>Teste o seu conhecimento! Você conhece todos os municípios do Rio Grande do Norte?</h2>
               <div className="challenge-rules"><span><Clock3 size={16} /> 3 minutos</span><span><MapPin size={16} /> 167 municípios</span><span><Sparkles size={16} /> mapa atualizado</span></div>
             </div>
             <div className="rn-map-card" aria-label="Mapa interativo do Rio Grande do Norte">

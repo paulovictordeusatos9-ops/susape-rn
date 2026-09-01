@@ -740,3 +740,15 @@
 - [x] Manter leitura e responsividade no desktop e mobile.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Grelha 2×2 das propostas e alinhamento do Desafio
+
+- [x] Organizar os eixos em duas colunas: 1–2 na primeira fila e 3–4 na segunda.
+- [x] Reduzir e alinhar o texto introdutório do Desafio com as restantes secções.
+- [x] Reduzir e alinhar o mapa do Desafio com a composição geral.
+- [x] Alterar “Teste o seu conhecimento.” para “Teste o seu conhecimento!”.
+- [x] Afastar o marcador “04” do título do Desafio.
+- [x] Uniformizar títulos, espaçamentos e alinhamentos com as outras secções.
+- [x] Validar desktop, mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
