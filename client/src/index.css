@@ -1190,3 +1190,30 @@ h3 { line-height: 1.16; }
   }
   .profile-section .profile-carousel-rail button > span { font-size: 22px; }
 }
+
+
+/* Trajetória: numeração e temas centralizados em cada bloco */
+.profile-section .profile-carousel-rail button {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+}
+.profile-section .profile-carousel-rail button > span {
+  font-size: 34px;
+  line-height: .9;
+}
+.profile-section .profile-carousel-rail button small {
+  text-align: center;
+}
+@media (max-width: 680px) {
+  .profile-section .profile-carousel-rail button {
+    gap: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .profile-section .profile-carousel-rail button > span { font-size: 24px; }
+}

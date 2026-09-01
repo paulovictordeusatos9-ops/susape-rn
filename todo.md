@@ -827,3 +827,13 @@
 - [x] Ajustar o espaçamento restante dos painéis.
 - [x] Validar as quatro propostas, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Centralização das etapas da trajetória
+
+- [x] Centralizar a numeração e o tema de cada etapa no respetivo bloco.
+- [x] Manter os números 1 a 4 acima dos temas com pequeno afastamento.
+- [x] Aplicar o alinhamento a Identidade, Pessoas, Formação e Caminhada.
+- [x] Preservar a navegação, o conteúdo e a leitura do carrossel.
+- [x] Validar desktop, mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
