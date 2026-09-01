@@ -826,4 +826,4 @@
 - [x] Manter a ação de contribuição existente nos cartões das propostas.
 - [x] Ajustar o espaçamento restante dos painéis.
 - [x] Validar as quatro propostas, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
