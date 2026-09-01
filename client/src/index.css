@@ -980,3 +980,21 @@ h3 { line-height: 1.16; }
   .challenge-section { display: block; }
   .challenge-layout { width: 100%; max-width: none; }
 }
+
+
+/* Cronómetro mais compacto e Galeria com o azul padrão da identidade */
+.quiz-card .quiz-top strong {
+  font-size: clamp(30px, 3.4vw, 40px);
+  line-height: .92;
+}
+.gallery-section {
+  background: #001c4a !important;
+}
+.gallery-section::before {
+  background: #001c4a;
+}
+@media (max-width: 680px) {
+  .quiz-card .quiz-top strong {
+    font-size: clamp(28px, 8vw, 34px);
+  }
+}

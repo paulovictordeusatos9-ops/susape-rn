@@ -720,3 +720,13 @@
 - [x] Preservar o mapa, o contador, as respostas e a interação existentes.
 - [x] Validar layout, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Ajuste do cronómetro e da Galeria
+
+- [x] Reduzir o tamanho do número do cronómetro do Desafio.
+- [x] Preservar a leitura do cronómetro no desktop, tablet e mobile.
+- [x] Aplicar o azul padrão SUSAPE como fundo da Galeria.
+- [x] Preservar contraste, fotografias e legendas da Galeria.
+- [x] Validar responsividade, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
