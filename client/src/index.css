@@ -1293,3 +1293,16 @@ h3 { line-height: 1.16; }
     row-gap: 22px;
   }
 }
+
+
+/* Faixa potiguar sempre preenchida, sem áreas brancas entre os marcadores */
+.potiguar-strip {
+  background: #e0141e;
+}
+.potiguar-strip-track {
+  min-width: 100%;
+}
+.potiguar-strip-track span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}

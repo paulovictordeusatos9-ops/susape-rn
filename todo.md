@@ -893,3 +893,13 @@
 - [x] Preservar o layout desktop e a legibilidade mobile.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Marcadores preenchidos por ordem de cores
+
+- [x] Preencher Sol, Vento, Mapa do RN, Gente e Cultura sem áreas brancas.
+- [x] Aplicar uma ordem de cores consistente da identidade SUSAPE.
+- [x] Garantir contraste entre texto, ícones e cada fundo colorido.
+- [x] Preservar o comportamento responsivo da faixa.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
