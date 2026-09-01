@@ -847,3 +847,21 @@
 - [x] Preservar a apresentação e os dados biográficos existentes.
 - [x] Validar os links, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Atualização do destino da ficha pública
+
+- [x] Direcionar “Ficha pública do candidato · TSE” para a página específica enviada.
+- [x] Preservar o texto do link, o perfil interno e a ficha biográfica.
+- [x] Validar o link, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
+
+
+## Espaçamento entre Galeria e Participe
+
+- [x] Reduzir o espaço azul entre Galeria e Participe.
+- [x] Preservar a separação visual e o fundo azul da Galeria.
+- [x] Manter o alinhamento responsivo em desktop e mobile.
+- [x] Consolidar o novo destino do link da ficha pública.
+- [x] Validar alterações, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

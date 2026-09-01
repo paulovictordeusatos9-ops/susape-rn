@@ -1242,3 +1242,13 @@ h3 { line-height: 1.16; }
   .profile-section .source-links { gap: 9px 16px; }
   .profile-section .source-links a { font-size: 9px; }
 }
+
+
+/* Transição mais compacta entre Galeria e Participe */
+.gallery-section { padding-bottom: 58px; }
+@media (max-width: 1000px) {
+  .gallery-section { padding-bottom: 52px; }
+}
+@media (max-width: 680px) {
+  .gallery-section { padding-bottom: 36px; }
+}
