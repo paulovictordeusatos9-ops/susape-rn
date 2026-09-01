@@ -729,4 +729,4 @@
 - [x] Aplicar o azul padrão SUSAPE como fundo da Galeria.
 - [x] Preservar contraste, fotografias e legendas da Galeria.
 - [x] Validar responsividade, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
