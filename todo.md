@@ -902,4 +902,4 @@
 - [x] Garantir contraste entre texto, ícones e cada fundo colorido.
 - [x] Preservar o comportamento responsivo da faixa.
 - [x] Validar visualmente, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
