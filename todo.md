@@ -761,4 +761,4 @@
 - [x] Preservar o botão de contribuição e o fecho da aba.
 - [x] Ajustar o espaçamento e a hierarquia visual do conteúdo restante.
 - [x] Validar as quatro propostas, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
