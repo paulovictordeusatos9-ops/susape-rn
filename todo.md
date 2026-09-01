@@ -978,3 +978,23 @@
 - [x] Preservar tablet, mobile, cores e conteúdos.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Separação ainda maior entre os eixos no PC
+
+- [x] Aumentar ainda mais o espaço entre os quatro quadrados apenas no computador.
+- [x] Garantir que os quadrados não encostam uns nos outros.
+- [x] Manter os quatro eixos lado a lado e alinhados.
+- [x] Preservar tablet, mobile, cores e conteúdos.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
+
+
+## Equilíbrio final entre quadrados e espaçamento no PC
+
+- [x] Garantir uma distância visual clara entre os quatro quadrados.
+- [x] Reduzir os quadrados se necessário para evitar que encostem.
+- [x] Manter os quatro eixos numa fila e alinhados no computador.
+- [x] Preservar tablet, mobile, cores e conteúdos.
+- [x] Validar visualmente, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

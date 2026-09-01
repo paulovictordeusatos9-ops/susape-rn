@@ -1407,3 +1407,23 @@ h3 { line-height: 1.16; }
     row-gap: 0;
   }
 }
+
+
+/* Separação ampla entre os eixos apenas no PC */
+@media (min-width: 1001px) {
+  .project-section .theme-grid {
+    column-gap: clamp(48px, 4.5vw, 72px);
+  }
+}
+
+
+/* Equilíbrio entre tamanho e separação: apenas no computador */
+@media (min-width: 1001px) {
+  .project-section .theme-grid {
+    column-gap: clamp(56px, 5vw, 88px);
+  }
+
+  .project-section .theme-card {
+    min-height: clamp(300px, 21vw, 360px);
+  }
+}
