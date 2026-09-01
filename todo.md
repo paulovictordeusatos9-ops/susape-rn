@@ -939,7 +939,7 @@
 - [x] Remover estilos inline duplicados e valores inválidos do JSX de Notícias.
 - [x] Preservar os cartões, links e conteúdos dos despachos.
 - [x] Validar tipos, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
 
 
 ## Aproximação entre despacho e tema nas Notícias
@@ -949,4 +949,4 @@
 - [x] Manter candidatura, despacho e títulos alinhados e legíveis.
 - [x] Preservar conteúdos, links e cartões das Notícias.
 - [x] Validar desktop, mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
