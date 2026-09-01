@@ -1323,3 +1323,15 @@ h3 { line-height: 1.16; }
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+
+/* Propostas: mais respiro entre o texto e a ação no rodapé do cartão */
+.project-section .theme-card > button {
+  margin-top: auto;
+  padding-top: 28px;
+}
+@media (max-width: 680px) {
+  .project-section .theme-card > button {
+    padding-top: 22px;
+  }
+}

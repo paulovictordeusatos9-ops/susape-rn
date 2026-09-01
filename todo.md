@@ -922,3 +922,13 @@
 - [x] Ajustar o espaço restante dos painéis.
 - [x] Validar as quatro propostas, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Espaço maior antes de “Contribuir com esse tema”
+
+- [x] Aumentar o espaço entre o texto e o botão em cada cartão de proposta.
+- [x] Posicionar “Contribuir com esse tema” mais abaixo nos quatro eixos.
+- [x] Manter uma área de respiro aberta dentro dos quadrados.
+- [x] Preservar os painéis de detalhe e os conteúdos das propostas.
+- [x] Validar desktop, tablet e mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
