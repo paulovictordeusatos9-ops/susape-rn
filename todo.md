@@ -836,4 +836,4 @@
 - [x] Aplicar o alinhamento a Identidade, Pessoas, Formação e Caminhada.
 - [x] Preservar a navegação, o conteúdo e a leitura do carrossel.
 - [x] Validar desktop, mobile, testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
