@@ -781,4 +781,4 @@
 - [x] Preservar os quatro itens, a descrição e o botão de contribuição.
 - [x] Garantir leitura correta em desktop e mobile.
 - [x] Validar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
