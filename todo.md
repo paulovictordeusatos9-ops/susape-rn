@@ -875,3 +875,11 @@
 - [x] Manter os detalhes, cores e conteúdos das quatro propostas.
 - [x] Validar desktop, tablet e mobile, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Remoção do WhatsApp da secção Contacto
+
+- [x] Retirar a opção WhatsApp da secção Contacto.
+- [x] Preservar os restantes canais de contacto e o layout.
+- [x] Validar desktop, mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

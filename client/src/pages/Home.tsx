@@ -626,7 +626,7 @@ export default function Home() {
 
       <footer id="contato" className="site-footer">
         <div className="footer-brand"><div><strong><SusapeWordmark className="susape-wordmark-footer" /> 1234</strong><span>Deputado Federal · RN</span></div></div>
-        <div className="footer-links"><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href="https://www.facebook.com/susape.augusto/" target="_blank" rel="noreferrer"><Facebook size={17} /> Facebook</a><span><MessageCircle size={17} /> WhatsApp: canal a confirmar</span></div>
+        <div className="footer-links"><a href="https://www.instagram.com/susapeaugusto/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a><a href="https://www.facebook.com/susape.augusto/" target="_blank" rel="noreferrer"><Facebook size={17} /> Facebook</a></div>
         <div className="footer-note"><p>Conteúdo baseado em fontes públicas consultadas em agosto de 2026. Situação de candidatura pode mudar; confirme no TSE.</p><a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noreferrer">Consulta oficial <ExternalLink size={14} /></a></div>
       </footer>
     </div>
