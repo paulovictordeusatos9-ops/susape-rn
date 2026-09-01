@@ -762,3 +762,13 @@
 - [x] Ajustar o espaçamento e a hierarquia visual do conteúdo restante.
 - [x] Validar as quatro propostas, testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Remoção da fotografia da etapa 1 da trajetória
+
+- [x] Retirar a fotografia da etapa Identidade.
+- [x] Preservar título, texto, numeração e navegação do carrossel.
+- [x] Reequilibrar o espaço da etapa sem fotografia.
+- [x] Manter as fotografias e conteúdos das restantes etapas.
+- [x] Validar desktop, mobile, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
