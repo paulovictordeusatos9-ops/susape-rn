@@ -935,3 +935,48 @@ h3 { line-height: 1.16; }
   .theme-card > .theme-detail-panel li p { font-size: 10px; line-height: 1.35; }
 }
 .theme-sustentavel > .theme-detail-panel { transform: none; }
+
+
+/* Desafio lado a lado: mapa à esquerda e cronómetro/interação à direita */
+@media (min-width: 681px) {
+  .challenge-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+    align-items: start;
+    column-gap: clamp(24px, 4vw, 64px);
+    row-gap: 30px;
+  }
+  .challenge-layout > .challenge-copy {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding-top: 14px;
+  }
+  .challenge-layout > .rn-map-card {
+    grid-column: 1;
+    width: 100%;
+    margin-top: 0;
+  }
+  .challenge-layout > .quiz-card {
+    grid-column: 2;
+    width: 100%;
+    margin: 0;
+    align-self: stretch;
+  }
+  .challenge-layout > .rn-map-card,
+  .challenge-layout > .quiz-card { min-width: 0; }
+}
+@media (min-width: 1001px) {
+  .challenge-layout { grid-template-columns: minmax(0, 1.55fr) minmax(340px, .72fr); }
+}
+@media (max-width: 680px) {
+  .challenge-layout { display: block; }
+  .challenge-layout > .rn-map-card { margin-top: 30px; }
+  .challenge-layout > .quiz-card { margin: 34px auto 0; }
+}
+
+
+/* O contentor exterior não deve criar uma coluna vazia antes da grelha interna */
+@media (min-width: 681px) {
+  .challenge-section { display: block; }
+  .challenge-layout { width: 100%; max-width: none; }
+}

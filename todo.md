@@ -709,3 +709,14 @@
 - [x] Validar interação em mobile e desktop.
 - [x] Executar testes e build.
 - [x] Guardar checkpoint e entregar a correção.
+
+
+## Desafio com mapa e cronómetro lado a lado
+
+- [x] Organizar o mapa do Rio Grande do Norte numa coluna própria.
+- [x] Organizar o cronómetro e a interação do desafio numa segunda coluna.
+- [x] Manter mapa e cronómetro lado a lado em desktop/tablet amplo.
+- [x] Manter disposição vertical e legível em mobile.
+- [x] Preservar o mapa, o contador, as respostas e a interação existentes.
+- [x] Validar layout, testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
