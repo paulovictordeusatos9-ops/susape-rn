@@ -1039,4 +1039,4 @@
 - [x] Garantir alinhamento, cores, leitura e ausência de sobreposição em desktop e mobile.
 - [x] Preservar o fecho e a navegação das abas.
 - [x] Atualizar e validar testes, executar build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
