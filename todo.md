@@ -1078,3 +1078,11 @@
 - [x] Mostrar após o envio: "Sua mensagem foi enviada. Obrigado por contribuir com o nosso trabalho".
 - [x] Validar estados de sucesso, erro e segurança do formulário.
 - [x] Guardar checkpoint e entregar a atualização.
+
+## Correção do erro de validação do formulário
+
+- [x] Corrigir o campo anti-spam `website` que está a rejeitar o envio com `maximum: 0`.
+- [x] Ajustar o limite solicitado para até 500 caracteres.
+- [x] Atualizar os testes para cobrir o limite e o envio válido.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.

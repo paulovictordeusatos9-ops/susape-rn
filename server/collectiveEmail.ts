@@ -6,10 +6,10 @@ export const collectiveIdeaSchema = z.object({
   municipality: z.string().trim().min(1, "Informe o seu município.").max(100),
   neighborhood: z.string().trim().max(100).optional().default(""),
   theme: z.string().trim().min(1, "Escolha um tema.").max(100),
-  message: z.string().trim().min(1, "Escreva a sua ideia.").max(800),
+  message: z.string().trim().min(1, "Escreva a sua ideia.").max(500),
   contact: z.string().trim().max(320).optional().default(""),
   consent: z.boolean().refine(value => value, "É necessário aceitar o uso dos dados."),
-  website: z.string().max(0).optional().default(""),
+  website: z.string().max(500).optional().default(""),
 });
 
 export type CollectiveIdea = z.infer<typeof collectiveIdeaSchema>;

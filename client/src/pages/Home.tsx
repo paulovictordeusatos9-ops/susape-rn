@@ -602,7 +602,7 @@ export default function Home() {
             <label>Seu município<input name="municipality" required maxLength={100} placeholder="Ex.: Mossoró" /></label>
             <label>Bairro <span className="optional">(opcional)</span><input name="neighborhood" maxLength={100} placeholder="Onde esta ideia acontece?" /></label>
             <label>Tema<select name="theme" required defaultValue=""><option value="" disabled>Escolha um tema</option><option>Orgulho de ser Potiguar</option><option>Segurança</option><option>Saúde</option><option>Desenvolvimento Sustentável</option><option>Outro</option></select></label>
-            <label>Sua ideia, problema ou proposta<textarea name="message" required rows={4} maxLength={800} placeholder="Conte o que precisa entrar nessa conversa." /></label>
+            <label>Sua ideia, problema ou proposta<textarea name="message" required rows={4} maxLength={500} placeholder="Conte o que precisa entrar nessa conversa." /></label>
             <label>Seu e-mail ou WhatsApp <span className="optional">(opcional)</span><input name="contact" type="text" maxLength={320} placeholder="Como podemos responder?" /></label>
             <label className="consent-label"><input name="consent" type="checkbox" required /> <span>Concordo com o uso destes dados apenas para responder a esta contribuição, conforme a política de privacidade.</span></label>
             <Button type="submit" className="send-button" disabled={collectiveSubmit.isPending}><Send size={17} /> {collectiveSubmit.isPending ? "A enviar…" : "Enviar contribuição"}</Button>

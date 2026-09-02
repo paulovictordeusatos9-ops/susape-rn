@@ -20,6 +20,12 @@ describe("collective idea form", () => {
     expect(collectiveIdeaSchema.safeParse({ ...validIdea, message: "" }).success).toBe(false);
   });
 
+  it("accepts up to 500 characters for the idea and honeypot fields", () => {
+    expect(collectiveIdeaSchema.safeParse({ ...validIdea, message: "a".repeat(500), website: "a".repeat(500) }).success).toBe(true);
+    expect(collectiveIdeaSchema.safeParse({ ...validIdea, message: "a".repeat(501) }).success).toBe(false);
+    expect(collectiveIdeaSchema.safeParse({ ...validIdea, website: "a".repeat(501) }).success).toBe(false);
+  });
+
   it("sends the complete contribution to both configured recipients", async () => {
     const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(
       new Response(JSON.stringify({ id: "email-id" }), { status: 200 }),
