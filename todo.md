@@ -1007,4 +1007,4 @@
 - [x] Ajustar a composição dos cartões para evitar títulos desconectados.
 - [x] Preservar as fotografias e o layout desktop.
 - [x] Validar mobile, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
