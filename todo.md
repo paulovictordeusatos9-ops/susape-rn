@@ -998,3 +998,13 @@
 - [x] Preservar tablet, mobile, cores e conteúdos.
 - [x] Validar visualmente, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Galeria mobile com fotos e títulos conectados
+
+- [x] Criar espaço visível entre as fotos da Galeria no mobile.
+- [x] Manter cada título e legenda ligados ao respetivo cartão.
+- [x] Ajustar a composição dos cartões para evitar títulos desconectados.
+- [x] Preservar as fotografias e o layout desktop.
+- [x] Validar mobile, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

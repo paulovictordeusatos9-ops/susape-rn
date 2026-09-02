@@ -1427,3 +1427,22 @@ h3 { line-height: 1.16; }
     min-height: clamp(300px, 21vw, 360px);
   }
 }
+
+
+/* Galeria mobile: mais espaço entre cada fotografia e a respetiva legenda */
+@media (max-width: 680px) {
+  .gallery-grid {
+    row-gap: clamp(30px, 8vw, 40px);
+  }
+
+  .gallery-grid figure {
+    margin: 0;
+    background: #001c4a;
+  }
+
+  .gallery-grid figcaption {
+    bottom: 0;
+    padding: 36px 16px 16px;
+    line-height: 1.35;
+  }
+}
