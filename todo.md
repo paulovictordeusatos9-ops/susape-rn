@@ -1070,3 +1070,11 @@
 - [x] Verificar o enquadramento em desktop e mobile.
 - [x] Validar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+## Envio de formulários por e-mail
+
+- [x] Configurar o serviço de envio transacional com `Susapezap@gmail.com` como remetente.
+- [x] Encaminhar cada resposta da Construção Coletiva para `Susapezap@gmail.com` e `suporte.luminamulher@gmail.com`.
+- [x] Mostrar após o envio: "Sua mensagem foi enviada. Obrigado por contribuir com o nosso trabalho".
+- [x] Validar estados de sucesso, erro e segurança do formulário.
+- [x] Guardar checkpoint e entregar a atualização.

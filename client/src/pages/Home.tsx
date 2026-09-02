@@ -2,7 +2,7 @@
  * Atualização baseada no Manual de Identidade Visual SUSAPE 1234.
  * Cada bloco deve levar a uma ação concreta e nunca substituir factos verificados por ficção.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -26,6 +26,7 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trpc } from "@/lib/trpc";
 
 type Municipio = {
   id: number;
@@ -206,6 +207,9 @@ export default function Home() {
   const [highlightedShapes, setHighlightedShapes] = useState<GeoFeature[]>([]);
   const [mapError, setMapError] = useState(false);
   const [ideaSent, setIdeaSent] = useState(false);
+  const [ideaError, setIdeaError] = useState("");
+  const ideaFormRef = useRef<HTMLFormElement>(null);
+  const collectiveSubmit = trpc.collective.submit.useMutation();
   const [profileIndex, setProfileIndex] = useState(0);
   const [quizActive, setQuizActive] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
@@ -220,6 +224,34 @@ export default function Home() {
 
   const changeProfile = (direction: number) => {
     setProfileIndex(current => (current + direction + perfil.length) % perfil.length);
+  };
+
+  const submitCollectiveIdea = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIdeaSent(false);
+    setIdeaError("");
+    const formData = new FormData(event.currentTarget);
+    collectiveSubmit.mutate(
+      {
+        name: String(formData.get("name") ?? ""),
+        municipality: String(formData.get("municipality") ?? ""),
+        neighborhood: String(formData.get("neighborhood") ?? ""),
+        theme: String(formData.get("theme") ?? ""),
+        message: String(formData.get("message") ?? ""),
+        contact: String(formData.get("contact") ?? ""),
+        consent: formData.get("consent") === "on",
+        website: String(formData.get("website") ?? ""),
+      },
+      {
+        onSuccess: () => {
+          setIdeaSent(true);
+          ideaFormRef.current?.reset();
+        },
+        onError: error => {
+          setIdeaError(error.message || "Não foi possível enviar a sua mensagem agora. Tente novamente.");
+        },
+      },
+    );
   };
 
   useEffect(() => {
@@ -561,19 +593,21 @@ export default function Home() {
           <div className="collective-copy">
             <SectionEyebrow>Construção coletiva</SectionEyebrow>
             <h2>Traga uma ideia do seu bairro. Vamos construir juntos.</h2>
-            <p>Ideias, problemas e propostas ajudam a dar forma a um plano que começa nas pessoas. Nesta versão estática, o formulário confirma a sua participação localmente; conecte-o ao canal oficial para receber envios reais.</p>
+            <p>Ideias, problemas e propostas ajudam a dar forma a um plano que começa nas pessoas. Preencha o formulário e a sua contribuição será encaminhada à equipa da campanha.</p>
             <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Propostas</span></div>
           </div>
-          <form className="idea-form" onSubmit={event => { event.preventDefault(); setIdeaSent(true); }}>
-            <label>Seu nome<input required placeholder="Como podemos chamar você?" /></label>
-            <label>Seu município<input required placeholder="Ex.: Mossoró" /></label>
-            <label>Bairro <span className="optional">(opcional)</span><input placeholder="Onde esta ideia acontece?" /></label>
-            <label>Tema<select required defaultValue=""><option value="" disabled>Escolha um tema</option><option>Orgulho de ser Potiguar</option><option>Segurança</option><option>Saúde</option><option>Desenvolvimento Sustentável</option><option>Outro</option></select></label>
-            <label>Sua ideia, problema ou proposta<textarea required rows={4} maxLength={800} placeholder="Conte o que precisa entrar nessa conversa." /></label>
-            <label>Seu e-mail ou WhatsApp <span className="optional">(opcional)</span><input type="text" placeholder="Como podemos responder?" /></label>
-            <label className="consent-label"><input type="checkbox" required /> <span>Concordo com o uso destes dados apenas para responder a esta contribuição, conforme a política de privacidade.</span></label>
-            <Button type="submit" className="send-button"><Send size={17} /> Enviar contribuição</Button>
-            {ideaSent && <p className="form-confirm"><Check size={16} /> Contribuição recebida. Ela não representa promessa de adoção; ligue o formulário ao canal oficial para receber envios reais.</p>}
+          <form ref={ideaFormRef} className="idea-form" onSubmit={submitCollectiveIdea}>
+            <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="form-honeypot" />
+            <label>Seu nome<input name="name" required maxLength={100} placeholder="Como podemos chamar você?" /></label>
+            <label>Seu município<input name="municipality" required maxLength={100} placeholder="Ex.: Mossoró" /></label>
+            <label>Bairro <span className="optional">(opcional)</span><input name="neighborhood" maxLength={100} placeholder="Onde esta ideia acontece?" /></label>
+            <label>Tema<select name="theme" required defaultValue=""><option value="" disabled>Escolha um tema</option><option>Orgulho de ser Potiguar</option><option>Segurança</option><option>Saúde</option><option>Desenvolvimento Sustentável</option><option>Outro</option></select></label>
+            <label>Sua ideia, problema ou proposta<textarea name="message" required rows={4} maxLength={800} placeholder="Conte o que precisa entrar nessa conversa." /></label>
+            <label>Seu e-mail ou WhatsApp <span className="optional">(opcional)</span><input name="contact" type="text" maxLength={320} placeholder="Como podemos responder?" /></label>
+            <label className="consent-label"><input name="consent" type="checkbox" required /> <span>Concordo com o uso destes dados apenas para responder a esta contribuição, conforme a política de privacidade.</span></label>
+            <Button type="submit" className="send-button" disabled={collectiveSubmit.isPending}><Send size={17} /> {collectiveSubmit.isPending ? "A enviar…" : "Enviar contribuição"}</Button>
+            {ideaSent && <p className="form-confirm" role="status"><Check size={16} /> Sua mensagem foi enviada. Obrigado por contribuir com o nosso trabalho</p>}
+            {ideaError && <p className="form-error" role="alert">{ideaError}</p>}
           </form>
         </section>
 
