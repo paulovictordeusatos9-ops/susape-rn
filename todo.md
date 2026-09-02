@@ -1017,7 +1017,7 @@
 - [x] Preservar as fotografias, títulos e espaçamento entre cartões.
 - [x] Manter o posicionamento atual das legendas no desktop.
 - [x] Validar mobile, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
 
 
 ## Barra azul das legendas mais compacta
@@ -1027,4 +1027,4 @@
 - [x] Preservar contraste e leitura do texto.
 - [x] Manter o estilo atual das legendas no desktop.
 - [x] Validar mobile, executar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
