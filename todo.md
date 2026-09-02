@@ -1028,3 +1028,15 @@
 - [x] Manter o estilo atual das legendas no desktop.
 - [x] Validar mobile, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Textos completos e roleta lateral nas propostas
+
+- [x] Substituir o conteúdo das quatro abas pelos textos fornecidos.
+- [x] Organizar cada proposta com descrição e lista completa de prioridades.
+- [x] Criar uma roleta lateral ou área rolável para leitura integral.
+- [x] Manter cada aba sobre o respetivo quadrado nos quatro eixos.
+- [x] Garantir alinhamento, cores, leitura e ausência de sobreposição em desktop e mobile.
+- [x] Preservar o fecho e a navegação das abas.
+- [x] Atualizar e validar testes, executar build.
+- [ ] Guardar checkpoint e entregar a atualização.

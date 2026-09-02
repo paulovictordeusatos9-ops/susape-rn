@@ -80,41 +80,53 @@ const themes = [
   {
     number: "01",
     title: "Gosto de Ser Potiguar",
-    body: "Valorizar a identidade, a cultura, a história, as potencialidades e o sentimento de pertencimento ao Rio Grande do Norte.",
+    body: "Valorizar, proteger e desenvolver o nosso Rio Grande do Norte. Nossa história, nossa cultura, nossas belezas naturais e nossas riquezas precisam ser preservadas e transformadas em oportunidades.",
     color: "theme-orgulho",
     plan: [
-      "Valorizar a cultura e a memória potiguar.",
-      "Abrir oportunidades para artistas, grupos e municípios.",
+      "Fortalecer o turismo em todo o Estado.",
+      "Preservar nosso patrimônio histórico, cultural e ambiental.",
+      "Melhorar a infraestrutura turística.",
+      "Valorizar nossa identidade potiguar.",
+      "Proteger nossas riquezas para as próximas gerações.",
     ],
   },
   {
     number: "02",
-    title: "Segurança Pública",
-    body: "Defender proteção, integração, prevenção, tecnologia e cidadania, com presença do Estado e segurança para as famílias.",
+    title: "Segurança e Oportunidades",
+    body: "Segurança não é apenas prender quem comete crimes. É também impedir que nossas crianças sejam atraídas pelo crime. Precisamos combater a criminalidade e, ao mesmo tempo, criar oportunidades para que crianças e jovens tenham um futuro diferente.",
     color: "theme-seguranca",
     plan: [
-      "Investir em prevenção e inteligência perto das comunidades.",
-      "Integrar forças, formação e tecnologia com responsabilidade.",
+      "Combate firme à criminalidade.",
+      "Mais oportunidades para crianças e jovens.",
+      "Esporte, educação e qualificação profissional.",
+      "Inclusão social.",
+      "Projetos que afastem nossos jovens da violência e das drogas.",
     ],
   },
   {
     number: "03",
-    title: "Saúde Pública",
-    body: "Saúde Pública mais perto de quem precisa. Propor atenção à infraestrutura, urgência, atenção básica e fortalecimento da rede regional dos municípios.",
+    title: "Saúde de Qualidade para Todos",
+    body: "Quem mora no interior também merece saúde de qualidade. Defender uma saúde pública mais eficiente, com profissionais valorizados e atendimento digno em todos os municípios.",
     color: "theme-saude",
     plan: [
-      "Fortalecer a atenção básica e a rede regional.",
-      "Reduzir esperas com estrutura, transparência e escuta.",
+      "Mais médicos e profissionais de saúde.",
+      "Valorização dos profissionais.",
+      "Mais concursos públicos.",
+      "Redução das filas para consultas, exames e cirurgias.",
+      "Atendimento de qualidade em todos os municípios.",
     ],
   },
   {
     number: "04",
-    title: "Sustentabilidade",
-    body: "Aproveitar as riquezas naturais, culturais e económicas do RN com responsabilidade, oportunidades e preservação.",
+    title: "Desenvolvimento Sustentável",
+    body: "O futuro do Rio Grande do Norte é verde, tecnológico e cheio de oportunidades. Somos uma potência em energia renovável. Precisamos transformar o sol e o vento em desenvolvimento, emprego, renda e qualidade de vida.",
     color: "theme-sustentavel",
     plan: [
-      "Proteger os recursos naturais e fortalecer economias locais.",
-      "Apoiar água, energia, saneamento e turismo responsável.",
+      "Expansão da energia solar e eólica.",
+      "Incentivo à inovação e à tecnologia.",
+      "Desenvolvimento da indústria sustentável.",
+      "Incentivo à mobilidade elétrica.",
+      "Mais empregos e oportunidades no Estado.",
     ],
   },
 ];
@@ -525,6 +537,9 @@ export default function Home() {
                         <span className="theme-detail-kicker">Plano de ação · proposta {theme.number}</span>
                       </div>
                       <button className="theme-detail-close" aria-label="Fechar detalhe da proposta" onClick={event => { event.stopPropagation(); setSelectedThemeNumber(null); }}>×</button>
+                    </div>
+                    <div className="theme-detail-copy">
+                      <p>{theme.body}</p>
                     </div>
                     <ol>
                       {theme.plan.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}

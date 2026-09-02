@@ -20,4 +20,12 @@ describe("proposal detail rendering", () => {
     expect(homeSource).toContain("aria-label={`Detalhe da proposta ${theme.number}: ${theme.title}`}");
     expect(homeSource).not.toContain("<h3 id={`theme-detail-title-${theme.number}`}>{theme.title}</h3>");
   });
+
+  it("contains complete proposal copy and a scrollable detail copy region", () => {
+    expect(homeSource).toContain("Fortalecer o turismo em todo o Estado.");
+    expect(homeSource).toContain("Projetos que afastem nossos jovens da violência e das drogas.");
+    expect(homeSource).toContain("Redução das filas para consultas, exames e cirurgias.");
+    expect(homeSource).toContain("Expansão da energia solar e eólica.");
+    expect(homeSource).toContain('className="theme-detail-copy"');
+  });
 });
