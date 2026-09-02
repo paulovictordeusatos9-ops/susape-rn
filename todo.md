@@ -1069,4 +1069,4 @@
 - [x] Preservar espaços, dimensões, cores, textos e restante composição.
 - [x] Verificar o enquadramento em desktop e mobile.
 - [x] Validar testes e build.
-- [ ] Guardar checkpoint e entregar a atualização.
+- [x] Guardar checkpoint e entregar a atualização.
