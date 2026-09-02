@@ -1008,3 +1008,23 @@
 - [x] Preservar as fotografias e o layout desktop.
 - [x] Validar mobile, executar testes e build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Legendas no topo da Galeria mobile
+
+- [x] Mover cada legenda para a parte superior da fotografia no mobile.
+- [x] Garantir contraste e legibilidade sobre as imagens.
+- [x] Preservar as fotografias, títulos e espaçamento entre cartões.
+- [x] Manter o posicionamento atual das legendas no desktop.
+- [x] Validar mobile, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
+
+
+## Barra azul das legendas mais compacta
+
+- [x] Reduzir a altura visual do gradiente azul das legendas no mobile.
+- [x] Manter as legendas no topo das fotografias.
+- [x] Preservar contraste e leitura do texto.
+- [x] Manter o estilo atual das legendas no desktop.
+- [x] Validar mobile, executar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.

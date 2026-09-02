@@ -1446,3 +1446,27 @@ h3 { line-height: 1.16; }
     line-height: 1.35;
   }
 }
+
+
+/* Galeria mobile: legendas posicionadas na parte superior das fotografias */
+@media (max-width: 680px) {
+  .gallery-grid figcaption {
+    top: 0;
+    bottom: auto;
+    padding: 16px 16px 38px;
+    background: linear-gradient(180deg, rgba(0, 28, 74, .9), rgba(0, 28, 74, 0));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
+  }
+}
+
+
+/* Galeria mobile: legenda no topo com barra azul compacta */
+@media (max-width: 680px) {
+  .gallery-grid figcaption {
+    top: 0;
+    bottom: auto;
+    padding: 12px 14px 24px;
+    background: linear-gradient(180deg, rgba(0, 28, 74, .9), rgba(0, 28, 74, 0));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
+  }
+}
