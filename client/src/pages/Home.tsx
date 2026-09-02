@@ -59,7 +59,7 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
     .join(" ");
 }
 
-const heroPortrait = "/manus-storage/susape-hero-flag-cutout-trimmed_4413d33f.png";
+const heroPortrait = "/manus-storage/WhatsAppImage2026-09-02at13.27.14_e7162f9e.png";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },

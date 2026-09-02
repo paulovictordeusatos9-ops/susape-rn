@@ -1040,3 +1040,33 @@
 - [x] Preservar o fecho e a navegação das abas.
 - [x] Atualizar e validar testes, executar build.
 - [x] Guardar checkpoint e entregar a atualização.
+
+
+## Substituição da fotografia da primeira secção
+
+- [x] Carregar a fotografia enviada para o armazenamento do projeto.
+- [x] Substituir apenas a fotografia do hero pela nova imagem.
+- [x] Preservar espaçamentos, dimensões, cores, textos e restantes elementos.
+- [x] Verificar enquadramento em desktop e mobile.
+- [x] Validar testes e build.
+- [x] Guardar checkpoint e entregar a atualização.
+
+
+## Nova fotografia transparente da primeira secção
+
+- [x] Carregar a nova versão PNG transparente.
+- [x] Substituir apenas a fotografia do hero pela nova imagem.
+- [x] Preservar espaços, dimensões, cores, textos e restante composição.
+- [x] Verificar transparência e enquadramento em desktop e mobile.
+- [x] Validar testes e build.
+- [x] Guardar checkpoint e entregar a atualização.
+
+
+## Substituição final da fotografia da primeira secção
+
+- [x] Carregar a nova fotografia PNG enviada.
+- [x] Substituir apenas a fotografia do hero.
+- [x] Preservar espaços, dimensões, cores, textos e restante composição.
+- [x] Verificar o enquadramento em desktop e mobile.
+- [x] Validar testes e build.
+- [ ] Guardar checkpoint e entregar a atualização.
