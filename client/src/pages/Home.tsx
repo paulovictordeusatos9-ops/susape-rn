@@ -165,7 +165,6 @@ function normalizar(value: string) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLocaleLowerCase("pt-BR")
-    .replace(/\s+/g, " ")
     .trim();
 }
 
@@ -203,8 +202,6 @@ function SusapeWordmark({ className = "" }: { className?: string }) {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
-  const [municipiosError, setMunicipiosError] = useState(false);
-  const [municipiosAttempt, setMunicipiosAttempt] = useState(0);
   const [rnShape, setRnShape] = useState<GeoFeature[]>([]);
   const [highlightedCities, setHighlightedCities] = useState<Municipio[]>([]);
   const [highlightedShapes, setHighlightedShapes] = useState<GeoFeature[]>([]);
@@ -259,26 +256,19 @@ export default function Home() {
 
   useEffect(() => {
     let active = true;
-    setMunicipiosError(false);
     fetch(IBGE_MUNICIPIOS_URL)
       .then(response => {
         if (!response.ok) throw new Error("IBGE indisponível");
         return response.json();
       })
       .then((data: Municipio[]) => {
-        if (!active) return;
-        if (!Array.isArray(data) || data.length !== 167 || data.some(item => !item?.id || !item?.nome)) {
-          throw new Error("Lista de municípios inválida");
-        }
-        setMunicipios(data);
+        if (active) setMunicipios(data);
       })
-      .catch(() => {
-        if (active) setMunicipiosError(true);
-      });
+      .catch(() => undefined);
     return () => {
       active = false;
     };
-  }, [municipiosAttempt]);
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -373,7 +363,7 @@ export default function Home() {
       setQuizFeedback("Ainda não encontramos esse município no cadastro do IBGE. Tente outro nome.");
       return;
     }
-    if (used.some(usedCity => normalizar(usedCity) === normalizar(city.nome))) {
+    if (used.includes(city.nome)) {
       setQuizFeedback("Esse município já foi marcado. Escolha outro.");
       setAnswer("");
       return;
@@ -607,6 +597,7 @@ export default function Home() {
             <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Propostas</span></div>
           </div>
           <form ref={ideaFormRef} className="idea-form" onSubmit={submitCollectiveIdea}>
+            <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="form-honeypot" />
             <label>Seu nome<input name="name" required maxLength={100} placeholder="Como podemos chamar você?" /></label>
             <label>Seu município<input name="municipality" required maxLength={100} placeholder="Ex.: Mossoró" /></label>
             <label>Bairro <span className="optional">(opcional)</span><input name="neighborhood" maxLength={100} placeholder="Onde esta ideia acontece?" /></label>
@@ -624,7 +615,7 @@ export default function Home() {
           <div className="section-stamp rail-light" aria-hidden="true"><span>04</span></div>
           <div className="challenge-layout">
             <div className="challenge-copy">
-              <SectionEyebrow>Desafio</SectionEyebrow>
+              <SectionEyebrow>Desafio 167/180</SectionEyebrow>
               <h2>Teste o seu conhecimento! Você conhece todos os municípios do Rio Grande do Norte?</h2>
               <div className="challenge-rules"><span><Clock3 size={16} /> 3 minutos</span><span><MapPin size={16} /> 167 municípios</span><span><Sparkles size={16} /> mapa atualizado</span></div>
             </div>
@@ -646,7 +637,7 @@ export default function Home() {
             <div className="quiz-card">
               <div className="quiz-top"><span>Desafio em curso</span><strong>{String(Math.floor(timeLeft / 60)).padStart(2, "0")}:{String(timeLeft % 60).padStart(2, "0")}<small>min</small></strong></div>
               <div className="quiz-score"><span>Acertos</span><strong>{score}</strong><small>de 167</small></div>
-              {!quizActive && !quizFinished && <Button onClick={() => municipiosError ? setMunicipiosAttempt(value => value + 1) : startQuiz()} disabled={!municipios.length && !municipiosError} className="quiz-start">{municipiosError ? "Tentar carregar municípios" : municipios.length ? "Começar agora" : "A carregar municípios…"} <ArrowUpRight size={17} /></Button>}
+              {!quizActive && !quizFinished && <Button onClick={startQuiz} disabled={!municipios.length} className="quiz-start">{municipios.length ? "Começar agora" : "A carregar municípios…"} <ArrowUpRight size={17} /></Button>}
               {quizActive && <form className="quiz-form" onSubmit={submitAnswer}>
                 <input autoFocus value={answer} onChange={event => setAnswer(event.target.value)} placeholder="Digite um município" aria-label="Digite um município do RN" />
                 <Button type="submit">Marcar <ChevronRight size={17} /></Button>
