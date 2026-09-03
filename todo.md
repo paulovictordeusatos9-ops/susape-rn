@@ -1120,3 +1120,12 @@
 - [x] Validar novamente o formulário e a receção nos dois destinatários. O utilizador confirmou a receção do novo teste.
 - [x] Executar check, testes e build.
 - [x] Guardar checkpoint e entregar o diagnóstico.
+
+## Nova falha — preenchimento da página não encaminha
+
+- [x] Reproduzir o preenchimento real e inspecionar o payload enviado. O payload atual é aceito sem o campo honeypot.
+- [x] Confirmar se a página publicada está na versão correta e chama `collective.submit`.
+- [x] Corrigir a diferença entre o teste isolado e o formulário da interface. O honeypot foi removido da interface para evitar preenchimento automático indevido.
+- [x] Testar uma contribuição completa pela página em produção. A rota respondeu HTTP 200 com `success: true`.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.

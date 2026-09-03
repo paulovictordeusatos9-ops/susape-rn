@@ -597,7 +597,6 @@ export default function Home() {
             <div className="collective-markers"><span><HeartHandshake size={16} /> Escuta</span><span><MessageCircle size={16} /> Ideias</span><span><Flag size={16} /> Propostas</span></div>
           </div>
           <form ref={ideaFormRef} className="idea-form" onSubmit={submitCollectiveIdea}>
-            <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="form-honeypot" />
             <label>Seu nome<input name="name" required maxLength={100} placeholder="Como podemos chamar você?" /></label>
             <label>Seu município<input name="municipality" required maxLength={100} placeholder="Ex.: Mossoró" /></label>
             <label>Bairro <span className="optional">(opcional)</span><input name="neighborhood" maxLength={100} placeholder="Onde esta ideia acontece?" /></label>
