@@ -1129,3 +1129,42 @@
 - [x] Testar uma contribuição completa pela página em produção. A rota respondeu HTTP 200 com `success: true`.
 - [x] Executar check, testes e build.
 - [x] Guardar checkpoint e entregar a correção.
+
+## Reincidência — testar obrigatoriamente pela interface publicada
+
+- [x] Preencher o formulário pela própria página publicada, sem chamar a API manualmente.
+- [x] Capturar a requisição gerada pelo botão Enviar contribuição.
+- [x] Identificar por que o fluxo visual não produz o mesmo resultado do teste técnico.
+- [x] Corrigir o envio e devolver um protocolo visível apenas após aceitação do provedor.
+- [x] Confirmar receção nos dois e-mails após uso do formulário publicado.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.
+
+## Correção do Desafio dos municípios
+
+- [x] Auditar a lógica atual do Desafio, dados dos municípios, mapa e cronómetro.
+- [x] Reproduzir os erros em desktop e mobile.
+- [x] Corrigir a interação, validação e atualização visual do mapa.
+- [x] Corrigir o cronómetro e os estados de início, acerto, erro e fim.
+- [x] Validar layout responsivo e acessibilidade.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.
+
+## Retomada — correção final do Desafio
+
+- [x] Reproduzir os erros do Desafio em desktop e mobile após a reautorização do projeto.
+- [x] Verificar carregamento dos 167 municípios e da malha geográfica.
+- [x] Corrigir validação de respostas, duplicados, feedback e atualização visual do mapa.
+- [x] Corrigir cronómetro, início, reinício e fim do jogo.
+- [x] Validar acessibilidade e layout responsivo.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.
+
+## Restauração do botão do Desafio
+
+- [x] Comparar a referência enviada com o botão atual.
+- [x] Restaurar o texto e o comportamento visual anterior.
+- [x] Preservar a lógica de retry e as restantes correções do Desafio.
+- [x] Validar desktop e mobile.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a versão restaurada.
