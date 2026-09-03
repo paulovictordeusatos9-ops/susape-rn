@@ -1086,3 +1086,21 @@
 - [x] Atualizar os testes para cobrir o limite e o envio válido.
 - [x] Executar check, testes e build.
 - [x] Guardar checkpoint e entregar a correção.
+
+## Incidente — formulários não chegam aos e-mails
+
+- [x] Auditar o fluxo completo de submissão e a resposta do provedor.
+- [x] Confirmar remetente autorizado, chave e estado de entrega/bounces. Diagnóstico: a Resend devolve HTTP 403 porque `susapeaugusto.com.br` não está verificado.
+- [ ] Corrigir o envio ou solicitar os dados de configuração que faltarem.
+- [ ] Validar uma submissão real sem expor credenciais.
+- [ ] Executar check, testes e build.
+- [ ] Guardar checkpoint e entregar a correção.
+
+## Correção da animação e carregamento da fotografia principal
+
+- [x] Auditar a animação e os estilos atuais do retrato do hero.
+- [x] Antecipar o carregamento da fotografia principal.
+- [x] Alterar a entrada para uma transição suave pela lateral.
+- [x] Preservar a composição e validar desktop, mobile e movimento reduzido.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.

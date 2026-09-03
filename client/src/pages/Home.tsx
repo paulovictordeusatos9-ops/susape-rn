@@ -420,7 +420,7 @@ export default function Home() {
           <img className="hero-flag-banner" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
           <div className="hero-visual">
             <div className="hero-number-central" aria-hidden="true">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-central-${index}`} className={className}>{digit}</span>)}</div>
-            <img className="hero-portrait" src={heroPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" />
+            <img className="hero-portrait" src={heroPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" loading="eager" fetchPriority="high" decoding="async" />
           </div>
           <div className="hero-overlay" />
           <div className="hero-content">
