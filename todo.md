@@ -1090,11 +1090,11 @@
 ## Incidente — formulários não chegam aos e-mails
 
 - [x] Auditar o fluxo completo de submissão e a resposta do provedor.
-- [x] Confirmar remetente autorizado, chave e estado de entrega/bounces. Diagnóstico: a Resend devolve HTTP 403 porque `susapeaugusto.com.br` não está verificado.
-- [ ] Corrigir o envio ou solicitar os dados de configuração que faltarem.
-- [ ] Validar uma submissão real sem expor credenciais.
-- [ ] Executar check, testes e build.
-- [ ] Guardar checkpoint e entregar a correção.
+- [x] Confirmar remetente autorizado, chave e estado de entrega/bounces. Diagnóstico inicial: a Resend devolvia HTTP 403 porque `susapeaugusto.com.br` não estava verificado; após a verificação, o envio foi aceite com HTTP 200.
+- [x] Corrigir o envio ou solicitar os dados de configuração que faltarem. O domínio foi verificado e o remetente passou a ser aceite.
+- [x] Validar uma submissão real sem expor credenciais. O utilizador confirmou a receção.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar a correção.
 
 ## Correção da animação e carregamento da fotografia principal
 
@@ -1104,3 +1104,10 @@
 - [x] Preservar a composição e validar desktop, mobile e movimento reduzido.
 - [x] Executar check, testes e build.
 - [x] Guardar checkpoint e entregar a correção.
+
+## Reabertura urgente — entrega dos formulários
+- [x] Reproduzir a rejeição de envio e guardar a resposta exata do provedor. O teste atual foi aceite com HTTP 200.
+- [x] Confirmar se o remetente configurado está autorizado. Remetente efetivo: `formulario@susapeaugusto.com.br`.
+- [x] Solicitar ao utilizador apenas DNS ou remetente verificado, se necessário. O domínio/remetente já está aceite pelo provedor.
+- [x] Confirmar entrega real para os dois destinatários. O utilizador confirmou que o teste chegou.
+- [x] Publicar e registar a correção final.
