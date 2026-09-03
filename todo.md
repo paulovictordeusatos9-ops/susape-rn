@@ -1111,3 +1111,12 @@
 - [x] Solicitar ao utilizador apenas DNS ou remetente verificado, se necessário. O domínio/remetente já está aceite pelo provedor.
 - [x] Confirmar entrega real para os dois destinatários. O utilizador confirmou que o teste chegou.
 - [x] Publicar e registar a correção final.
+
+## Nova falha — submissão recente não recebida
+
+- [x] Auditar logs da submissão recente no frontend, backend e provedor. A submissão anterior não deixou registo de erro recente.
+- [x] Reproduzir o envio e confirmar o ID/estado da mensagem. A rota publicada respondeu HTTP 200 e `success: true`.
+- [x] Corrigir a causa da não entrega ou melhorar o tratamento de falha. O envio real atual foi aceite após a verificação do domínio.
+- [x] Validar novamente o formulário e a receção nos dois destinatários. O utilizador confirmou a receção do novo teste.
+- [x] Executar check, testes e build.
+- [x] Guardar checkpoint e entregar o diagnóstico.
