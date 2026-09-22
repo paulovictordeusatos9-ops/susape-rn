@@ -17,7 +17,7 @@
   --color-ring: var(--ring);
 }
 
-:root { --background: #f3eee5; --foreground: #102744; --primary: #f15a3a; --primary-foreground: #fffaf1; --border: #ded5c8; --muted: #e8e0d4; --muted-foreground: #5d6c79; --ring: #f15a3a; --radius: 0; }
+:root { --background: #e0141e; --foreground: #102744; --primary: #f15a3a; --primary-foreground: #fffaf1; --border: #ded5c8; --muted: #e8e0d4; --muted-foreground: #5d6c79; --ring: #f15a3a; --radius: 0; }
 
 * { border-color: var(--border); }
 html { scroll-behavior: smooth; }
