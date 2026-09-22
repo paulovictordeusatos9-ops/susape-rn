@@ -17,11 +17,11 @@
   --color-ring: var(--ring);
 }
 
-:root { --background: #e0141e; --foreground: #102744; --primary: #f15a3a; --primary-foreground: #fffaf1; --border: #ded5c8; --muted: #e8e0d4; --muted-foreground: #5d6c79; --ring: #f15a3a; --radius: 0; }
+:root { --background: #f3eee5; --foreground: #102744; --primary: #f15a3a; --primary-foreground: #fffaf1; --border: #ded5c8; --muted: #e8e0d4; --muted-foreground: #5d6c79; --ring: #f15a3a; --radius: 0; }
 
 * { border-color: var(--border); }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Manrope", Arial, sans-serif; }
+body { margin: 0; background: #e0141e; color: var(--foreground); font-family: "Manrope", Arial, sans-serif; }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
