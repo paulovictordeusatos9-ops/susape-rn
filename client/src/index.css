@@ -26,7 +26,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 
-.site-shell { overflow: hidden; }
+.site-shell { overflow: hidden; background: #e0141e; }
 .site-header { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; height: 76px; padding: 0 5.5vw; display: flex; align-items: center; justify-content: space-between; gap: 28px; background: rgba(9, 28, 51, .88); color: #fffaf1; backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.12); }
 .brand { display: inline-flex; align-items: center; gap: 10px; min-width: max-content; }
 .brand img, .footer-brand img { width: 44px; height: 44px; object-fit: contain; padding: 3px; border: 1px solid rgba(241,90,58,.74); background: rgba(255,255,255,.07); }
