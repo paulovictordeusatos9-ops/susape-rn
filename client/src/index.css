@@ -1543,9 +1543,27 @@ h3 { line-height: 1.16; }
 /* Fundo principal vermelho */
 body,
 .site-shell,
+.hero-white-blue,
+.hero-white-blue .hero-visual,
 .profile-section,
 .action-section,
 .collective-section,
 .news-section {
   background: #e0141e;
+}
+
+.hero-white-blue .hero-content,
+.hero-white-blue h1,
+.hero-white-blue .hero-summary,
+.hero-white-blue .hero-source {
+  color: #ffffff;
+}
+
+.hero-white-blue .section-eyebrow {
+  color: #f4ae28;
+}
+
+.hero-white-blue .button-ghost {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
