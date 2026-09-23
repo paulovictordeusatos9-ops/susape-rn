@@ -60,7 +60,7 @@ function geometryToPath(geometry: GeoGeometry, project: (point: Coordinate) => s
     .join(" ");
 }
 
-const heroPortrait = "/manus-storage/WhatsAppImage2026-09-02at13.27.14_e7162f9e.png";
+const heroPortrait = "https://upload.wikimedia.org/wikipedia/commons/8/82/Natal_Rio_Grande_do_Norte_Brasil.jpg";
 const heroNumberDigits = [
   { digit: "1", className: "num-red" },
   { digit: "2", className: "num-green" },
@@ -68,13 +68,13 @@ const heroNumberDigits = [
   { digit: "4", className: "num-yellow" },
 ];
 const galleryImages = [
-  { src: "/manus-storage/galeria-01_34e2af54.webp", alt: "Susape Augusto em encontro com lideranças potiguares", caption: "Encontro e diálogo" },
-  { src: "/manus-storage/galeria-02_0a9c9b22.webp", alt: "Susape Augusto em agenda com representantes locais", caption: "Construção de caminhos" },
-  { src: "/manus-storage/galeria-03_89b05074.jpg", alt: "Susape Augusto fala ao público durante encontro político", caption: "Presença e participação" },
-  { src: "/manus-storage/galeria-04_8b902bbf.jpg", alt: "Susape Augusto durante atividade partidária", caption: "Compromisso com o RN" },
-  { src: "/manus-storage/galeria-05_35a64db0.jpg", alt: "Susape Augusto em reunião com integrantes do partido", caption: "União e trabalho" },
-  { src: "/manus-storage/galeria-06_3e849a02.jpg", alt: "Susape Augusto com grupo em visita institucional", caption: "Agenda pelo Rio Grande do Norte" },
-  { src: "/manus-storage/galeria-07_e4a11224.jpg", alt: "Susape Augusto em encontro diante de um mapa do Rio Grande do Norte", caption: "Diálogo sobre o território", wide: true },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/8/82/Natal_Rio_Grande_do_Norte_Brasil.jpg", alt: "Vista aérea de Natal e do litoral do Rio Grande do Norte", caption: "Natal e o litoral potiguar" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Instituto_Hist%C3%B3rico_e_Geogr%C3%A1fico_do_Rio_Grande_do_Norte%2C_Natal_%28RN%29.jpg", alt: "Instituto Histórico e Geográfico do Rio Grande do Norte em Natal", caption: "História e patrimônio potiguar" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Apr2024._Catedral_Metropolitana_de_Nossa_Senhora_Da_Apresenta%C3%A7%C3%A3o%2C_Natal%2C_Brazil_01.jpg", alt: "Catedral Metropolitana de Nossa Senhora da Apresentação em Natal", caption: "Cultura e identidade" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/8/82/Natal_Rio_Grande_do_Norte_Brasil.jpg", alt: "Paisagem urbana e costeira de Natal", caption: "Paisagens do Rio Grande do Norte" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Instituto_Hist%C3%B3rico_e_Geogr%C3%A1fico_do_Rio_Grande_do_Norte%2C_Natal_%28RN%29.jpg", alt: "Patrimônio histórico de Natal", caption: "Patrimônio histórico" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Apr2024._Catedral_Metropolitana_de_Nossa_Senhora_Da_Apresenta%C3%A7%C3%A3o%2C_Natal%2C_Brazil_01.jpg", alt: "Arquitetura de Natal, Rio Grande do Norte", caption: "Arquitetura potiguar" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/8/82/Natal_Rio_Grande_do_Norte_Brasil.jpg", alt: "Natal vista do alto", caption: "Rio Grande do Norte", wide: true },
 ];
 
 const themes = [
@@ -417,7 +417,7 @@ export default function Home() {
 
       <main>
         <section id="inicio" className="hero hero-refresh hero-white-blue">
-          <img className="hero-flag-banner" src="/manus-storage/bandeira-rio-grande-do-norte_68147e19.svg" alt="Bandeira do Rio Grande do Norte" />
+          <img className="hero-flag-banner" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeira_do_Rio_Grande_do_Norte.svg" alt="Bandeira do Rio Grande do Norte" />
           <div className="hero-visual">
             <div className="hero-number-central" aria-hidden="true">{heroNumberDigits.map(({ digit, className }, index) => <span key={`${digit}-central-${index}`} className={className}>{digit}</span>)}</div>
             <img className="hero-portrait" src={heroPortrait} alt="Susape Augusto, candidato a deputado federal pelo Rio Grande do Norte" loading="eager" fetchPriority="high" decoding="async" />
