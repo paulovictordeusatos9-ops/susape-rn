@@ -1538,3 +1538,14 @@ h3 { line-height: 1.16; }
 @media (max-width: 680px) and (prefers-reduced-motion: no-preference) {
   .hero-white-blue .hero-portrait { animation-duration: .54s; animation-delay: 0s; }
 }
+
+
+/* Fundo principal vermelho */
+body,
+.site-shell,
+.profile-section,
+.action-section,
+.collective-section,
+.news-section {
+  background: #e0141e;
+}
